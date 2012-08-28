@@ -9,7 +9,7 @@
 <small>
 [<a class="el" href="group__flac.html">FLAC C API</a>]</small>
 </h1><hr><a name="_details"></a><h2>Detailed Description</h2>
-This module contains structure definitions for the representation of FLAC format components in memory. These are the basic structures used by the rest of the interfaces. 
+This module contains structure definitions for the representation of FLAC format components in memory. These are the basic structures used by the rest of the interfaces.
 <p>
 First, you should be familiar with the <a href="../format.html">FLAC format</a>. Many of the values here follow directly from the specification. As a user of libFLAC, the interesting parts really are the structures that describe the frame header and metadata blocks.<p>
 The format structures here are very primitive, designed to store information in an efficient way. Reading information from the structures is easy but creating or modifying them directly is more complex. For the most part, as a user of a library, editing is not necessary; however, for metadata blocks it is, so there are convenience functions provided in the <a class="el" href="group__flac__metadata.html">metadata module </a> to simplify the manipulation of metadata blocks.<p>
@@ -109,66 +109,66 @@ The format structures here are very primitive, designed to store information in 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga108">FLAC__STREAM_METADATA_HEADER_LENGTH</a>&nbsp;&nbsp;&nbsp;(4u)</td></tr>
 
 <tr><td colspan="2"><br><h2>Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga109">FLAC__EntropyCodingMethodType</a> { <a class="el" href="group__flac__format.html#gga109a100">FLAC__ENTROPY_CODING_METHOD_PARTITIONED_RICE</a> =  0, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga109">FLAC__EntropyCodingMethodType</a> { <a class="el" href="group__flac__format.html#gga109a100">FLAC__ENTROPY_CODING_METHOD_PARTITIONED_RICE</a> =  0,
 <a class="el" href="group__flac__format.html#gga109a101">FLAC__ENTROPY_CODING_METHOD_PARTITIONED_RICE2</a> =  1
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga110">FLAC__SubframeType</a> { <a class="el" href="group__flac__format.html#gga110a102">FLAC__SUBFRAME_TYPE_CONSTANT</a> =  0, 
-<a class="el" href="group__flac__format.html#gga110a103">FLAC__SUBFRAME_TYPE_VERBATIM</a> =  1, 
-<a class="el" href="group__flac__format.html#gga110a104">FLAC__SUBFRAME_TYPE_FIXED</a> =  2, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga110">FLAC__SubframeType</a> { <a class="el" href="group__flac__format.html#gga110a102">FLAC__SUBFRAME_TYPE_CONSTANT</a> =  0,
+<a class="el" href="group__flac__format.html#gga110a103">FLAC__SUBFRAME_TYPE_VERBATIM</a> =  1,
+<a class="el" href="group__flac__format.html#gga110a104">FLAC__SUBFRAME_TYPE_FIXED</a> =  2,
 <a class="el" href="group__flac__format.html#gga110a105">FLAC__SUBFRAME_TYPE_LPC</a> =  3
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga111">FLAC__ChannelAssignment</a> { <a class="el" href="group__flac__format.html#gga111a106">FLAC__CHANNEL_ASSIGNMENT_INDEPENDENT</a> =  0, 
-<a class="el" href="group__flac__format.html#gga111a107">FLAC__CHANNEL_ASSIGNMENT_LEFT_SIDE</a> =  1, 
-<a class="el" href="group__flac__format.html#gga111a108">FLAC__CHANNEL_ASSIGNMENT_RIGHT_SIDE</a> =  2, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga111">FLAC__ChannelAssignment</a> { <a class="el" href="group__flac__format.html#gga111a106">FLAC__CHANNEL_ASSIGNMENT_INDEPENDENT</a> =  0,
+<a class="el" href="group__flac__format.html#gga111a107">FLAC__CHANNEL_ASSIGNMENT_LEFT_SIDE</a> =  1,
+<a class="el" href="group__flac__format.html#gga111a108">FLAC__CHANNEL_ASSIGNMENT_RIGHT_SIDE</a> =  2,
 <a class="el" href="group__flac__format.html#gga111a109">FLAC__CHANNEL_ASSIGNMENT_MID_SIDE</a> =  3
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga112">FLAC__FrameNumberType</a> { <a class="el" href="group__flac__format.html#gga112a110">FLAC__FRAME_NUMBER_TYPE_FRAME_NUMBER</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga112">FLAC__FrameNumberType</a> { <a class="el" href="group__flac__format.html#gga112a110">FLAC__FRAME_NUMBER_TYPE_FRAME_NUMBER</a>,
 <a class="el" href="group__flac__format.html#gga112a111">FLAC__FRAME_NUMBER_TYPE_SAMPLE_NUMBER</a>
  }</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga113">FLAC__MetadataType</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga113a112">FLAC__METADATA_TYPE_STREAMINFO</a> =  0, 
-<a class="el" href="group__flac__format.html#gga113a113">FLAC__METADATA_TYPE_PADDING</a> =  1, 
-<a class="el" href="group__flac__format.html#gga113a114">FLAC__METADATA_TYPE_APPLICATION</a> =  2, 
-<a class="el" href="group__flac__format.html#gga113a115">FLAC__METADATA_TYPE_SEEKTABLE</a> =  3, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga113a112">FLAC__METADATA_TYPE_STREAMINFO</a> =  0,
+<a class="el" href="group__flac__format.html#gga113a113">FLAC__METADATA_TYPE_PADDING</a> =  1,
+<a class="el" href="group__flac__format.html#gga113a114">FLAC__METADATA_TYPE_APPLICATION</a> =  2,
+<a class="el" href="group__flac__format.html#gga113a115">FLAC__METADATA_TYPE_SEEKTABLE</a> =  3,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga113a116">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> =  4, 
-<a class="el" href="group__flac__format.html#gga113a117">FLAC__METADATA_TYPE_CUESHEET</a> =  5, 
-<a class="el" href="group__flac__format.html#gga113a118">FLAC__METADATA_TYPE_PICTURE</a> =  6, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga113a116">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> =  4,
+<a class="el" href="group__flac__format.html#gga113a117">FLAC__METADATA_TYPE_CUESHEET</a> =  5,
+<a class="el" href="group__flac__format.html#gga113a118">FLAC__METADATA_TYPE_PICTURE</a> =  6,
 <a class="el" href="group__flac__format.html#gga113a119">FLAC__METADATA_TYPE_UNDEFINED</a> =  7
 <br>
  }</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga114">FLAC__StreamMetadata_Picture_Type</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a120">FLAC__STREAM_METADATA_PICTURE_TYPE_OTHER</a> =  0, 
-<a class="el" href="group__flac__format.html#gga114a121">FLAC__STREAM_METADATA_PICTURE_TYPE_FILE_ICON_STANDARD</a> =  1, 
-<a class="el" href="group__flac__format.html#gga114a122">FLAC__STREAM_METADATA_PICTURE_TYPE_FILE_ICON</a> =  2, 
-<a class="el" href="group__flac__format.html#gga114a123">FLAC__STREAM_METADATA_PICTURE_TYPE_FRONT_COVER</a> =  3, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a120">FLAC__STREAM_METADATA_PICTURE_TYPE_OTHER</a> =  0,
+<a class="el" href="group__flac__format.html#gga114a121">FLAC__STREAM_METADATA_PICTURE_TYPE_FILE_ICON_STANDARD</a> =  1,
+<a class="el" href="group__flac__format.html#gga114a122">FLAC__STREAM_METADATA_PICTURE_TYPE_FILE_ICON</a> =  2,
+<a class="el" href="group__flac__format.html#gga114a123">FLAC__STREAM_METADATA_PICTURE_TYPE_FRONT_COVER</a> =  3,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a124">FLAC__STREAM_METADATA_PICTURE_TYPE_BACK_COVER</a> =  4, 
-<a class="el" href="group__flac__format.html#gga114a125">FLAC__STREAM_METADATA_PICTURE_TYPE_LEAFLET_PAGE</a> =  5, 
-<a class="el" href="group__flac__format.html#gga114a126">FLAC__STREAM_METADATA_PICTURE_TYPE_MEDIA</a> =  6, 
-<a class="el" href="group__flac__format.html#gga114a127">FLAC__STREAM_METADATA_PICTURE_TYPE_LEAD_ARTIST</a> =  7, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a124">FLAC__STREAM_METADATA_PICTURE_TYPE_BACK_COVER</a> =  4,
+<a class="el" href="group__flac__format.html#gga114a125">FLAC__STREAM_METADATA_PICTURE_TYPE_LEAFLET_PAGE</a> =  5,
+<a class="el" href="group__flac__format.html#gga114a126">FLAC__STREAM_METADATA_PICTURE_TYPE_MEDIA</a> =  6,
+<a class="el" href="group__flac__format.html#gga114a127">FLAC__STREAM_METADATA_PICTURE_TYPE_LEAD_ARTIST</a> =  7,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a128">FLAC__STREAM_METADATA_PICTURE_TYPE_ARTIST</a> =  8, 
-<a class="el" href="group__flac__format.html#gga114a129">FLAC__STREAM_METADATA_PICTURE_TYPE_CONDUCTOR</a> =  9, 
-<a class="el" href="group__flac__format.html#gga114a130">FLAC__STREAM_METADATA_PICTURE_TYPE_BAND</a> =  10, 
-<a class="el" href="group__flac__format.html#gga114a131">FLAC__STREAM_METADATA_PICTURE_TYPE_COMPOSER</a> =  11, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a128">FLAC__STREAM_METADATA_PICTURE_TYPE_ARTIST</a> =  8,
+<a class="el" href="group__flac__format.html#gga114a129">FLAC__STREAM_METADATA_PICTURE_TYPE_CONDUCTOR</a> =  9,
+<a class="el" href="group__flac__format.html#gga114a130">FLAC__STREAM_METADATA_PICTURE_TYPE_BAND</a> =  10,
+<a class="el" href="group__flac__format.html#gga114a131">FLAC__STREAM_METADATA_PICTURE_TYPE_COMPOSER</a> =  11,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a132">FLAC__STREAM_METADATA_PICTURE_TYPE_LYRICIST</a> =  12, 
-<a class="el" href="group__flac__format.html#gga114a133">FLAC__STREAM_METADATA_PICTURE_TYPE_RECORDING_LOCATION</a> =  13, 
-<a class="el" href="group__flac__format.html#gga114a134">FLAC__STREAM_METADATA_PICTURE_TYPE_DURING_RECORDING</a> =  14, 
-<a class="el" href="group__flac__format.html#gga114a135">FLAC__STREAM_METADATA_PICTURE_TYPE_DURING_PERFORMANCE</a> =  15, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a132">FLAC__STREAM_METADATA_PICTURE_TYPE_LYRICIST</a> =  12,
+<a class="el" href="group__flac__format.html#gga114a133">FLAC__STREAM_METADATA_PICTURE_TYPE_RECORDING_LOCATION</a> =  13,
+<a class="el" href="group__flac__format.html#gga114a134">FLAC__STREAM_METADATA_PICTURE_TYPE_DURING_RECORDING</a> =  14,
+<a class="el" href="group__flac__format.html#gga114a135">FLAC__STREAM_METADATA_PICTURE_TYPE_DURING_PERFORMANCE</a> =  15,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a136">FLAC__STREAM_METADATA_PICTURE_TYPE_VIDEO_SCREEN_CAPTURE</a> =  16, 
-<a class="el" href="group__flac__format.html#gga114a137">FLAC__STREAM_METADATA_PICTURE_TYPE_FISH</a> =  17, 
-<a class="el" href="group__flac__format.html#gga114a138">FLAC__STREAM_METADATA_PICTURE_TYPE_ILLUSTRATION</a> =  18, 
-<a class="el" href="group__flac__format.html#gga114a139">FLAC__STREAM_METADATA_PICTURE_TYPE_BAND_LOGOTYPE</a> =  19, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a136">FLAC__STREAM_METADATA_PICTURE_TYPE_VIDEO_SCREEN_CAPTURE</a> =  16,
+<a class="el" href="group__flac__format.html#gga114a137">FLAC__STREAM_METADATA_PICTURE_TYPE_FISH</a> =  17,
+<a class="el" href="group__flac__format.html#gga114a138">FLAC__STREAM_METADATA_PICTURE_TYPE_ILLUSTRATION</a> =  18,
+<a class="el" href="group__flac__format.html#gga114a139">FLAC__STREAM_METADATA_PICTURE_TYPE_BAND_LOGOTYPE</a> =  19,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a140">FLAC__STREAM_METADATA_PICTURE_TYPE_PUBLISHER_LOGOTYPE</a> =  20, 
+&nbsp;&nbsp;<a class="el" href="group__flac__format.html#gga114a140">FLAC__STREAM_METADATA_PICTURE_TYPE_PUBLISHER_LOGOTYPE</a> =  20,
 <b>FLAC__STREAM_METADATA_PICTURE_TYPE_UNDEFINED</b>
 <br>
  }</td></tr>
@@ -1173,7 +1173,7 @@ Vorbis comment names must be composed only of characters from [0x20-0x3C,0x3E-0x
     <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>A NUL-terminated string to be checked. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> name != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> name != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1225,7 +1225,7 @@ Vorbis comment values must be valid UTF-8 sequences.<p>
     <tr><td valign="top"></td><td valign="top"><em>length</em>&nbsp;</td><td>A the length of <em>value</em> in bytes. May be <code></code>(unsigned)(-1) to indicate that <em>value</em> is a plain UTF-8 NUL-terminated string. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> value != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> value != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1277,7 +1277,7 @@ Vorbis comment entries must be of the form 'name=value', and 'name' and 'value' 
     <tr><td valign="top"></td><td valign="top"><em>length</em>&nbsp;</td><td>The length of <em>entry</em> in bytes. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> value != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> value != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1318,7 +1318,7 @@ Check a seek table to see if it conforms to the FLAC specification. See the form
     <tr><td valign="top"></td><td valign="top"><em>seek_table</em>&nbsp;</td><td>A pointer to a seek table to be checked. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> seek_table != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> seek_table != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1359,7 +1359,7 @@ Sort a seek table's seek points according to the format specification. This incl
     <tr><td valign="top"></td><td valign="top"><em>seek_table</em>&nbsp;</td><td>A pointer to a seek table to be sorted. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> seek_table != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> seek_table != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1417,7 +1417,7 @@ Check a cue sheet to see if it conforms to the FLAC specification. See the forma
     <tr><td valign="top"></td><td valign="top"><em>violation</em>&nbsp;</td><td>Address of a pointer to a string. If there is a violation, a pointer to a string explanation of the violation will be returned here. <em>violation</em> may be <code>NULL</code> if you don't need the returned string. Do not free the returned string; it will always point to static data. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> cue_sheet != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> cue_sheet != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1468,7 +1468,7 @@ Check picture data to see if it conforms to the FLAC specification. See the form
     <tr><td valign="top"></td><td valign="top"><em>violation</em>&nbsp;</td><td>Address of a pointer to a string. If there is a violation, a pointer to a string explanation of the violation will be returned here. <em>violation</em> may be <code>NULL</code> if you don't need the returned string. Do not free the returned string; it will always point to static data. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> picture != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> picture != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -3336,9 +3336,6 @@ Using a FLAC__StreamMetadata_Picture_Type as the index to this array will give t
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

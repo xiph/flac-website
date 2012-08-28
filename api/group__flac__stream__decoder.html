@@ -9,7 +9,7 @@
 <small>
 [<a class="el" href="group__flac__decoder.html">FLAC/_decoder.h: decoder interfaces</a>]</small>
 </h1><hr><a name="_details"></a><h2>Detailed Description</h2>
-This module contains the functions which implement the stream decoder. 
+This module contains the functions which implement the stream decoder.
 <p>
 The stream decoder can decode native FLAC, and optionally Ogg FLAC (check FLAC_API_SUPPORTS_OGG_FLAC) streams and files.<p>
 The basic usage of this decoder is as follows:<ul>
@@ -60,59 +60,59 @@ STREAMINFO and SEEKTABLE blocks are always parsed and used internally, but they 
 
 <tr><td colspan="2"><br><h2>Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga50">FLAC__StreamDecoderState</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga50a16">FLAC__STREAM_DECODER_SEARCH_FOR_METADATA</a> =  0, 
-<a class="el" href="group__flac__stream__decoder.html#gga50a17">FLAC__STREAM_DECODER_READ_METADATA</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga50a18">FLAC__STREAM_DECODER_SEARCH_FOR_FRAME_SYNC</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga50a19">FLAC__STREAM_DECODER_READ_FRAME</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga50a16">FLAC__STREAM_DECODER_SEARCH_FOR_METADATA</a> =  0,
+<a class="el" href="group__flac__stream__decoder.html#gga50a17">FLAC__STREAM_DECODER_READ_METADATA</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga50a18">FLAC__STREAM_DECODER_SEARCH_FOR_FRAME_SYNC</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga50a19">FLAC__STREAM_DECODER_READ_FRAME</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga50a20">FLAC__STREAM_DECODER_END_OF_STREAM</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga50a21">FLAC__STREAM_DECODER_OGG_ERROR</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga50a22">FLAC__STREAM_DECODER_SEEK_ERROR</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga50a23">FLAC__STREAM_DECODER_ABORTED</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga50a20">FLAC__STREAM_DECODER_END_OF_STREAM</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga50a21">FLAC__STREAM_DECODER_OGG_ERROR</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga50a22">FLAC__STREAM_DECODER_SEEK_ERROR</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga50a23">FLAC__STREAM_DECODER_ABORTED</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga50a24">FLAC__STREAM_DECODER_MEMORY_ALLOCATION_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga50a24">FLAC__STREAM_DECODER_MEMORY_ALLOCATION_ERROR</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga50a25">FLAC__STREAM_DECODER_UNINITIALIZED</a>
 <br>
  }</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga51">FLAC__StreamDecoderInitStatus</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga51a26">FLAC__STREAM_DECODER_INIT_STATUS_OK</a> =  0, 
-<a class="el" href="group__flac__stream__decoder.html#gga51a27">FLAC__STREAM_DECODER_INIT_STATUS_UNSUPPORTED_CONTAINER</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga51a28">FLAC__STREAM_DECODER_INIT_STATUS_INVALID_CALLBACKS</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga51a29">FLAC__STREAM_DECODER_INIT_STATUS_MEMORY_ALLOCATION_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga51a26">FLAC__STREAM_DECODER_INIT_STATUS_OK</a> =  0,
+<a class="el" href="group__flac__stream__decoder.html#gga51a27">FLAC__STREAM_DECODER_INIT_STATUS_UNSUPPORTED_CONTAINER</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga51a28">FLAC__STREAM_DECODER_INIT_STATUS_INVALID_CALLBACKS</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga51a29">FLAC__STREAM_DECODER_INIT_STATUS_MEMORY_ALLOCATION_ERROR</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga51a30">FLAC__STREAM_DECODER_INIT_STATUS_ERROR_OPENING_FILE</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__decoder.html#gga51a30">FLAC__STREAM_DECODER_INIT_STATUS_ERROR_OPENING_FILE</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga51a31">FLAC__STREAM_DECODER_INIT_STATUS_ALREADY_INITIALIZED</a>
 <br>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga52">FLAC__StreamDecoderReadStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga52a32">FLAC__STREAM_DECODER_READ_STATUS_CONTINUE</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga52a33">FLAC__STREAM_DECODER_READ_STATUS_END_OF_STREAM</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga52">FLAC__StreamDecoderReadStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga52a32">FLAC__STREAM_DECODER_READ_STATUS_CONTINUE</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga52a33">FLAC__STREAM_DECODER_READ_STATUS_END_OF_STREAM</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga52a34">FLAC__STREAM_DECODER_READ_STATUS_ABORT</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga53">FLAC__StreamDecoderSeekStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga53a35">FLAC__STREAM_DECODER_SEEK_STATUS_OK</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga53a36">FLAC__STREAM_DECODER_SEEK_STATUS_ERROR</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga53">FLAC__StreamDecoderSeekStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga53a35">FLAC__STREAM_DECODER_SEEK_STATUS_OK</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga53a36">FLAC__STREAM_DECODER_SEEK_STATUS_ERROR</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga53a37">FLAC__STREAM_DECODER_SEEK_STATUS_UNSUPPORTED</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga54">FLAC__StreamDecoderTellStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga54a38">FLAC__STREAM_DECODER_TELL_STATUS_OK</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga54a39">FLAC__STREAM_DECODER_TELL_STATUS_ERROR</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga54">FLAC__StreamDecoderTellStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga54a38">FLAC__STREAM_DECODER_TELL_STATUS_OK</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga54a39">FLAC__STREAM_DECODER_TELL_STATUS_ERROR</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga54a40">FLAC__STREAM_DECODER_TELL_STATUS_UNSUPPORTED</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga55">FLAC__StreamDecoderLengthStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga55a41">FLAC__STREAM_DECODER_LENGTH_STATUS_OK</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga55a42">FLAC__STREAM_DECODER_LENGTH_STATUS_ERROR</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga55">FLAC__StreamDecoderLengthStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga55a41">FLAC__STREAM_DECODER_LENGTH_STATUS_OK</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga55a42">FLAC__STREAM_DECODER_LENGTH_STATUS_ERROR</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga55a43">FLAC__STREAM_DECODER_LENGTH_STATUS_UNSUPPORTED</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga56">FLAC__StreamDecoderWriteStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga56a44">FLAC__STREAM_DECODER_WRITE_STATUS_CONTINUE</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga56">FLAC__StreamDecoderWriteStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga56a44">FLAC__STREAM_DECODER_WRITE_STATUS_CONTINUE</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga56a45">FLAC__STREAM_DECODER_WRITE_STATUS_ABORT</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga57">FLAC__StreamDecoderErrorStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga57a46">FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga57a47">FLAC__STREAM_DECODER_ERROR_STATUS_BAD_HEADER</a>, 
-<a class="el" href="group__flac__stream__decoder.html#gga57a48">FLAC__STREAM_DECODER_ERROR_STATUS_FRAME_CRC_MISMATCH</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__decoder.html#ga57">FLAC__StreamDecoderErrorStatus</a> { <a class="el" href="group__flac__stream__decoder.html#gga57a46">FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga57a47">FLAC__STREAM_DECODER_ERROR_STATUS_BAD_HEADER</a>,
+<a class="el" href="group__flac__stream__decoder.html#gga57a48">FLAC__STREAM_DECODER_ERROR_STATUS_FRAME_CRC_MISMATCH</a>,
 <a class="el" href="group__flac__stream__decoder.html#gga57a49">FLAC__STREAM_DECODER_ERROR_STATUS_UNPARSEABLE_STREAM</a>
  }</td></tr>
 
@@ -912,7 +912,7 @@ Free a decoder instance. Deletes the object pointed to by <em>decoder</em>.<p>
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A pointer to an existing decoder. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
     </td>
   </tr>
@@ -960,7 +960,7 @@ Set the serial number for the FLAC stream within the Ogg container. The default 
     <tr><td valign="top"></td><td valign="top"><em>serial_number</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1014,7 +1014,7 @@ Clients that do not use the MD5 check should leave this off to speed up decoding
     <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Flag value (see above). </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1066,7 +1066,7 @@ Direct the decoder to pass on all metadata blocks of type <em>type</em>.<p>
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> <em>type</em> is valid </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1118,8 +1118,8 @@ Direct the decoder to pass on all APPLICATION metadata blocks of the given <em>i
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> <span class="keywordtype">id</span> != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> <span class="keywordtype">id</span> != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1161,7 +1161,7 @@ Direct the decoder to pass on all metadata blocks of any type.<p>
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to set. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1213,7 +1213,7 @@ Direct the decoder to filter out all metadata blocks of type <em>type</em>.<p>
     <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> <em>type</em> is valid </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1265,8 +1265,8 @@ Direct the decoder to filter out all APPLICATION metadata blocks of the given <e
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> <span class="keywordtype">id</span> != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> <span class="keywordtype">id</span> != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1308,7 +1308,7 @@ Direct the decoder to filter out all metadata blocks of any type.<p>
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to set. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1349,7 +1349,7 @@ Get the current decoder state.<p>
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1390,7 +1390,7 @@ Get the current decoder state as a C string.<p>
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1431,7 +1431,7 @@ Get the "MD5 signature checking" flag. This is the value of the setting, not whe
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1472,7 +1472,7 @@ Get the total number of samples in the stream being decoded. Will only be valid 
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1513,7 +1513,7 @@ Get the current number of channels in the stream being decoded. Will only be val
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1554,7 +1554,7 @@ Get the current channel assignment in the stream being decoded. Will only be val
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1595,7 +1595,7 @@ Get the current sample resolution in the stream being decoded. Will only be vali
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1636,7 +1636,7 @@ Get the current sample rate in Hz of the stream being decoded. Will only be vali
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1677,7 +1677,7 @@ Get the current blocksize of the stream being decoded. Will only be valid after 
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance to query. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1729,8 +1729,8 @@ Returns the decoder's current read position within the stream. The position is t
     <tr><td valign="top"></td><td valign="top"><em>position</em>&nbsp;</td><td>Address at which to return the desired position. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> position != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> position != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1839,7 +1839,7 @@ This function should be called after <a class="el" href="group__flac__stream__de
     <tr><td valign="top"></td><td valign="top"><em>client_data</em>&nbsp;</td><td>This value will be supplied to callbacks in their <em>client_data</em> argument. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1949,7 +1949,7 @@ This function should be called after <a class="el" href="group__flac__stream__de
     <tr><td valign="top"></td><td valign="top"><em>client_data</em>&nbsp;</td><td>This value will be supplied to callbacks in their <em>client_data</em> argument. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2030,8 +2030,8 @@ This function should be called after <a class="el" href="group__flac__stream__de
     <tr><td valign="top"></td><td valign="top"><em>client_data</em>&nbsp;</td><td>This value will be supplied to callbacks in their <em>client_data</em> argument. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> file != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> file != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2113,8 +2113,8 @@ This function should be called after <a class="el" href="group__flac__stream__de
     <tr><td valign="top"></td><td valign="top"><em>client_data</em>&nbsp;</td><td>This value will be supplied to callbacks in their <em>client_data</em> argument. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> file != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> file != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2195,7 +2195,7 @@ This function should be called after <a class="el" href="group__flac__stream__de
     <tr><td valign="top"></td><td valign="top"><em>client_data</em>&nbsp;</td><td>This value will be supplied to callbacks in their <em>client_data</em> argument. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2277,7 +2277,7 @@ This function should be called after <a class="el" href="group__flac__stream__de
     <tr><td valign="top"></td><td valign="top"><em>client_data</em>&nbsp;</td><td>This value will be supplied to callbacks in their <em>client_data</em> argument. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2319,7 +2319,7 @@ In the event of a prematurely-terminated decode, it is not strictly necessary to
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>An uninitialized decoder instance. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2360,7 +2360,7 @@ Flush the stream input. The decoder's input buffer will be cleared and the state
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2403,7 +2403,7 @@ If the decoder was initialized with FLAC__stream_encoder_init*_stream() and is n
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>A decoder instance. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2446,7 +2446,7 @@ Unless there is a fatal read error or end of stream, this function will return o
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>An initialized decoder instance. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2488,7 +2488,7 @@ As the decoder needs more input it will call the read callback. As each metadata
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>An initialized decoder instance. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2530,7 +2530,7 @@ As the decoder needs more input it will call the read callback. As each metadata
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>An initialized decoder instance. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2575,7 +2575,7 @@ This function should only be called when the stream has advanced past all the me
     <tr><td valign="top"></td><td valign="top"><em>decoder</em>&nbsp;</td><td>An initialized decoder instance not in a metadata state. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2626,7 +2626,7 @@ Flush the input and seek to an absolute sample. Decoding will resume at the give
     <tr><td valign="top"></td><td valign="top"><em>sample</em>&nbsp;</td><td>The target sample number to seek to. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> decoder != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -2837,9 +2837,6 @@ Using a FLAC__StreamDecoderErrorStatus as the index to this array will give the 
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

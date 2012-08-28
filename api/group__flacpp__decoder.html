@@ -9,11 +9,11 @@
 <small>
 [<a class="el" href="group__flacpp.html">FLAC C++ API</a>]</small>
 </h1><hr><a name="_details"></a><h2>Detailed Description</h2>
-This module describes the decoder layers provided by libFLAC++. 
+This module describes the decoder layers provided by libFLAC++.
 <p>
 The libFLAC++ decoder classes are object wrappers around their counterparts in libFLAC. All decoding layers available in libFLAC are also provided here. The interface is very similar; make sure to read the <a class="el" href="group__flac__decoder.html">libFLAC decoder module </a>.<p>
 There are only two significant differences here. First, instead of passing in C function pointers for callbacks, you inherit from the decoder class and provide implementations for the callbacks in your derived class; because of this there is no need for a 'client_data' property.<p>
-Second, there are two stream decoder classes. <a class="el" href="classFLAC_1_1Decoder_1_1Stream.html">FLAC::Decoder::Stream</a> is used for the same cases that <a class="el" href="group__flac__stream__decoder.html#ga36">FLAC__stream_decoder_init_stream()</a> / <a class="el" href="group__flac__stream__decoder.html#ga37">FLAC__stream_decoder_init_ogg_stream()</a> are used, and <a class="el" href="classFLAC_1_1Decoder_1_1File.html">FLAC::Decoder::File</a> is used for the same cases that <a class="el" href="group__flac__stream__decoder.html#ga38">FLAC__stream_decoder_init_FILE()</a> and <a class="el" href="group__flac__stream__decoder.html#ga40">FLAC__stream_decoder_init_file()</a> / <a class="el" href="group__flac__stream__decoder.html#ga39">FLAC__stream_decoder_init_ogg_FILE()</a> and <a class="el" href="group__flac__stream__decoder.html#ga41">FLAC__stream_decoder_init_ogg_file()</a> are used. 
+Second, there are two stream decoder classes. <a class="el" href="classFLAC_1_1Decoder_1_1Stream.html">FLAC::Decoder::Stream</a> is used for the same cases that <a class="el" href="group__flac__stream__decoder.html#ga36">FLAC__stream_decoder_init_stream()</a> / <a class="el" href="group__flac__stream__decoder.html#ga37">FLAC__stream_decoder_init_ogg_stream()</a> are used, and <a class="el" href="classFLAC_1_1Decoder_1_1File.html">FLAC::Decoder::File</a> is used for the same cases that <a class="el" href="group__flac__stream__decoder.html#ga38">FLAC__stream_decoder_init_FILE()</a> and <a class="el" href="group__flac__stream__decoder.html#ga40">FLAC__stream_decoder_init_file()</a> / <a class="el" href="group__flac__stream__decoder.html#ga39">FLAC__stream_decoder_init_ogg_FILE()</a> and <a class="el" href="group__flac__stream__decoder.html#ga41">FLAC__stream_decoder_init_ogg_file()</a> are used.
 <p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -34,9 +34,7 @@ Second, there are two stream decoder classes. <a class="el" href="classFLAC_1_1D
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
 			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
-			</td>
+
 		</tr>
 	</table>
 </div>

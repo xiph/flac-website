@@ -9,7 +9,7 @@
 <small>
 [<a class="el" href="group__porting.html">Porting Guide for New Versions</a>]</small>
 </h1>There were only very minor changes to the interfaces from 1.1.4 to 1.2.0. In libFLAC, <code><a class="el" href="group__flac__format.html#ga81">FLAC__format_sample_rate_is_subset()</a></code> was added. In libFLAC++, <code><a class="el" href="classFLAC_1_1Decoder_1_1Stream.html#FLAC_1_1Decoder_1_1Streama20">FLAC::Decoder::Stream::get_decode_position()</a></code> was added.<p>
-Finally, value of the constant <code>FLAC__FRAME_HEADER_RESERVED_LEN</code> has changed to reflect the conversion of one of the reserved bits into active use. It used to be <code>2</code> and now is <code>1</code>. However the FLAC frame header length has not changed, so to skip the proper number of bits, use <code>FLAC__FRAME_HEADER_RESERVED_LEN</code> + <code>FLAC__FRAME_HEADER_BLOCKING_STRATEGY_LEN</code> 
+Finally, value of the constant <code>FLAC__FRAME_HEADER_RESERVED_LEN</code> has changed to reflect the conversion of one of the reserved bits into active use. It used to be <code>2</code> and now is <code>1</code>. However the FLAC frame header length has not changed, so to skip the proper number of bits, use <code>FLAC__FRAME_HEADER_RESERVED_LEN</code> + <code>FLAC__FRAME_HEADER_BLOCKING_STRATEGY_LEN</code>
 <p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -22,9 +22,6 @@ Finally, value of the constant <code>FLAC__FRAME_HEADER_RESERVED_LEN</code> has 
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

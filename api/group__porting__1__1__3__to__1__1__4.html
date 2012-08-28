@@ -8,7 +8,7 @@
 <h1>Porting from FLAC 1.1.3 to 1.1.4<br>
 <small>
 [<a class="el" href="group__porting.html">Porting Guide for New Versions</a>]</small>
-</h1>There were no changes to any of the interfaces from 1.1.3 to 1.1.4. There was a slight change in the implementation of <a class="el" href="group__flac__stream__encoder.html#ga34">FLAC__stream_encoder_set_metadata()</a>; the function now makes a copy of the <em>metadata</em> array of pointers so the client no longer needs to maintain it after the call. The objects themselves that are pointed to by the array are still not copied though and must be maintained until the call to <a class="el" href="group__flac__stream__encoder.html#ga62">FLAC__stream_encoder_finish()</a>. 
+</h1>There were no changes to any of the interfaces from 1.1.3 to 1.1.4. There was a slight change in the implementation of <a class="el" href="group__flac__stream__encoder.html#ga34">FLAC__stream_encoder_set_metadata()</a>; the function now makes a copy of the <em>metadata</em> array of pointers so the client no longer needs to maintain it after the call. The objects themselves that are pointed to by the array are still not copied though and must be maintained until the call to <a class="el" href="group__flac__stream__encoder.html#ga62">FLAC__stream_encoder_finish()</a>.
 <p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -21,9 +21,6 @@
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

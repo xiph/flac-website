@@ -71,7 +71,7 @@ or just:<p>
 </pre></div><p>
 Another small change to the decoder is in how it handles unparseable streams. Before, when the decoder found an unparseable stream (reserved for when the decoder encounters a stream from a future encoder that it can't parse), it changed the state to <code>FLAC__STREAM_DECODER_UNPARSEABLE_STREAM</code>. Now the decoder instead drops sync and calls the error callback with a new error code <code>FLAC__STREAM_DECODER_ERROR_STATUS_UNPARSEABLE_STREAM</code>. This is more robust. If your error callback does not discriminate on the the error state, your code does not need to be changed.<p>
 The encoder now has a new setting: <a class="el" href="group__flac__stream__encoder.html#ga24">FLAC__stream_encoder_set_apodization()</a>. This is for setting the method used to window the data before LPC analysis. You only need to add a call to this function if the default is not suitable. There are also two new convenience functions that may be useful: <a class="el" href="group__flac__metadata__object.html#ga41">FLAC__metadata_object_cuesheet_calculate_cddb_id()</a> and <a class="el" href="group__flac__metadata__level0.html#ga2">FLAC__metadata_get_cuesheet()</a>.<p>
-The <em>bytes</em> parameter to FLAC__StreamDecoderReadCallback, FLAC__StreamEncoderReadCallback, and FLAC__StreamEncoderWriteCallback is now <code>size_t</code> instead of <code>unsigned</code>. 
+The <em>bytes</em> parameter to FLAC__StreamDecoderReadCallback, FLAC__StreamEncoderReadCallback, and FLAC__StreamEncoderWriteCallback is now <code>size_t</code> instead of <code>unsigned</code>.
 <p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -84,9 +84,6 @@ The <em>bytes</em> parameter to FLAC__StreamDecoderReadCallback, FLAC__StreamEnc
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

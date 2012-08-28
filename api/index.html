@@ -32,7 +32,7 @@ It is easiest to just describe the dependencies:<p>
 <li>All modules depend on the <a class="el" href="group__flac__format.html">Format </a> module.</li><li>The decoders and encoders depend on the bitbuffer.</li><li>The decoder is independent of the encoder. The encoder uses the decoder because of the verify feature, but this can be removed if not needed.</li><li>Parts of the metadata interface require the stream decoder (but not the encoder).</li><li>Ogg support is selectable through the compile time macro <code>FLAC__HAS_OGG</code>.</li></ul>
 <p>
 For example, if your application only requires the stream decoder, no encoder, and no metadata interface, you can remove the stream encoder and the metadata interface, which will greatly reduce the size of the library.<p>
-Also, there are several places in the libFLAC code with comments marked with "OPT:" where a #define can be changed to enable code that might be faster on a specific platform. Experimenting with these can yield faster binaries. 
+Also, there are several places in the libFLAC code with comments marked with "OPT:" where a #define can be changed to enable code that might be faster on a specific platform. Experimenting with these can yield faster binaries.
 <hr size="1">
 <div class="copyright">
 	<!-- @@@ oh so hacky -->
@@ -40,9 +40,6 @@ Also, there are several places in the libFLAC code with comments marked with "OP
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

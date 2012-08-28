@@ -14,7 +14,7 @@ Convenience class for encapsulating Vorbis comment entries. An entry is a vendor
 A <em>field</em> as used in the methods refers to an entire 'NAME=VALUE' string; for convenience the string is NUL-terminated. A length field is required in the unlikely event that the value contains contain embedded NULs.<p>
 A <em>field_name</em> is what is on the left side of the first '=' in the <em>field</em>. By definition it is ASCII and so is NUL-terminated and does not require a length to describe it. <em>field_name</em> is undefined for a vendor string entry.<p>
 A <em>field_value</em> is what is on the right side of the first '=' in the <em>field</em>. By definition, this may contain embedded NULs and so a <em>field_value_length</em> is required to describe it. However in practice, embedded NULs are not known to be used, so it is generally safe to treat field values as NUL- terminated UTF-8 strings.<p>
-Always check <a class="el" href="classFLAC_1_1Metadata_1_1VorbisComment_1_1Entry.html#FLAC_1_1Metadata_1_1VorbisComment_1_1Entrya8">is_valid()</a> after the constructor or operator= to make sure memory was properly allocated and that the <a class="el" href="classFLAC_1_1Metadata_1_1VorbisComment_1_1Entry.html">Entry</a> conforms to the Vorbis comment specification. 
+Always check <a class="el" href="classFLAC_1_1Metadata_1_1VorbisComment_1_1Entry.html#FLAC_1_1Metadata_1_1VorbisComment_1_1Entrya8">is_valid()</a> after the constructor or operator= to make sure memory was properly allocated and that the <a class="el" href="classFLAC_1_1Metadata_1_1VorbisComment_1_1Entry.html">Entry</a> conforms to the Vorbis comment specification.
 <p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -120,7 +120,7 @@ unsigned&nbsp;</td><td class="memItemRight" valign="bottom"><b>field_value_lengt
     <td>
 
 <p>
-Returns <code>true</code> iff object was properly constructed. 
+Returns <code>true</code> iff object was properly constructed.
 <p>
     </td>
   </tr>
@@ -135,9 +135,6 @@ Returns <code>true</code> iff object was properly constructed.
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

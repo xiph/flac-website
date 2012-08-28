@@ -25,7 +25,7 @@
 <area href="classFLAC_1_1Metadata_1_1VorbisComment.html" alt="FLAC::Metadata::VorbisComment" shape="rect" coords="207,448,404,472">
 </map>
 <a href="classFLAC_1_1Metadata_1_1Prototype-members.html">List of all members.</a><hr><a name="_details"></a><h2>Detailed Description</h2>
-Base class for all metadata block types. See the <a class="el" href="group__flacpp__metadata__object.html">overview </a> for more. 
+Base class for all metadata block types. See the <a class="el" href="group__flacpp__metadata__object.html">overview </a> for more.
 <p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -159,7 +159,7 @@ Constructs a copy of the given object. This form always performs a deep copy.   
 
 <p>
 Constructs an object with copy control. When <em>copy</em> is <code>true</code>, behaves identically to FLAC::Metadata::Prototype::Prototype(const ::FLAC__StreamMetadata *object). When <em>copy</em> is <code>false</code>, the instance takes ownership of the pointer and the <a class="el" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a> object will be freed by the destructor.<p>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> object != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> object != NULL
 </pre></div> </dd></dl>
     </td>
   </tr>
@@ -309,7 +309,7 @@ Deletes the underlying <a class="el" href="structFLAC____StreamMetadata.html">FL
 
 <p>
 Returns <code>true</code> if this block is the last block in a stream, else <code>false</code>.<p>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>() 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>()
 </pre></div> </dd></dl>
     </td>
   </tr>
@@ -339,7 +339,7 @@ Returns <code>true</code> if this block is the last block in a stream, else <cod
 
 <p>
 Returns the type of the block.<p>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>() 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>()
 </pre></div> </dd></dl>
 
 <p>
@@ -372,7 +372,7 @@ Reimplemented in <a class="el" href="classFLAC_1_1Metadata_1_1Picture.html#FLAC_
 <p>
 Returns the stream length of the metadata block.<p>
 <dl compact><dt><b>Note:</b></dt><dd>The length does not include the metadata block header, per spec.</dd></dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>() 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>()
 </pre></div> </dd></dl>
     </td>
   </tr>
@@ -403,7 +403,7 @@ Returns the stream length of the metadata block.<p>
 
 <p>
 Sets the "is_last" flag for the block. When using the iterators it is not necessary to set this flag; they will do it for you.<p>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>() 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> <a class="code" href="group__flacpp__metadata__object.html#ga7">is_valid</a>()
 </pre></div> </dd></dl>
     </td>
   </tr>
@@ -418,9 +418,6 @@ Sets the "is_last" flag for the block. When using the iterators it is not necess
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

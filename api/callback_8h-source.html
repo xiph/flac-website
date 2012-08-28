@@ -37,31 +37,31 @@
 00028 <span class="comment"> * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span>
 00029 <span class="comment"> * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
 00030 <span class="comment"> */</span>
-00031 
+00031
 00032 <span class="preprocessor">#ifndef FLAC__CALLBACK_H</span>
 00033 <span class="preprocessor"></span><span class="preprocessor">#define FLAC__CALLBACK_H</span>
 00034 <span class="preprocessor"></span>
 00035 <span class="preprocessor">#include "ordinals.h"</span>
 00036 <span class="preprocessor">#include &lt;stdlib.h&gt;</span> <span class="comment">/* for size_t */</span>
-00037 
+00037
 00081 <span class="preprocessor">#ifdef __cplusplus</span>
 00082 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">"C"</span> {
 00083 <span class="preprocessor">#endif</span>
 00084 <span class="preprocessor"></span>
 <a name="l00088"></a><a class="code" href="group__flac__callbacks.html#ga0">00088</a> <span class="keyword">typedef</span> <span class="keywordtype">void</span>* <a class="code" href="group__flac__callbacks.html#ga0">FLAC__IOHandle</a>;
-00089 
+00089
 <a name="l00101"></a><a class="code" href="group__flac__callbacks.html#ga1">00101</a> <span class="keyword">typedef</span> size_t (*<a class="code" href="group__flac__callbacks.html#ga1">FLAC__IOCallback_Read</a>) (<span class="keywordtype">void</span> *ptr, size_t size, size_t nmemb, FLAC__IOHandle handle);
-00102 
+00102
 <a name="l00114"></a><a class="code" href="group__flac__callbacks.html#ga2">00114</a> <span class="keyword">typedef</span> size_t (*<a class="code" href="group__flac__callbacks.html#ga2">FLAC__IOCallback_Write</a>) (<span class="keyword">const</span> <span class="keywordtype">void</span> *ptr, size_t size, size_t nmemb, FLAC__IOHandle handle);
-00115 
+00115
 <a name="l00127"></a><a class="code" href="group__flac__callbacks.html#ga3">00127</a> <span class="keyword">typedef</span> int (*<a class="code" href="group__flac__callbacks.html#ga3">FLAC__IOCallback_Seek</a>) (FLAC__IOHandle handle, FLAC__int64 offset, <span class="keywordtype">int</span> whence);
-00128 
+00128
 <a name="l00138"></a><a class="code" href="group__flac__callbacks.html#ga4">00138</a> <span class="keyword">typedef</span> FLAC__int64 (*<a class="code" href="group__flac__callbacks.html#ga4">FLAC__IOCallback_Tell</a>) (FLAC__IOHandle handle);
-00139 
+00139
 <a name="l00149"></a><a class="code" href="group__flac__callbacks.html#ga5">00149</a> <span class="keyword">typedef</span> int (*<a class="code" href="group__flac__callbacks.html#ga5">FLAC__IOCallback_Eof</a>) (FLAC__IOHandle handle);
-00150 
+00150
 <a name="l00159"></a><a class="code" href="group__flac__callbacks.html#ga6">00159</a> <span class="keyword">typedef</span> int (*<a class="code" href="group__flac__callbacks.html#ga6">FLAC__IOCallback_Close</a>) (FLAC__IOHandle handle);
-00160 
+00160
 <a name="l00169"></a><a class="code" href="structFLAC____IOCallbacks.html">00169</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
 00170     <a class="code" href="group__flac__callbacks.html#ga1">FLAC__IOCallback_Read</a> read;
 00171     <a class="code" href="group__flac__callbacks.html#ga2">FLAC__IOCallback_Write</a> write;
@@ -70,9 +70,9 @@
 00174     <a class="code" href="group__flac__callbacks.html#ga5">FLAC__IOCallback_Eof</a> eof;
 00175     <a class="code" href="group__flac__callbacks.html#ga6">FLAC__IOCallback_Close</a> close;
 00176 } <a class="code" href="structFLAC____IOCallbacks.html">FLAC__IOCallbacks</a>;
-00177 
+00177
 00178 <span class="comment">/* \} */</span>
-00179 
+00179
 00180 <span class="preprocessor">#ifdef __cplusplus</span>
 00181 <span class="preprocessor"></span>}
 00182 <span class="preprocessor">#endif</span>
@@ -86,9 +86,6 @@
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

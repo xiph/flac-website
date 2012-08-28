@@ -8,9 +8,9 @@
 <div class="nav">
 <a class="el" href="dir_000000.html">include</a>&nbsp;/&nbsp;<a class="el" href="dir_000002.html">FLAC</a></div>
 <h1>metadata.h File Reference</h1><hr><a name="_details"></a><h2>Detailed Description</h2>
-This module provides functions for creating and manipulating FLAC metadata blocks in memory, and three progressively more powerful interfaces for traversing and editing metadata in FLAC files. 
+This module provides functions for creating and manipulating FLAC metadata blocks in memory, and three progressively more powerful interfaces for traversing and editing metadata in FLAC files.
 <p>
-See the detailed documentation for each interface in the <a class="el" href="group__flac__metadata.html">metadata </a> module. 
+See the detailed documentation for each interface in the <a class="el" href="group__flac__metadata.html">metadata </a> module.
 <p>
 <code>#include &lt;sys/types.h&gt;</code><br>
 <code>#include "<a class="el" href="export_8h-source.html">export.h</a>"</code><br>
@@ -29,44 +29,44 @@ See the detailed documentation for each interface in the <a class="el" href="gro
 
 <tr><td colspan="2"><br><h2>Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__metadata__level1.html#ga18">FLAC__Metadata_SimpleIteratorStatus</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a5">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_OK</a> =  0, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a6">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ILLEGAL_INPUT</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a7">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ERROR_OPENING_FILE</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a8">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_A_FLAC_FILE</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a5">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_OK</a> =  0,
+<a class="el" href="group__flac__metadata__level1.html#gga18a6">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ILLEGAL_INPUT</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a7">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ERROR_OPENING_FILE</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a8">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_A_FLAC_FILE</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a9">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_WRITABLE</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a10">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_BAD_METADATA</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a11">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_READ_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a12">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_SEEK_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a9">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_WRITABLE</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a10">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_BAD_METADATA</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a11">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_READ_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a12">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_SEEK_ERROR</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a13">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_WRITE_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a14">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_RENAME_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a15">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_UNLINK_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a16">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_MEMORY_ALLOCATION_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a13">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_WRITE_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a14">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_RENAME_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a15">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_UNLINK_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a16">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_MEMORY_ALLOCATION_ERROR</a>,
 <br>
 &nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a17">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_INTERNAL_ERROR</a>
 <br>
  }</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__metadata__level2.html#ga27">FLAC__Metadata_ChainStatus</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a18">FLAC__METADATA_CHAIN_STATUS_OK</a> =  0, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a19">FLAC__METADATA_CHAIN_STATUS_ILLEGAL_INPUT</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a20">FLAC__METADATA_CHAIN_STATUS_ERROR_OPENING_FILE</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a21">FLAC__METADATA_CHAIN_STATUS_NOT_A_FLAC_FILE</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a18">FLAC__METADATA_CHAIN_STATUS_OK</a> =  0,
+<a class="el" href="group__flac__metadata__level2.html#gga27a19">FLAC__METADATA_CHAIN_STATUS_ILLEGAL_INPUT</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a20">FLAC__METADATA_CHAIN_STATUS_ERROR_OPENING_FILE</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a21">FLAC__METADATA_CHAIN_STATUS_NOT_A_FLAC_FILE</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a22">FLAC__METADATA_CHAIN_STATUS_NOT_WRITABLE</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a23">FLAC__METADATA_CHAIN_STATUS_BAD_METADATA</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a24">FLAC__METADATA_CHAIN_STATUS_READ_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a25">FLAC__METADATA_CHAIN_STATUS_SEEK_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a22">FLAC__METADATA_CHAIN_STATUS_NOT_WRITABLE</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a23">FLAC__METADATA_CHAIN_STATUS_BAD_METADATA</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a24">FLAC__METADATA_CHAIN_STATUS_READ_ERROR</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a25">FLAC__METADATA_CHAIN_STATUS_SEEK_ERROR</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a26">FLAC__METADATA_CHAIN_STATUS_WRITE_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a27">FLAC__METADATA_CHAIN_STATUS_RENAME_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a28">FLAC__METADATA_CHAIN_STATUS_UNLINK_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a29">FLAC__METADATA_CHAIN_STATUS_MEMORY_ALLOCATION_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a26">FLAC__METADATA_CHAIN_STATUS_WRITE_ERROR</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a27">FLAC__METADATA_CHAIN_STATUS_RENAME_ERROR</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a28">FLAC__METADATA_CHAIN_STATUS_UNLINK_ERROR</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a29">FLAC__METADATA_CHAIN_STATUS_MEMORY_ALLOCATION_ERROR</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a30">FLAC__METADATA_CHAIN_STATUS_INTERNAL_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a31">FLAC__METADATA_CHAIN_STATUS_INVALID_CALLBACKS</a>, 
-<a class="el" href="group__flac__metadata__level2.html#gga27a32">FLAC__METADATA_CHAIN_STATUS_READ_WRITE_MISMATCH</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level2.html#gga27a30">FLAC__METADATA_CHAIN_STATUS_INTERNAL_ERROR</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a31">FLAC__METADATA_CHAIN_STATUS_INVALID_CALLBACKS</a>,
+<a class="el" href="group__flac__metadata__level2.html#gga27a32">FLAC__METADATA_CHAIN_STATUS_READ_WRITE_MISMATCH</a>,
 <a class="el" href="group__flac__metadata__level2.html#gga27a33">FLAC__METADATA_CHAIN_STATUS_WRONG_WRITE_CALL</a>
 <br>
  }</td></tr>
@@ -266,9 +266,6 @@ See the detailed documentation for each interface in the <a class="el" href="gro
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

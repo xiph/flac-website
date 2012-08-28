@@ -9,7 +9,7 @@
 <small>
 [<a class="el" href="group__flac__metadata.html">FLAC/metadata.h: metadata interfaces</a>]</small>
 </h1><hr><a name="_details"></a><h2>Detailed Description</h2>
-The level 1 interface provides read-write access to FLAC file metadata and operates directly on the FLAC file. 
+The level 1 interface provides read-write access to FLAC file metadata and operates directly on the FLAC file.
 <p>
 The general usage of this interface is:<p>
 <ul>
@@ -27,20 +27,20 @@ If any of the modification functions (<a class="el" href="group__flac__metadata_
 
 <tr><td colspan="2"><br><h2>Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__metadata__level1.html#ga18">FLAC__Metadata_SimpleIteratorStatus</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a5">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_OK</a> =  0, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a6">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ILLEGAL_INPUT</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a7">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ERROR_OPENING_FILE</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a8">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_A_FLAC_FILE</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a5">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_OK</a> =  0,
+<a class="el" href="group__flac__metadata__level1.html#gga18a6">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ILLEGAL_INPUT</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a7">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_ERROR_OPENING_FILE</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a8">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_A_FLAC_FILE</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a9">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_WRITABLE</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a10">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_BAD_METADATA</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a11">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_READ_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a12">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_SEEK_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a9">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_NOT_WRITABLE</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a10">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_BAD_METADATA</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a11">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_READ_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a12">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_SEEK_ERROR</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a13">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_WRITE_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a14">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_RENAME_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a15">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_UNLINK_ERROR</a>, 
-<a class="el" href="group__flac__metadata__level1.html#gga18a16">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_MEMORY_ALLOCATION_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a13">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_WRITE_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a14">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_RENAME_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a15">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_UNLINK_ERROR</a>,
+<a class="el" href="group__flac__metadata__level1.html#gga18a16">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_MEMORY_ALLOCATION_ERROR</a>,
 <br>
 &nbsp;&nbsp;<a class="el" href="group__flac__metadata__level1.html#gga18a17">FLAC__METADATA_SIMPLE_ITERATOR_STATUS_INTERNAL_ERROR</a>
 <br>
@@ -228,7 +228,7 @@ Free an iterator instance. Deletes the object pointed to by <em>iterator</em>.<p
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> </dd></dl>
     </td>
   </tr>
@@ -264,7 +264,7 @@ Get the current status of the iterator. Call this after a function returns <code
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -329,8 +329,8 @@ Initialize the iterator to point to the first metadata block in the given FLAC f
     <tr><td valign="top"></td><td valign="top"><em>preserve_file_stats</em>&nbsp;</td><td>If <code>true</code>, the owner and modification time will be preserved even if the FLAC file is written to. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> filename != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> filename != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -371,7 +371,7 @@ Returns <code>true</code> if the FLAC file is writable. If <code>false</code>, c
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -412,7 +412,7 @@ Moves the iterator forward one metadata block, returning <code>false</code> if a
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -453,7 +453,7 @@ Moves the iterator backward one metadata block, returning <code>false</code> if 
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -494,7 +494,7 @@ Returns a flag telling if the current metadata block is the last.<p>
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -535,7 +535,7 @@ Get the offset of the metadata block at the current position. This avoids readin
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -576,7 +576,7 @@ Get the type of the metadata block at the current position. This avoids reading 
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -617,7 +617,7 @@ Get the length of the metadata block at the current position. This avoids readin
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -668,8 +668,8 @@ Get the application ID of the <code>APPLICATION</code> block at the current posi
     <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>A pointer to a buffer of at least <code>4</code> bytes where the ID will be stored. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
-</pre></div> <div class="fragment"><pre class="fragment"> <span class="keywordtype">id</span> != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
+</pre></div> <div class="fragment"><pre class="fragment"> <span class="keywordtype">id</span> != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -711,7 +711,7 @@ You must call <a class="el" href="group__flac__metadata__object.html#ga2">FLAC__
     <tr><td valign="top"></td><td valign="top"><em>iterator</em>&nbsp;</td><td>A pointer to an existing initialized iterator. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -776,8 +776,8 @@ After writing the block, the iterator will remain in the same place, i.e. pointi
     <tr><td valign="top"></td><td valign="top"><em>use_padding</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
-</pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> <div class="fragment"><pre class="fragment"> block != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
+</pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> <div class="fragment"><pre class="fragment"> block != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -837,8 +837,8 @@ After writing the block, the iterator will be pointing to the new block.<p>
     <tr><td valign="top"></td><td valign="top"><em>use_padding</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
-</pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> <div class="fragment"><pre class="fragment"> block != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
+</pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> <div class="fragment"><pre class="fragment"> block != NULL
 </pre></div> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -890,7 +890,7 @@ You may not delete the STREAMINFO block.<p>
     <tr><td valign="top"></td><td valign="top"><em>use_padding</em>&nbsp;</td><td>See above. </td></tr>
   </table>
 </dl>
-<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL 
+<dl compact><dt><b>Assertions: </b></dt><dd><div class="fragment"><pre class="fragment"> iterator != NULL
 </pre></div> <em>iterator</em> has been successfully initialized with <a class="el" href="group__flac__metadata__level1.html#ga5">FLAC__metadata_simple_iterator_init()</a> </dd></dl>
 <dl compact><dt><b>Return values:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -933,9 +933,6 @@ Using a FLAC__Metadata_SimpleIteratorStatus as the index to this array will give
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>

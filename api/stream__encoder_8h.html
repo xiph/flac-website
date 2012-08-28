@@ -8,9 +8,9 @@
 <div class="nav">
 <a class="el" href="dir_000000.html">include</a>&nbsp;/&nbsp;<a class="el" href="dir_000002.html">FLAC</a></div>
 <h1>stream_encoder.h File Reference</h1><hr><a name="_details"></a><h2>Detailed Description</h2>
-This module contains the functions which implement the stream encoder. 
+This module contains the functions which implement the stream encoder.
 <p>
-See the detailed documentation in the <a class="el" href="group__flac__stream__encoder.html">stream encoder </a> module. 
+See the detailed documentation in the <a class="el" href="group__flac__stream__encoder.html">stream encoder </a> module.
 <p>
 <code>#include &lt;stdio.h&gt;</code><br>
 <code>#include "<a class="el" href="export_8h-source.html">export.h</a>"</code><br>
@@ -35,58 +35,58 @@ See the detailed documentation in the <a class="el" href="group__flac__stream__e
 
 <tr><td colspan="2"><br><h2>Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga65">FLAC__StreamEncoderState</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga65a12">FLAC__STREAM_ENCODER_OK</a> =  0, 
-<a class="el" href="group__flac__stream__encoder.html#gga65a13">FLAC__STREAM_ENCODER_UNINITIALIZED</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga65a14">FLAC__STREAM_ENCODER_OGG_ERROR</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga65a15">FLAC__STREAM_ENCODER_VERIFY_DECODER_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga65a12">FLAC__STREAM_ENCODER_OK</a> =  0,
+<a class="el" href="group__flac__stream__encoder.html#gga65a13">FLAC__STREAM_ENCODER_UNINITIALIZED</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga65a14">FLAC__STREAM_ENCODER_OGG_ERROR</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga65a15">FLAC__STREAM_ENCODER_VERIFY_DECODER_ERROR</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga65a16">FLAC__STREAM_ENCODER_VERIFY_MISMATCH_IN_AUDIO_DATA</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga65a17">FLAC__STREAM_ENCODER_CLIENT_ERROR</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga65a18">FLAC__STREAM_ENCODER_IO_ERROR</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga65a19">FLAC__STREAM_ENCODER_FRAMING_ERROR</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga65a16">FLAC__STREAM_ENCODER_VERIFY_MISMATCH_IN_AUDIO_DATA</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga65a17">FLAC__STREAM_ENCODER_CLIENT_ERROR</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga65a18">FLAC__STREAM_ENCODER_IO_ERROR</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga65a19">FLAC__STREAM_ENCODER_FRAMING_ERROR</a>,
 <br>
 &nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga65a20">FLAC__STREAM_ENCODER_MEMORY_ALLOCATION_ERROR</a>
 <br>
  }</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga66">FLAC__StreamEncoderInitStatus</a> { <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a21">FLAC__STREAM_ENCODER_INIT_STATUS_OK</a> =  0, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a22">FLAC__STREAM_ENCODER_INIT_STATUS_ENCODER_ERROR</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a23">FLAC__STREAM_ENCODER_INIT_STATUS_UNSUPPORTED_CONTAINER</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a24">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_CALLBACKS</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a21">FLAC__STREAM_ENCODER_INIT_STATUS_OK</a> =  0,
+<a class="el" href="group__flac__stream__encoder.html#gga66a22">FLAC__STREAM_ENCODER_INIT_STATUS_ENCODER_ERROR</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a23">FLAC__STREAM_ENCODER_INIT_STATUS_UNSUPPORTED_CONTAINER</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a24">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_CALLBACKS</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a25">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_NUMBER_OF_CHANNELS</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a26">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_BITS_PER_SAMPLE</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a27">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_SAMPLE_RATE</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a28">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_BLOCK_SIZE</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a25">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_NUMBER_OF_CHANNELS</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a26">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_BITS_PER_SAMPLE</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a27">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_SAMPLE_RATE</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a28">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_BLOCK_SIZE</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a29">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_MAX_LPC_ORDER</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a30">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_QLP_COEFF_PRECISION</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a31">FLAC__STREAM_ENCODER_INIT_STATUS_BLOCK_SIZE_TOO_SMALL_FOR_LPC_ORDER</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga66a32">FLAC__STREAM_ENCODER_INIT_STATUS_NOT_STREAMABLE</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a29">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_MAX_LPC_ORDER</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a30">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_QLP_COEFF_PRECISION</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a31">FLAC__STREAM_ENCODER_INIT_STATUS_BLOCK_SIZE_TOO_SMALL_FOR_LPC_ORDER</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga66a32">FLAC__STREAM_ENCODER_INIT_STATUS_NOT_STREAMABLE</a>,
 <br>
-&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a33">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_METADATA</a>, 
+&nbsp;&nbsp;<a class="el" href="group__flac__stream__encoder.html#gga66a33">FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_METADATA</a>,
 <a class="el" href="group__flac__stream__encoder.html#gga66a34">FLAC__STREAM_ENCODER_INIT_STATUS_ALREADY_INITIALIZED</a>
 <br>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga67">FLAC__StreamEncoderReadStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga67a35">FLAC__STREAM_ENCODER_READ_STATUS_CONTINUE</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga67a36">FLAC__STREAM_ENCODER_READ_STATUS_END_OF_STREAM</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga67a37">FLAC__STREAM_ENCODER_READ_STATUS_ABORT</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga67">FLAC__StreamEncoderReadStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga67a35">FLAC__STREAM_ENCODER_READ_STATUS_CONTINUE</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga67a36">FLAC__STREAM_ENCODER_READ_STATUS_END_OF_STREAM</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga67a37">FLAC__STREAM_ENCODER_READ_STATUS_ABORT</a>,
 <a class="el" href="group__flac__stream__encoder.html#gga67a38">FLAC__STREAM_ENCODER_READ_STATUS_UNSUPPORTED</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga68">FLAC__StreamEncoderWriteStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga68a39">FLAC__STREAM_ENCODER_WRITE_STATUS_OK</a> =  0, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga68">FLAC__StreamEncoderWriteStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga68a39">FLAC__STREAM_ENCODER_WRITE_STATUS_OK</a> =  0,
 <a class="el" href="group__flac__stream__encoder.html#gga68a40">FLAC__STREAM_ENCODER_WRITE_STATUS_FATAL_ERROR</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga69">FLAC__StreamEncoderSeekStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga69a41">FLAC__STREAM_ENCODER_SEEK_STATUS_OK</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga69a42">FLAC__STREAM_ENCODER_SEEK_STATUS_ERROR</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga69">FLAC__StreamEncoderSeekStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga69a41">FLAC__STREAM_ENCODER_SEEK_STATUS_OK</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga69a42">FLAC__STREAM_ENCODER_SEEK_STATUS_ERROR</a>,
 <a class="el" href="group__flac__stream__encoder.html#gga69a43">FLAC__STREAM_ENCODER_SEEK_STATUS_UNSUPPORTED</a>
  }</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga70">FLAC__StreamEncoderTellStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga70a44">FLAC__STREAM_ENCODER_TELL_STATUS_OK</a>, 
-<a class="el" href="group__flac__stream__encoder.html#gga70a45">FLAC__STREAM_ENCODER_TELL_STATUS_ERROR</a>, 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga70">FLAC__StreamEncoderTellStatus</a> { <a class="el" href="group__flac__stream__encoder.html#gga70a44">FLAC__STREAM_ENCODER_TELL_STATUS_OK</a>,
+<a class="el" href="group__flac__stream__encoder.html#gga70a45">FLAC__STREAM_ENCODER_TELL_STATUS_ERROR</a>,
 <a class="el" href="group__flac__stream__encoder.html#gga70a46">FLAC__STREAM_ENCODER_TELL_STATUS_UNSUPPORTED</a>
  }</td></tr>
 
@@ -219,9 +219,6 @@ See the detailed documentation in the <a class="el" href="group__flac__stream__e
 		<tr>
 			<td align="left">
 				Copyright (c) 2000,2001,2002,2003,2004,2005,2006,2007  Josh Coalson
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
 			</td>
 		</tr>
 	</table>
