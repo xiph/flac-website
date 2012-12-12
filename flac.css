@@ -110,6 +110,17 @@ div.box_body
 	font-size: 100%;
 }
 
+#newsbox h3
+{
+	margin: 5px 0 0 0; 
+	font-size: 0.9em; 
+}
+
+#newsbox p
+{
+	margin: 0 0 5px 0;
+}
+
 div.smallbox
 {
 	text-align: left;

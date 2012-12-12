@@ -13,11 +13,61 @@
 	<meta name="keywords" content="free,lossless,audio,codec,encoder,decoder,compression,compressor,archival,archive,archiving,backup,music" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="flac.css" />
-    <link rel="alternate" type="application/atom+xml" title="FLAC News" href="feeds/news-atom1.xml"/>
+	<link rel="alternate" type="application/rss+xml" title="FLAC News" href="feeds/feed.rss"/>
 	<title>FLAC - Free Lossless Audio Codec</title>
+	<script>
+	function loadXMLDoc(dname) {
+	  var xhttp;
+	  if (window.XMLHttpRequest) {
+	    xhttp=new XMLHttpRequest();
+	  } else {
+	    xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	  xhttp.open("GET",dname,false);
+	  xhttp.send("");
+	  return xhttp.responseXML;
+	}
+
+	function displayResult() {
+	  var xml, xsl, xsl_sidebar, xsltProcessor, resultDocument;
+	  
+	  document.getElementById("newsbox").innerHTML='';
+	  document.getElementById("newssmallbox").innerHTML='';
+
+	  xml=loadXMLDoc("feeds/feed.rss");
+	  xsl=loadXMLDoc("feeds/rss_transform_home.xsl");
+	  xsl_sidebar=loadXMLDoc("feeds/rss_transform_sidebar.xsl");
+  
+	  // Proces newssection
+	  if (window.ActiveXObject) {
+	    // code for IE
+	    ex=xml.transformNode(xsl_sidebar);
+	    document.getElementById("newsbox").innerHTML=ex;
+	  } else if (document.implementation && document.implementation.createDocument) {
+	    // code for Mozilla, Firefox, Opera, etc.
+	    xsltProcessor=new XSLTProcessor();
+	    xsltProcessor.importStylesheet(xsl);
+	    resultDocument = xsltProcessor.transformToFragment(xml,document);
+	    document.getElementById("newsbox").appendChild(resultDocument);
+	  }
+	  
+	  // Proces sidebar
+	  if (window.ActiveXObject) {
+	    // code for IE
+	    ex=xml.transformNode(xsl_sidebar);
+	    document.getElementById("newssmallbox").innerHTML=ex;
+	  } else if (document.implementation && document.implementation.createDocument) {
+	    // code for Mozilla, Firefox, Opera, etc.
+	    xsltProcessor=new XSLTProcessor();
+	    xsltProcessor.importStylesheet(xsl_sidebar);
+	    resultDocument = xsltProcessor.transformToFragment(xml,document);
+	    document.getElementById("newssmallbox").appendChild(resultDocument);
+	  }
+	}
+	</script>
 </head>
 
-<body>
+<body onload="displayResult()">
 
 <div class="logo">
 	<a href="index.html"><img src="images/logo130.gif" alt="FLAC Logo" align="middle" border="0" hspace="0" /></a>
@@ -46,7 +96,7 @@
 
 <table border="0" cellpadding="0" cellspacing="0">
 	<tr>
-		<td width="75%" align="center" valign="top">
+		<td width="65%" align="center" valign="top">
 
 			<div class="box">
 				<div class="box_title">
@@ -67,63 +117,11 @@
 
 			<div class="box">
 				<div class="box_title">
-					<a name="latest">the latest</a>&nbsp;&nbsp;<a href="feeds/news-atom1.xml"><img src="images/feed-icon-16x16.png" alt="Atom 1.0 Feed" border="0" hspace="0" style="text-align: center" /></a>
+					<a name="latest">latest news&nbsp;&nbsp;<a href="feeds/feed.rss"><img src="images/feed-icon-16x16.png" border="0" hspace="0" style="text-align: center" /></a>
 				</div>
 				<div class="box_header"></div>
-				<div class="box_body">
-					The Beatles have released <a href="http://www.thebeatles.com/news/Last_Apple_USBs_available_in">14 re-mastered albums in 24-bit FLAC</a> on a themed USB drive.<br />
-					<br />
-					Paul McCartney's side project <a href="http://en.wikipedia.org/wiki/The_Fireman">The Fireman</a> has released its new album <i>Electric Arguments</i> as a digital download, and <a href="http://www.thefiremanmusic.com/purchase/">available in FLAC</a>.<br />
-					<br />
-					<a href="http://getsongbird.com/">Songbird</a>, a new open and customizable music player, is out and it supports FLAC natively.  For Mac, Linux, and Windows.<br />
-					<br />
-					The <a href="http://slimdevices.com/pi_boom.html">Squeezebox Boom</a> is out: Slim Devices' latest home audio player weds their award-winning receiver with built-in speakers and as always has excellent FLAC support out of the box.<br />
-					<br />
-					David Byrne and Brian Eno's new album <i><a href="http://www.everythingthathappens.com/order.html#flac">Everything That Happens Will Happen Today</a></i> is also available in FLAC.<br />
-					<br />
-					Pearl Jam is <a href="http://www.tenclub.net/news/">bringing back their "bootleg" program</a> for their upcoming 2008 tour.  Shows will be available for download in FLAC and MP3.<br />
-					<br />
-					TrondheimSolistene has released its new album <a href="http://www.2l.musiconline.no/shop/displayAlbum.asp?id=34188">Divertimenti</a> in an interesting array of formats, including both 5.1 and stereo 24bit/96kHz FLAC downloads.<br />
-					<br />
-					<a href="http://www.hdtracks.com/">HDtracks</a> offers their large music catalog in FLAC, AIFF, and MP3, and plans to offer <a href="http://www.hdtracks.com/index.php?file=staticpage&pagename=audiophile_96khz">96kHz/24-bit FLAC files</a> soon.<br />
-					<br />
-					A new site called <a href="http://indietorrent.org/">indietorrent.org</a> is up and running.  indietorrent.org is a digital music store which "<a href="http://indietorrent.org/v1/docs/manifesto.php#1">enables independent musicians to sell their own music while keeping all profits.</a>"  FLAC is one of the available formats.<br />
-					<br />
-					The new <a href="http://olive.us/products/opus4.html">Opus No.4</a> and <a href="http://olive.us/products/melody2.html">Melody No.2</a> digital audio players from Olive support FLAC streams up to 96kHz/24bit and embedded cover-art, and feature hi-res color touchscreens and up to 1TB storage.  Stay tuned for a review here in May.<br />
-					<br />
-					The T+A <a href="http://www.taelektroakustik.de/eng/ta2/e_system/music_player.htm">E-Series Music Player</a> supports FLAC.<br />
-					<br />
-					FLAC love has spread to the New York Times in <a href="http://www.nytimes.com/2008/02/21/technology/personaltech/21basics.html">this article</a> on digital music in the home.  The Squeezebox, Sonos, and McIntosh also get nods.<br />
-					<br />
-					The <a href="http://www.engadget.com/2008/03/09/teclasts-m25-pmp-has-love-for-lots-of-formats/">Teclast M25</a> portable supports FLAC.<br />
-					<br />
-					The <a href="http://hquad.project.googlepages.com/">H-QuAD project</a> aims to create a FLAC decoder core implemented entirely in hardware.<br />
-					<br />
-					The McIntosh <a href="http://www.stereophile.com/mediaservers/108mac/">MS750</a> music server supports FLAC.<br />
-					<br />
-					A few new portables support FLAC: the Onda <a href="http://www.engadget.com/2007/11/03/ondas-vx888-pmp-gets-its-shine-on/">VX888</a>, the Ainol <a href="http://portableplayers.blogspot.com/2008/03/ainol-u80se-pmp.html">U80SE</a>, the Epoq <a href="http://www.gadgetell.com/tech/comment/epoq-releases-emp-ts30-4-mp5-portable-media-player/">EMP-TS30-4</a>, and the WindTouch <a href="http://latestgadgetz.blogspot.com/2008/03/windtouch-v80-pmp.html">V80</a>.<br />
-					<br />
-					<a href="http://www.ripfactory.com/">Ripfactory</a> has announced the <a href="http://www.ripfactory.com/ripserver.html">Ripserver</a>, a sleek NAS with a slot-loading CD drive.  Pop in a CD and it automatically rips to FLAC or MP3 and adds it to the media library.  Ripserver can also run Slimserver and Twonkymedia for easy integration with <a href="http://slimdevices.com/">Slim Devices</a>, <a href="http://www.sonos.com/">Sonos</a>, and many other networked media players.<br />
-					<br />
-					Merge Records just launched their <a href="http://www.mergerecords.com/store/">online store</a> where you can buy albums in FLAC format.<br />
-					<br />
-					The <a href="http://www.pcworld.com/article/id,141578-c,mp3players/article.html">Video Touch</a> PMP from PlayTomato supports FLAC.<br />
-					<br />
-					<a href="http://ghosts.nin.com/main/order_options">Nine Inch Nails' Ghosts I-IV</a> is on sale, with a FLAC download option.<br />
-					<br />
-					Escient's <a href="http://www.avreview.co.uk/news/article/mps/UAN/1636/v/1/sp/">Fireball S-E500i</a> music server is their latest in a long line with FLAC support.<br />
-					<br />
-					The <a href="http://www.akihabaranews.com/en/news-15576-Celrun+TV%3A++The+Premium+HD+Multimedia+Player.html">Celrun TV</a>, an interesting HD multimedia player, supports FLAC.<br />
-					<br />
-					<a href="http://www.gimell.com/">Gimell Records</a> offers their catalog of The Tallis Scholars in FLAC format in three versions: "CD Quality" at 16-bit/44.1kHz, "Studio Master" at 16-bit/88.2kHz, and "Studio Master Pro" at 24-bit/88.2kHz.<br />
-					<br />
-					Trent Reznor <a href="http://www.nin.com/">recently wrote</a> about the sales numbers for <i>Niggy Tardust</i>, including that almost 20% of paying downloaders chose FLAC format.<br />
-					<br />
-					The Eagles' latest album <i>Long Road Out Of Eden</i> has also been <a href="http://eagles.shop.musictoday.com/Product.aspx?pc=E1DD02">released in FLAC format</a> (including the <a href="http://eagles.shop.musictoday.com/Dept.aspx?cp=458_12497">deluxe edition</a>).<br />
-					<br />
-					The European Broadcasting Union has <a href="http://www.ebu.ch/en/radio/ops_rdo/faq/index.php">adopted FLAC</a> for distribution of audio over its Euroradio network.<br />
-					<br />
-					<i>last updated 2009-Dec-07</i>
+				<div class="box_body" id="newsbox">
+					It seems you've disables Javascript. This news feed requires it. Sorry
 				</div>
 				<div class="box_footer"></div>
 			</div>
@@ -131,23 +129,15 @@
 		</td>
 
 
-		<td width="25%" align="center" valign="top">
+		<td width="35%" align="center" valign="top">
 
 			<div class="smallbox">
 				<div class="smallbox_title">
-					news
+					news</a>
 				</div>
 				<div class="smallbox_header"></div>
-				<div class="smallbox_body">
-					<a href="news.html#20091207">07-Dec-2009</a> :<br />14 Beatles re-masters available in 24-bit FLAC<br /><br />
-					<a href="news.html#20081210">10-Dec-2008</a> :<br /><i>Electric Arguments</i> available in FLAC<br /><br />
-					<a href="news.html#20080902">02-Sep-2008</a> :<br />Squeezebox Boom supports FLAC<br /><br />
-					<a href="news.html#20080819">19-Aug-2008</a> :<br />Byrne, Eno album available in FLAC<br /><br />
-					<a href="news.html#20080421">21-Apr-2008</a> :<br />New players from Olive support FLAC<br /><br />
-					<a href="news.html#20080303">03-Mar-2008</a> :<br />NIN: Ghosts I-IV available in FLAC<br /><br />
-					<a href="news.html#20080130">30-Jan-2008</a> :<br />The Tallis Scholars available in FLAC<br /><br />
-					<a href="news.html#20080113">13-Jan-2008</a> :<br />Eagles' album available in FLAC<br /><br />
-					<a href="news.html">(all news)</a>
+				<div class="smallbox_body" id="newssmallbox">
+					It seems you've disables Javascript. This news feed requires it. Sorry
 				</div>
 				<div class="smallbox_footer"></div>
 			</div>
