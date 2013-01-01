@@ -5,7 +5,27 @@
     <link>http://xiph.org/flac</link>
     <description>The latest news about FLAC (Free Lossless Audio Codec)</description>
     
-    
+    <item>
+      <title>Google Play cloud service supports FLAC</title>
+      <description>Google announches that Google Play, an online music shop, now has a cloud service that matches music on the users computer with music on Google Play and uploads music not on Google Play. This way, music can be streamed back to any PC or Android-device. The scanner, Google’s Music Manager, supports FLAC and OGG Vorbis alongside non-DRM WMA, AAC and MP3</description>
+      <link>https://plus.google.com/u/0/+GooglePlay/posts/VZhB6EpsWKx</link>
+      <pubDate>Wed, 19 Dec 2012 16:28:22 +0100</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20121219</guid>
+    </item>
+    <item>
+      <title>Olive One with FLAC support</title>
+      <description>Olive announches the One, their "All-in-One Home Music Player" as they call it. It supports WAV, AIF, FLAC and Apple Lossless as lossless formats as well as MP3, AAC, OGG Vorbis as lossy formats</description>
+      <link>http://www.myoliveone.com/</link>
+      <pubDate>Tue, 18 Dec 2012 20:56:25 +0100</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20121218</guid>
+    </item>
+    <item>
+      <title>Astell &amp; Kern AK100 with FLAC support</title>
+      <description>At $699 not your average media player, but this Astell &amp; Kern AK100 from iRiver Japan comes with support for WAV, FLAC, APE, OGG Vorbis and of course MP3 and stands out for being able of playing 192kHz/24-bit files, the latter being only possible when using either WAV of FLAC as file format. Beside using it as a (portable) media player, it can be used as DAC as well</description>
+      <link>http://www.pcmag.com/article2/0,2817,2413076,00.asp</link>
+      <pubDate>Mon, 17 Dec 2012 20:50:20 +0100</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20121217</guid>
+    </item>
     <item>
       <title>Highresaudio.com offers FLAC</title>
       <description>The European-based Highresaudio.com has started to offer high-resolution 'studio-master' versions of all kinds of music. They offer downloads as FLAC, ALAC and WAV and sell DVD's containing FLAC-files as burn-on-demand.</description>
@@ -13,13 +33,20 @@
       <pubDate>Tue, 28 Aug 2012 12:50:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20120828</guid>
     </item>
-    
     <item>
       <title>Javascript FLAC decoder released</title>
       <description>Developers from Official.fm have built a nice piece of javascript-code that is able to decode FLAC-files. The code can be used to feed FLAC-data to the 'web-audio' API which is to be included in the HTML5 standard. This would enable FLAC-driven DJ-apps or audioeditors with HTML5.</description>
       <link>http://labs.official.fm/articles/2012/06/15/flac-and-aurora/</link>
       <pubDate>Sun, 17 Jun 2012 19:50:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20120617</guid>
+    </item>
+    
+    <item>
+      <title>FLAC development moved to Xiph.org</title>
+      <description>Develoment of FLAC has been moved from Sourceforge to Xiph.org. For more information, see the linked mail</description>
+      <link>http://lists.xiph.org/pipermail/flac-dev/2012-February/003083.html</link>
+      <pubDate>Wed, 01 Feb 2012 10:56:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20120201</guid>
     </item>
     
     <item>
