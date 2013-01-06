@@ -41,7 +41,7 @@
 	  // Proces newssection
 	  if (window.ActiveXObject) {
 	    // code for IE
-	    ex=xml.transformNode(xsl_sidebar);
+	    ex=xml.transformNode(xsl);
 	    document.getElementById("newsbox").innerHTML=ex;
 	  } else if (document.implementation && document.implementation.createDocument) {
 	    // code for Mozilla, Firefox, Opera, etc.
