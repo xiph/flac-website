@@ -50,49 +50,16 @@
 	</div>
 	<div class="box_header"></div>
 	<div class="box_body">
-		Many lossless comparisons look at only compression ratio and speed.  FLAC decoding is the fastest among lossless codecs and it has the fastest encoding mode.  FLAC's compression is within 3% of even the most complex codecs.  Note that the compression ratios of all lossless codecs fall in a quite narrow range; the difference between the very best and very worst is only around 7%, and only 4% for the practical codecs.<br />
-		<br />
-		So the evaluation of lossless codecs typically depends mainly on other features, which is what our first table shows; features like how well it is supported in devices and software, licensing, etc.  Additionally, as archiving is one of the main applications for a lossless codec, of chief importance is the ability to use and recover data in the future.  FLAC stands out as the most widely supported codec, and the only codec that at once is non-proprietary, is unencumbered by patents, has an open-source reference implementation, has a well documented format and API, and has several other independent implementations.<br />
-		<br />
-		The rest of the tables show in detail the compression ratios and speed of the codecs in different modes.  FLAC's high decoding speed is due to very low complexity and is instrumental to its support by dozens of consumer electronic devices.<br />
-		<br />
-		<font size="-1">(Note: this comparison leaves out some archaic or impractical codecs; see <a href="comparison.html#alternate_links">below</a> for some other comparisons.)</font><br />
-		<br />
-		Reviewed encoders (besides flac of course):
-		<ul>
-			<li>
-				Apple Lossless - A proprietary codec by Apple.
-			</li>
-			<li>
-				<a href="http://www.logarithmic.net/pfh/bonk">Bonk</a> - An open-source source codec.  No player or library support yet.
-			</li>
-			<li>
-				<a href="http://www.lossless-audio.com">La</a> - A closed source symmetric adaptive codec.  Highest compression ratio but extremely slow.
-			</li>
-			<li>
-				<a href="http://www.monkeysaudio.com/">Monkey's Audio</a> - A symmetric adaptive codec with good compression.  Source is available under a non-OSI license.
-			</li>
-			<li>
-				Ogg Squish - An open source source codec that is no longer maintained.
-			</li>
-			<li>
-				<a href="http://losslessaudiocompression.com/">optimFROG</a> - A closed source, Windows/Linux codec, with Winamp and XMMS plugins.  Slow but high compression ratios.
-			</li>
-			<li>
-				<a href="http://www.softsound.com/Shorten.html">Shorten</a> - A.J. Robinson's well-known codec; source is available <a href="http://rpmfind.net/linux/rpm2html/search.php?query=shorten">here</a>.
-			</li>
-			<li>
-				<a href="http://www.thbeck.de/Tak/Tak.html">Tak</a> - A new and efficient codec, but closed-source and Windows only.
-			</li>
-			<li>
-				<a href="http://www.wavpack.com/">WavPack</a> - A fine open-source codec, released under the BSD license.
-			</li>
-		</ul>
-		<br />
+		<p>Many lossless audio codec comparisons look at only compression ratio and encoding speed.  FLAC decoding is the fastest among lossless codecs and its compression is within 3% of even the most complex codecs.  Note that the compression ratios of all lossless codecs falls in a quite narrow range; the difference between the very best and very worst is only around 7%, and only 4% for the practical codecs.</p>
+		
+		<h3>feature comparison</h3>
+		
+		<p>The evaluation of lossless codecs typically depends mainly on features other than speed and compression, which is what our first table shows: features like how well it is supported in devices and software, licensing, etc. For more information on this matter, take a look at <a href="http://wiki.hydrogenaudio.org/index.php?title=Lossless_comparison">the comparison at Hydrogenaudio</a>. Additionally, as archiving is one of the main applications for a lossless codec, of chief importance is the ability to use and recover data in the future.  FLAC stands out as the most widely supported codec, and the only codec that at once is non-proprietary, is unencumbered by patents, has an open-source reference implementation, has a well documented format and API, and has several other independent implementations.</p>
+		
 		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEED4"><tr><td>
 		<table width="100%" border="1" bgcolor="#EEEED4">
 			<tr>
-				<td align="right">
+				<td align="right" bgcolor="#F4F4CC">
 					<font size="+1"><b>Codec</b></font>
 				</td>
 				<td bgcolor="#F4F4CC">
@@ -110,6 +77,9 @@
 				<td bgcolor="#F4F4CC">
 					<font size="+1"><b>OS support</b></font>
 				</td>
+				<td bgcolor="#F4F4CC">
+					<font size="+1"><b>Last official release*</b></font>
+				</td>
 			</tr>
 			<tr>
 				<td align="right" bgcolor="#F4F4CC">
@@ -119,10 +89,10 @@
 					YES (<a href="http://www.opensource.org/licenses/index.html">OSI</a> approved license)
 				</td>
 				<td>
-					YES (<a href="http://www.xmms.org/">XMMS</a>, <a href="http://www.winamp.com/">Winamp</a>, <a href="http://alsaplayer.org/">AlsaPlayer</a>, <a href="http://music.yahoo.com/musicengine/">Y!&nbsp;Music&nbsp;Engine</a>, <a href="http://arcticlounge.com/maltx/">MacAmp&nbsp;Lite</a>, <a href="http://www.dbpoweramp.com/">dBpowerAMP</a>, <a href="http://www.saunalahti.fi/~cse/foobar2000/index.html">Foobar2000</a>, <a href="http://www.quinnware.com/">QCD</a>, <a href="http://www.hut.fi/~hylinen/apollo/Plug-ins.html">Apollo</a>, <a href="download.html#extras">many&nbsp;more</a>)
+					YES (<a href="http://xbmc.org/">XBMC</a>, <a href="http://www.xmms.org/">XMMS</a>, <a href="http://www.winamp.com/">Winamp</a>, <a href="http://alsaplayer.org/">AlsaPlayer</a>, <a href="http://music.yahoo.com/musicengine/">Y!&nbsp;Music&nbsp;Engine</a>, <a href="http://arcticlounge.com/maltx/">MacAmp&nbsp;Lite</a>, <a href="http://www.saunalahti.fi/~cse/foobar2000/index.html">foobar2000</a>, <a href="http://www.quinnware.com/">QCD</a>, <a href="http://corecodec.com/products/coreplayer">CorePlayer</a>, <a href="http://www.native-instruments.com/#/en/products/dj/traktor-pro-2/?page=2050">Traktor</a>, DirectShow-based, <a href="http://en.wikipedia.org/wiki/Libavcodec#Applications_using_libavcodec">libavcodec-based</a>, <a href="download.html#extras">many&nbsp;more</a>)
 				</td>
 				<td>
-					YES (<a href="http://www.slimdevices.com/">Squeezebox</a>, <a href="http://www.sonos.com/">Sonos</a>, <a href="http://www.phatnoise.com/technology/encoding.php">PhatBox</a>, Kenwood&nbsp;MusicKeg, <a href="http://www.cowonamerica.com/products/">iAudio</a>, <a href="http://www.request.com/">ReQuest</a>, <a href="http://www.olive.us/">Olive</a>, <a href="http://www.escient.com/">Escient</a>, <a href="http://www.trekstor.de/en/products/detail_mp3.php?pid=66">TrekStor</a>, <a href="links.html#hardware">dozens&nbsp;more</a>)
+					YES (<a href="http://ue.logitech.com/en-us/smart-radios">Logitech/Squeezebox</a>, <a href="http://www.sonos.com/">Sonos</a>, <a href="http://developer.android.com/guide/appendix/media-formats.html">Android</a>-powered devices, <a href="http://www.cowonamerica.com/products/">iAudio</a>, <a href="http://www.request.com/">ReQuest</a>, <a href="http://www.olive.us/">Olive</a>, <a href="http://www.trekstor.de/en/products/detail_mp3.php?pid=66">TrekStor</a>, <a href="http://www.sandisk.com/products/music-video-players/">Sandisk Sansa</a>, <a href="http://www.popcornhour.com">Popcorn Hour</a>, <a href="links.html#hardware">dozens&nbsp;more</a>)
 				</td>
 				<td>
 					NONE
@@ -130,19 +100,22 @@
 				<td>
 					Linux, Windows, Mac&nbsp;OS&nbsp;X, *BSD, Solaris, OS/2, BeOS, Amiga&nbsp;OS, others
 				</td>
+				<td bgcolor="#D4D4C0">
+					21 Oct 2007
+				</td>
 			</tr>
 			<tr>
 				<td align="right" bgcolor="#F4F4CC">
-					WavPack v4.41
+					WavPack v4.60.1
 				</td>
 				<td>
 					YES (<a href="http://www.opensource.org/licenses/index.html">OSI</a> approved license)
 				</td>
 				<td>
-					YES (Winamp, foobar2000, dBpowerAMP, <a href="http://wiki.hydrogenaudio.org/index.php?title=WavPack#Players">more</a>)
+					YES (Winamp, XBMC, foobar2000, CorePlayer, DirectShow-based, libavcodec-based, <a href="http://wiki.hydrogenaudio.org/index.php?title=WavPack#Players">more</a>)
 				</td>
 				<td bgcolor="#D4D4C0">
-					maybe (some portables via <a href="http://www.rockbox.org/">Rockbox</a> firmware replacement)
+					SOME (via <a href="http://www.rockbox.org/">Rockbox</a> firmware, some discontinued <a href="http://www.cowonglobal.com/">Cowon</a> devices, see <a href="http://www.wavpack.com/#Hardware">WavPack</a> website)
 				</td>
 				<td>
 					NONE
@@ -150,20 +123,22 @@
 				<td>
 					Linux, Windows, Mac&nbsp;OS&nbsp;X, *BSD, Solaris, others
 				</td>
+				<td bgcolor="#D4D4C0">
+					29 Nov 2009
 				</td>
 			</tr>
 			<tr>
 				<td align="right" bgcolor="#F4F4CC">
-					Shorten v3.2
+					Shorten v3.6.1
 				</td>
 				<td bgcolor="#D4D4C0">
 					YES (non-<a href="http://www.opensource.org/licenses/index.html">OSI</a> license)
 				</td>
 				<td bgcolor="#D4D4C0">
-					YES (Winamp, XMMS)
+					YES (Winamp, XBMC, XMMS, libavcodec-based, DirectShow-based)
 				</td>
 				<td bgcolor="#D4D4C0">
-					maybe (some portables via <a href="http://www.rockbox.org/">Rockbox</a> firmware replacement)
+					SOME (some portables via <a href="http://www.rockbox.org/">Rockbox</a> firmware replacement)
 				</td>
 				<td bgcolor="#BCBCAC">
 					non-<br />commercial only
@@ -171,16 +146,134 @@
 				<td>
 					Linux, Windows, Mac&nbsp;OS&nbsp;9, Mac&nbsp;OS&nbsp;X, *BSD, Solaris, others
 				</td>
+				<td bgcolor="#D4D4C0">
+					19 Mar 2007
+				</td>
 			</tr>
 			<tr>
 				<td align="right" bgcolor="#F4F4CC">
-					Monkey's Audio v4.01
+					Monkey's Audio v4.10
 				</td>
 				<td bgcolor="#D4D4C0">
 					YES (non-<a href="http://www.opensource.org/licenses/index.html">OSI</a> license)
 				</td>
 				<td>
-					YES (Winamp, MediaJukebox, dBpowerAMP, more)
+					YES (Winamp, XBMC, MediaJukebox, dBpoweramp, DirectShow-based, libavcodec-based)
+				</td>
+				<td bgcolor="#D4D4C0">
+					SOME (most current <a href="http://www.cowonglobal.com/">Cowon</a> MP3-devices, Popcorn Hour, some discontinued Philips GoGEAR, some current RockBox-devices)
+				</td>
+				<td bgcolor="#BCBCAC">
+					?
+				</td>
+				<td bgcolor="#BCBCAC">
+					Windows
+				</td>
+				<td>
+					16 april 2011
+				</td>
+			</tr>
+			<tr>
+				<td align="right" bgcolor="#F4F4CC">
+					Apple Lossless
+				</td>
+				<td>
+					YES (<a href="http://www.opensource.org/licenses/index.html">OSI</a> approved license)
+				</td>
+				<td bgcolor="#D4D4C0">
+					YES (<a href="http://www.apple.com/itunes/">iTunes</a>, XBMC, dBpoweramp, foobar2000, libavcodec-based)
+				</td>
+				<td>
+					YES (most iOS-devices, <a href="http://ue.logitech.com/en-us/smart-radios">Logitech</a>, <a href="http://www.sonos.com/">Sonos</a>, <a href="http://www.myoliveone.com/">Olive One</a>, some RockBox-devices)
+				</td>
+				<td>
+					NONE
+				</td>
+				<td bgcolor="#BCBCAC">
+					Windows, Mac&nbsp;OS&nbsp;X
+				</td>
+				<td bgcolor="#D4D4C0">
+					no stable release yet
+				</td>
+			</tr>
+			<tr>
+				<td align="right" bgcolor="#F4F4CC">
+					The True Audio 3.4.1
+				</td>
+				<td bgcolor="#BCBCAC">
+					YES (<a href="http://www.opensource.org/licenses/index.html">OSI</a> approved license)
+				</td>
+				<td bgcolor="#D4D4C0">
+					YES (XMMS, Coreplayer, Foobar2000, Winamp, DirectShow-based, libavcodec-based)
+				</td>
+				<td bgcolor="#D4D4C0">
+					SOME (Popcorn Hour, iconBIT, some discontinued Cowon PMPs, some RockBox-devices)
+				</td>
+				<td bgcolor="#BCBCAC">
+					?
+				</td>
+				<td bgcolor="#BCBCAC">
+					Windows, Linux
+				</td>
+				<td bgcolor="#D4D4C0">
+					27 Jul 2007
+				</td>
+			</tr>
+			<tr>
+				<td align="right" bgcolor="#F4F4CC">
+					optimFROG 4.910b
+				</td>
+				<td bgcolor="#BCBCAC">
+					no
+				</td>
+				<td bgcolor="#D4D4C0">
+					YES (Winamp, XMMS foobar2000, DirectShow-based)
+				</td>
+				<td bgcolor="#BCBCAC">
+					no
+				</td>
+				<td bgcolor="#BCBCAC">
+					?
+				</td>
+				<td bgcolor="#BCBCAC">
+					Windows, Linux
+				</td>
+				<td bgcolor="#D4D4C0">
+					Windows 12 feb 2011, Other 26 apr 2006
+				</td>
+			</tr>
+			<tr>
+				<td align="right" bgcolor="#F4F4CC">
+					WMA Lossless
+				</td>
+				<td bgcolor="#BCBCAC">
+					no
+				</td>
+				<td bgcolor="#D4D4C0">
+					YES (DirectShow-based, libavcodec-based)
+				</td>
+				<td bgcolor="#D4D4C0">
+					SOME (XBox, Zune, few other)
+				</td>
+				<td bgcolor="#BCBCAC">
+					?
+				</td>
+				<td bgcolor="#BCBCAC">
+					Windows
+				</td>
+				<td bgcolor="#BCBCAC">
+					14 jan 2003
+				</td>
+			</tr>
+			<tr>
+				<td align="right" bgcolor="#F4F4CC">
+					Real Audio Lossless
+				</td>
+				<td bgcolor="#BCBCAC">
+					no
+				</td>
+				<td bgcolor="#BCBCAC">
+					FEW (RealPlayer)
 				</td>
 				<td bgcolor="#BCBCAC">
 					no
@@ -189,27 +282,56 @@
 					?
 				</td>
 				<td bgcolor="#D4D4C0">
-					Windows, Linux console source
+					Windows, Linux, Mac
+				</td>
+				<td bgcolor="#D4D4C0">
+					19 jan 2009
 				</td>
 			</tr>
 			<tr>
 				<td align="right" bgcolor="#F4F4CC">
-					Apple Lossless
+					La 0.4
 				</td>
 				<td bgcolor="#BCBCAC">
 					no
 				</td>
 				<td bgcolor="#D4D4C0">
-					YES (<a href="http://www.apple.com/itunes/">iTunes</a>)
+					YES (Winamp, XMMS, foobar2000)
+				</td>
+				<td bgcolor="#BCBCAC">
+					no
+				</td>
+				<td bgcolor="#BCBCAC">
+					?
 				</td>
 				<td bgcolor="#D4D4C0">
-					YES (<a href="http://www.apple.com/ipod/">iPod</a> only)
+					Windows, Linux, Mac
 				</td>
 				<td bgcolor="#BCBCAC">
-					unavailable
+					8 feb 2004
+				</td>
+			</tr>
+			<tr>
+				<td align="right" bgcolor="#F4F4CC">
+					Tak 2.2.0
 				</td>
 				<td bgcolor="#BCBCAC">
-					Windows, Mac&nbsp;OS&nbsp;X
+					no
+				</td>
+				<td bgcolor="#D4D4C0">
+					YES (foobar2000, DirectShow-based, libavcodec-based)
+				</td>
+				<td bgcolor="#BCBCAC">
+					no
+				</td>
+				<td bgcolor="#BCBCAC">
+					free for non-commercial use
+				</td>
+				<td bgcolor="#BCBCAC">
+					Windows, Linux via Wine
+				</td>
+				<td>
+					10 jul 2011
 				</td>
 			</tr>
 			<tr>
@@ -231,6 +353,9 @@
 				<td>
 					Linux, Windows, other UNIX
 				</td>
+				<td bgcolor="#BCBCAC">
+					Discontinued 2003 in favor of FLAC
+				</td>
 			</tr>
 			<tr>
 				<td align="right" bgcolor="#F4F4CC">
@@ -239,8 +364,8 @@
 				<td>
 					YES (<a href="http://www.opensource.org/licenses/index.html">OSI</a> approved license)
 				</td>
-				<td bgcolor="#D4D4C0">
-					YES (XMMS)
+				<td bgcolor="#BCBCAC">
+					FEW (XMMS)
 				</td>
 				<td bgcolor="#BCBCAC">
 					no
@@ -251,169 +376,69 @@
 				<td>
 					Linux, Windows, other UNIX
 				</td>
-			</tr>
-			<tr>
-				<td align="right" bgcolor="#F4F4CC">
-					optimFROG 4.21
-				</td>
 				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#D4D4C0">
-					YES (Winamp, XMMS)
-				</td>
-				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#BCBCAC">
-					?
-				</td>
-				<td bgcolor="#BCBCAC">
-					Windows, Linux
-				</td>
-			</tr>
-			<tr>
-				<td align="right" bgcolor="#F4F4CC">
-					La 0.3c
-				</td>
-				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#D4D4C0">
-					YES (Winamp, XMMS)
-				</td>
-				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#BCBCAC">
-					?
-				</td>
-				<td bgcolor="#BCBCAC">
-					Windows, Linux
-				</td>
-			</tr>
-			<tr>
-				<td align="right" bgcolor="#F4F4CC">
-					Tak 1.0.3b
-				</td>
-				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#BCBCAC">
-					no
-				</td>
-				<td bgcolor="#BCBCAC">
-					free for non-commercial use
-				</td>
-				<td bgcolor="#BCBCAC">
-					Windows
+					somewhere in 2002 (now recommends FLAC)
 				</td>
 			</tr>
 		</table>
 		</td></tr></table>
-		<br />
-		The machine used for encoding the test files is a PII-333 with 256 megs of RAM, running Windows NT 4.0 SP5.  Unfortunately, though flac runs just about everywhere, Windows is the lowest-common-denominator platform for all the encoders.  Apple Lossless was tested on a newer machine (P4-2.4GHz Windows 2000); only the overall encoding and decoding times are shown, and the times are scaled to the PII-333 by multiplying by the ratio of flac times on the PII to P4.<br />
-		<br />
-		By default when processing files, <span class="commandname">flac</span> computes the MD5 sum while encoding and decoding.  Since MD5 sums are not typically used in playback, and since most codecs either do not support MD5 sums or do not compute them by default, to make the comparison as accurate as possible MD5 checking was disabled for FLAC decoding.  However since it is currently not possible to disable MD5 computation for FLAC encoding, the FLAC encoding times here are 4-15% longer than they would be without MD5 checking.<br />
-		<br />
-		The audio corpus currently consists entirely of CD music tracks.  In the future it may include more kinds of input (like speech, other sample rates/resolutions, etc).  There are 14 tracks whose genres range from rock to pop to death metal to classical to chant.<br />
-		<br />
-		Here is a summary table of results on the whole corpus, using just the most 'economic' modes (the ones that give the most compression for the least amount of encode/decode time) for each codec.  The table is ordered by the average track compression ratio, which is the average of the ratios for each track; this keeps long tracks from having more influence than short ones.  Clicking the column header links will take you to complete tables ordered by that column.<br />
-		<br />
-		Shown in white, <span class="commandname">flac</span> in its default mode is right in the middle with respect to compression, relatively fast on the encoding range, and the fastest decoding.  This is about what you would expect; FLAC is designed to put most of the processing on the encoding side, which is only done once, whereas the adaptive codecs take as long to decode as encode.  FLAC is more suited in this way for playback on low-power devices, borne out by the <a href="links.html#hardware">many hardware devices which support it</a>.<br />
-		<br />
-
-		<!-- TABLE BEGIN -->
-		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEED4"><tr><td>
-		<table width="100%" border="0" bgcolor="#EEEED4"><!-- @@@@@@ border="1" ? -->
-			<tr align="right">
-				<td>
-				</td>
-				<td align="center" bgcolor="#F4F4CC" colspan="2">
-					<font size="+1"><b>Encode time</b></font>
-				</td>
-				<td align="center" bgcolor="#F4F4CC" colspan="2">
-					<font size="+1"><b>Decode time</b></font>
-				</td>
-				<td align="center" bgcolor="#F4F4CC" colspan="2">
-					<font size="+1"><b>Compression</b></font>
-				</td>
-			</tr>
-			<tr align="right">
-				<td align="left" bgcolor="#F4F4CC">
-					<font size="+1"><b>Codec</b></font>
-				</td>
-				<td bgcolor="#F4F4CC">
-					<font size="+1"><a href="comparison_all_procenctime.html">Total</a></font>
-				</td>
-				<td bgcolor="#F4F4CC">
-					<font size="+1"><a href="comparison_all_cpuenctime.html">CPU</a></font>
-				</td>
-				<td bgcolor="#F4F4CC">
-					<font size="+1"><a href="comparison_all_procdectime.html">Total</a></font>
-				</td>
-				<td bgcolor="#F4F4CC">
-					<font size="+1"><a href="comparison_all_cpudectime.html">CPU</a></font>
-				</td>
-				<td bgcolor="#F4F4CC">
-					<font size="+1">Size</font>
-				</td>
-				<td bgcolor="#F4F4CC">
-					<font size="+1"><b>Avg.ratio</b></font>
-				</td>
-			</tr>
-			<tr align="right"><td align="left">Tak 1.0.3b (normal)</td><td>9:06.16</td><td bgcolor="#F8F8E8">5:35.51</td><td>6:25.93</td><td bgcolor="#F8F8E8">3:17.84</td><td>393.36 MB</td><td bgcolor="#F8F8E8">51.67%</td></tr>
-			<tr align="right" bgcolor="#D4D4C0"><td align="left">Monkey's Audio 4.01 (normal)</td><td>13:22.49</td><td bgcolor="#E0E0D4">9:58.32</td><td>14:32.30</td><td bgcolor="#E0E0D4">11:39.72</td><td>393.17 MB</td><td bgcolor="#E0E0D4">51.97%</td></tr>
-			<tr align="right"><td align="left">optimFROG 4.21 (mode 0 @ 4x)</td><td>16:36.98</td><td bgcolor="#F8F8E8">12:51.58</td><td>17:55.55</td><td bgcolor="#F8F8E8">14:58.99</td><td>394.69 MB</td><td bgcolor="#F8F8E8">52.24%</td></tr>
-			<tr align="right" bgcolor="#D4D4C0"><td align="left">WavPack 4.41 (high)</td><td>11:48.47</td><td bgcolor="#E0E0D4">7:45.58</td><td>9:19.07</td><td bgcolor="#E0E0D4">6:05.35</td><td>399.90 MB</td><td bgcolor="#E0E0D4">52.73%</td></tr>
-			<tr align="right"><td align="left">Tak 1.0.3b (turbo)</td><td>7:06.70</td><td bgcolor="#F8F8E8">3:26.93</td><td>6:12.02</td><td bgcolor="#F8F8E8">3:01.83</td><td>402.23 MB</td><td bgcolor="#F8F8E8">53.07%</td></tr>
-			<tr align="right" bgcolor="#D4D4C0"><td align="left">Monkey's Audio 4.01 (fast)</td><td>10:27.00</td><td bgcolor="#E0E0D4">7:01.41</td><td>11:43.16</td><td bgcolor="#E0E0D4">8:48.92</td><td>400.57 MB</td><td bgcolor="#E0E0D4">53.11%</td></tr>
-			<tr align="right"><td align="left">WavPack 4.41 (normal)</td><td>9:48.59</td><td bgcolor="#F8F8E8">5:46.91</td><td>7:37.26</td><td bgcolor="#F8F8E8">4:30.11</td><td>405.84 MB</td><td bgcolor="#F8F8E8">53.56%</td></tr>
-			<tr align="right" bgcolor="#FFFFFF"><td align="left">FLAC 1.2.1 (-5, default)</td><td>10:07.41</td><td bgcolor="#FFFFFF">6:35.68</td><td>5:23.16</td><td bgcolor="#FFFFFF">2:22.41</td><td>406.25 MB</td><td bgcolor="#FFFFFF">53.67%</td></tr>
-			<tr align="right"><td align="left">FLAC 1.2.1 (-3)</td><td>7:23.77</td><td bgcolor="#F8F8E8">3:47.42</td><td>5:31.15</td><td bgcolor="#F8F8E8">2:19.07</td><td>412.42 MB</td><td bgcolor="#F8F8E8">54.57%</td></tr>
-			<tr align="right" bgcolor="#D4D4C0"><td align="left">WavPack 4.41 (fast)</td><td>8:52.27</td><td bgcolor="#E0E0D4">4:47.74</td><td>6:33.73</td><td bgcolor="#E0E0D4">3:28.19</td><td>415.05 MB</td><td bgcolor="#E0E0D4">54.92%</td></tr>
-			<tr align="right"><td align="left">Apple Lossless (iTunes 4.5)</td><td>19:53.27</td><td bgcolor="#F8F8E8">19:53.27</td><td>10:01.86</td><td bgcolor="#F8F8E8">10:01.86</td><td>414.45 MB</td><td bgcolor="#F8F8E8">54.96%</td></tr>
-			<tr align="right" bgcolor="#D4D4C0"><td align="left">Bonk 0.5</td><td>51:45.58</td><td bgcolor="#E0E0D4">48:32.10</td><td>42:02.76</td><td bgcolor="#E0E0D4">39:05.43</td><td>418.65 MB</td><td bgcolor="#E0E0D4">55.43%</td></tr>
-			<tr align="right"><td align="left">FLAC 1.2.1 (-1)</td><td>6:24.51</td><td bgcolor="#F8F8E8">2:42.93</td><td>5:26.87</td><td bgcolor="#F8F8E8">2:17.49</td><td>431.72 MB</td><td bgcolor="#F8F8E8">56.97%</td></tr>
-			<tr align="right" bgcolor="#D4D4C0"><td align="left">Shorten 3.2a (-p0 -b256, default)</td><td>10:01.38</td><td bgcolor="#E0E0D4">6:23.40</td><td>6:38.43</td><td bgcolor="#E0E0D4">3:30.66</td><td>433.56 MB</td><td bgcolor="#E0E0D4">57.29%</td></tr>
-			<tr align="right"><td align="left">RIFF WAVE</td><td>73:44.94</td><td bgcolor="#F8F8E8"></td><td>73:44.94</td><td bgcolor="#F8F8E8"></td><td>780.56 MB</td><td bgcolor="#F8F8E8">100.00%</td></tr>
-		</table>
-		</td></tr></table><br />
-		<table align="center" border="1"><tr><td align="center"><img src="images/comparison_all_cpudectime.png" /></td></tr></table><br />
-		<table align="center" border="1"><tr><td align="center"><img src="images/comparison_all_cpuenctime.png" /></td></tr></table><br />
-		<!-- TABLE END -->
-
-		Here are links to the full summary table (all codecs, all modes) and tables for each individual track.  The individual track tables are sorted only by compression ratio since the relative encoding and decoding times are the same as for the whole corpus.
-		<br /><br />
-
-		<b><a href="comparison_all_ratio.html">Complete summary table</a></b><br />
-		<br />
-		<a href="comparison__chopin_prelude_24.html">Frederic Chopin&nbsp;-&nbsp; Prelude No.24 in d minor </a><br />
-		<a href="comparison__dream_theater_600.html">Dream Theater&nbsp;-&nbsp; 6:00 </a><br />
-		<a href="comparison__eddie_warner_titus.html">Eddie Warner&nbsp;-&nbsp; Titus </a><br />
-		<a href="comparison__fanfare_de_l_eventail_de_jeanne.html">Maurice Ravel&nbsp;-&nbsp; Fanfare from "L'eventail de Jeanne" </a><br />
-		<a href="comparison__gloria_estefan_conga.html">Gloria Estefan&nbsp;-&nbsp; Conga </a><br />
-		<a href="comparison__hand_in_my_pocket.html">Alanis Morissette&nbsp;-&nbsp; Hand In My Pocket </a><br />
-		<a href="comparison__l_sub_raga_sivapriya.html">L. Subramaniam&nbsp;-&nbsp; Raga Sivapriya </a><br />
-		<a href="comparison__laetatus_sum.html">The Benedictine Monks of&nbsp;-&nbsp;Santo Domingo de Silos&nbsp;-&nbsp; Laetatus Sum </a><br />
-		<a href="comparison__mummified_in_barbed_wire.html">Cannibal Corpse&nbsp;-&nbsp; Mummified In Barbed Wire </a><br />
-		<a href="comparison__prokofiev_pcon3_3.html">Sergei Prokofiev&nbsp;-&nbsp; Piano Concerto No.3 (3rd movement) </a><br />
-		<a href="comparison__ravel_sq4_4.html">Maurice Ravel&nbsp;-&nbsp; String Quartet (4th movement) </a><br />
-		<a href="comparison__scarlatti_k42.html">Domenico Scarlatti&nbsp;-&nbsp; Sonata K.42 (arr.Yepes for guitar) </a><br />
-		<a href="comparison__tool_forty_six_and_2.html">Tool&nbsp;-&nbsp; Forty-six &amp; 2 </a><br />
-		<a href="comparison__white_room.html">Cream&nbsp;-&nbsp; White Room </a><br />
-
-		<br />
-		<a name="alternate_links"></a>Some alternate lossless audio codec comparisons:
+		<p><i>*At the time of writing, which is 6 jan 2013</i></p>
+		
+		<h3>speed comparison</h3>
+		
+		<p>The machine used for running the test has an Intel Core2Duo T9600 with 4GB of RAM and is using Kubuntu 12.10. The tests are run from ramdisk, as the harddisk is a bottleneck in certain cases. For the codecs that only have Windows-support, the binaries are used through WINE. Measured is the so called cpu time used, not the real time used, except for WMA Lossless and Real Audio Lossless which were timed by hand.</p>
+		
+		<p>The audio corpus currently consists entirely of CD albums. These are 29 CDs whose genres range from rock to pop to metal to classical to world. The following graphs display the results of these tests: the compression ratio as a function of encoding and decoding speed for the currently most used lossless codecs for all their recommended compression modes.</p>
+		
+		<p>In the graphs below you can see both the compression and decompression performance of all tested codecs by their speed relative to 'playing speed' on the x-axis and their compression relative to WAVE on the y-axis. The connected dots for each codec are its different presets. For more information on the test environment, codecs and settings, please see <a href="comparison.pdf">the exhaustive report here (PDF)</a>.</p>
+		
+		<p>Please keep in mind that the differences considering archieved compression are exaggerated: in fact, the difference between the best and worst compression is <b>a factor 1000 in time, but only about 7% in space used.</b> So, please mind the axes.</p>
+		
+		
+		<table align="center" border="1"><tr><td align="center"><img src="images/all-tracks-decode.png" /></td></tr></table><br />
+		<table align="center" border="1"><tr><td align="center"><img src="images/all-tracks-encode.png" /></td></tr></table><br />
+		
+		
+		<p>The CD's used in this test are listed below, with a very general indication of the kind of music it should represent.</p>
+		
 		<ul>
-			<li><a href="http://web.inter.nl.net/users/hvdh/lossless/lossless.htm">Hans Heijden's</a> lossless comparison</li>
+		  <li>30 Seconds to Mars - This Is War (rock)
+		  <li>Confido Domino Minsk - Sacred choral music from White Russia (choral, religious)
+		  <li>Daft Punk - Alive 2007 (electronic, live)
+		  <li>Dan Brown - Angels and Demons (audiobook)
+		  <li>Enya - Amarantine (new age)
+		  <li>Fanfare Ciocarlia - Baro Biao: World Wide Wedding (world music, brass)
+		  <li>Gilberto Santa Rosa - Esencia (salsa)
+		  <li>Giuseppe Verdi - Messa da Requiem (Berliner Philharmoniker feat. conductor Claudio Abbado) (classical, romantic)
+		  <li>Howard Shore - The Hobbit: An Unexpected Journey (soundtrack, orchestral)
+		  <li>Iron Maiden - Brave New World (metal)
+		  <li>John Coltrane - Live at the half note, vol. 1 (jazz)
+		  <li>Joss Stone - Mind, Body &amp; Soul (soul)
+		  <li>J.S. Bach - Magnificat (orchestral, baroque)
+		  <li>Koninklijke Militaire Kapel - [no name] (military brass, vinyl rip)
+		  <li>Kraftwerk - Autobahn (electronic)
+		  <li>Lana del Rey - Born to Die (pop)
+		  <li>Lil Wayne - Tha Carter III (hip hop)
+		  <li>Martin O'Donnell &amp; Michael Salvatori - Halo: Reach O.S.T. (ambient-ish, soundtrack)
+		  <li>Michael Bubl&eacute; - meets madison square garden (pop, live)
+		  <li>Mike Oldfield - Tubular Bells (not classifiable)
+		  <li>Rosenberg Trio - Djangologists (jazz)
+		  <li>Rush - Grace under Pressure (1997 remaster) (rock)
+		  <li>System of a Down - Mezmerize (metal)
+		  <li>Szakcsi - Vir&aacute;gom, vir&aacute;gom (world music)
+		  <li>Ti&euml;sto - In Search of Sunrise 7: Asia (dance)
+		  <li>Various - Jeff Waynes Musical Version of The War of the Worlds (radio drama-ish, rock, orchestral)
+		  <li>Various - Latin Village, CD 1: Salsa (compilation of salsa)
+		  <li>Xzibit - At the Speed of Life (hip hop)
+		  <li>Yann Tiersen - Le Fabuleux Destin d'Am&eacute;lie Poulain (minimalism, soundtrack)
+		</ul>
+
+		<br />
+		<a name="alternate_links"></a>Some other lossless audio codec comparisons can be found here:
+		<ul>
 			<li><a href="http://www.synthetic-soul.co.uk/comparison/lossless/">Synthetic Soul</a> lossless comparison</li>
 			<li><a href="http://wiki.hydrogenaudio.org/index.php?title=Lossless_comparison">Roberto Amorim's</a> lossless comparison on Hydrogenaudio</li>
-			<li><a href="http://www.hydrogenaudio.org/forums/index.php?showtopic=33226">"Which is the best lossless codec?"</a> thread on Hydrogenaudio</li>
-			<li><a href="http://www.losslessaudioblog.com/">Lossless Audio Blog</a></li>
+			<li><a href="http://www.hydrogenaudio.org/forums/index.php?showtopic=97310">"Lossless Compression test"</a> thread on Hydrogenaudio</li>
 		</ul>
 
 	</div> <!-- box_body -->
