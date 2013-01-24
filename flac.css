@@ -11,16 +11,17 @@ body
 {
 	background-color: #99CC99;
 	color: black;
-	margin: 0px;
+	margin: 0 auto;
 	padding: 0px;
+	max-width: 1200px;
 }
 
-div
+/*div
 {
 	background-color: #99CC99;
 	margin: 0px;
 	padding: 0px;
-}
+}*/
 
 div.logo
 {
@@ -67,7 +68,7 @@ div.body_with_sidebar
 div.box
 {
 	text-align: left;
-	margin: 0px 8px 0px 8px;
+	margin: 0;
 	background-color: #EEEED4;
 }
 
@@ -118,13 +119,13 @@ div.box_body
 
 #newsbox p
 {
-	margin: 0 0 5px 0;
+	margin: 0;
 }
 
 div.smallbox
 {
 	text-align: left;
-	margin: 0px 8px 0px 0px;
+	margin: 0 0 0 8px;
 	background-color: #EEEED4;
 }
 
