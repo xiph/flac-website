@@ -20,10 +20,10 @@
 	<script>
 	function loadXMLDoc(dname) {
 	  var xhttp;
-	  if (window.XMLHttpRequest) {
-	    xhttp=new XMLHttpRequest();
+	  if (window.ActiveXObject) {
+	    xhttp=new ActiveXObject("Msxml2.XMLHTTP.3.0");
 	  } else {
-	    xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	    xhttp=new XMLHttpRequest();
 	  }
 	  xhttp.open("GET",dname,false);
 	  xhttp.send("");
@@ -34,7 +34,7 @@
 	  var xml, xsl, xsltProcessor, resultDocument;
 	  document.getElementById("newspagebox").innerHTML='';
 
-	  xml=loadXMLDoc("feeds/feed.rss");
+	  xml=loadXMLDoc("feeds/feed.xml");
 	  xsl=loadXMLDoc("feeds/rss_transform_news.xsl");
   
 	  // Proces main newsbox
