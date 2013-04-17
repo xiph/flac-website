@@ -5,7 +5,7 @@
 <xsl:template match="/">
 
 <xsl:if test="count(rss/channel/item)=0">
-  <p>Sorry, there is no news to share currently</p>
+  <p>Sorry, something went wrong while trying to display the news feed.</p>
 </xsl:if>
 
 

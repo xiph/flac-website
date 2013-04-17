@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FLAC News</title>
     <link>http://xiph.org/flac</link>
     <description>The latest news about FLAC (Free Lossless Audio Codec)</description>
+    <atom:link href="http://flac.sourceforge.net/feeds/feed.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Android-app enables multichannel FLAC recording</title>
+      <title>New Pioneer receivers play FLAC gaplessly</title>
+      <description>While Pioneer's receivers have had FLAC support for some years now, their new VSX receivers now finally support gapless playback.</description>
+      <link>http://www.pioneer.eu/eur/newsroom/news/new_vsx-series/page.html</link>
+      <pubDate>Mon, 15 Apr 2013 09:35:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20130415</guid>
+    </item>
+    
+    <item>
+      <title>VLC fixes FLAC 7 and 8 channel playback</title>
+      <description>The FLAC channel ordering for 7 and 8 channel playback as defined a few months ago on the FLAC-dev mailinglist has found its way to VLC media player. Furthermore support for FLAC audio in MKV-files has been fixed too</description>
+      <link>http://www.videolan.org/vlc/releases/2.0.6.html</link>
+      <pubDate>Fri, 12 Apr 2013 11:40:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20130409</guid>
+    </item>
+    
+    <item>
+      <title>Sonos Playbar supports FLAC</title>
+      <description>Sonos has released it's Playbar, a soundbar which can be directly connected to a device or used standalone. It is able to play FLAC-files from various network sources by using a smartphone or tablet as a remote control.</description>
+      <link>http://www.sonos.com/shop/products/playbar</link>
+      <pubDate>Tue, 9 Apr 2013 16:19:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20130409</guid>
+    </item>
+    
+    <item>
+      <title>Umphrey’s McGee offers show in FLAC format</title>
+      <description>Umphrey’s McGee, an American progressive rock band, now offers an option to enjoy their shows live through headphones for the best experience plus a download of the whole show in either MP3 or FLAC for $40. A regular ticket to the show and a deposit (for renting the headphones) are required.</description>
+      <link>http://blog.umphreys.com/2013/03/08/headphones-snowcones/</link>
+      <pubDate>Fri, 5 Apr 2013 08:35:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20130405</guid>
+    </item>
+    
+    <item>
+      <title>Android-app enables multitrack FLAC recording</title>
       <description>eXtream Software Development has released a stand-alone app for Android devices titled USB Audio Recorder PRO. It’s a simple record and playback application that is the first to allow devices running Android 3.1 or higher to talk to a USB 1.0 or 2.0 compliant audio card, and vice-versa. It is able to record to WAV, FLAC and OGG Vorbis on the go.</description>
       <link>https://play.google.com/store/apps/details?id=com.extreamsd.usbaudiorecorderpro</link>
       <pubDate>Thu, 24 Jan 2013 12:18:00 +0100</pubDate>
@@ -14,7 +47,7 @@
     </item>
     
     <item>
-      <title>Soundtrack of Sins of a Solar Empire: Rebellion available in FLAC</title>
+      <title>Soundtrack of Sins of a Solar Empire: Rebellion available as FLAC</title>
       <description>Steam now sells the soundtrack of the game Sins of a Solar Empire: Rebellion as a DLC. It contains over 2 hours of music from the game. The DLC consists of the soundtrack in two formats: MP3 and FLAC.</description>
       <link>http://store.steampowered.com/app/228600/</link>
       <pubDate>Sat, 12 Jan 2013 14:43:00 +0100</pubDate>

@@ -13,15 +13,15 @@
 	<meta name="keywords" content="free,lossless,audio,codec,encoder,decoder,compression,compressor,archival,archive,archiving,backup,music" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="flac.css" />
-	<link rel="alternate" type="application/rss+xml" title="FLAC News" href="feeds/feed.rss"/>
+	<link rel="alternate" type="application/rss+xml" title="FLAC News" href="feeds/feed.xml"/>
 	<title>FLAC - Free Lossless Audio Codec</title>
 	<script>
 	function loadXMLDoc(dname) {
 	  var xhttp;
-	  if (window.XMLHttpRequest) {
-	    xhttp=new XMLHttpRequest();
+	  if (window.ActiveXObject) {
+	    xhttp=new ActiveXObject("Msxml2.XMLHTTP.3.0");
 	  } else {
-	    xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	    xhttp=new XMLHttpRequest();
 	  }
 	  xhttp.open("GET",dname,false);
 	  xhttp.send("");
@@ -34,7 +34,7 @@
 	  document.getElementById("newsbox").innerHTML='';
 	  document.getElementById("newssmallbox").innerHTML='';
 
-	  xml=loadXMLDoc("feeds/feed.rss");
+	  xml=loadXMLDoc("feeds/feed.xml");
 	  xsl=loadXMLDoc("feeds/rss_transform_home.xsl");
 	  xsl_sidebar=loadXMLDoc("feeds/rss_transform_sidebar.xsl");
   
@@ -112,7 +112,7 @@
 
 			<div class="box">
 				<div class="box_title">
-					<a name="latest">latest news&nbsp;&nbsp;<a href="feeds/feed.rss"><img src="images/feed-icon-16x16.png" border="0" hspace="0" style="text-align: center" /></a>
+					<a name="latest">latest news&nbsp;&nbsp;<a href="feeds/feed.xml"><img src="images/feed-icon-16x16.png" border="0" hspace="0" style="text-align: center" /></a>
 				</div>
 				<div class="box_header"></div>
 				<div class="box_body" id="newsbox">
