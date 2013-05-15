@@ -95,6 +95,14 @@
     </item>
     
     <item>
+      <title>Cubase now supports FLAC</title>
+      <description>With the release of version 6.5, Cubase now supports exporting to FLAC</description>
+      <link>http://www.steinberg.net/en/company/press/archive/2012/cubase_65_and_cubase_artist_65.html</link>
+      <pubDate>Thu, 01 Mar 2012 21:32:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20120230</guid>
+    </item>
+    
+    <item>
       <title>FLAC development moved to Xiph.org</title>
       <description>Develoment of FLAC has been moved from Sourceforge to Xiph.org. For more information, see the linked mail</description>
       <link>http://lists.xiph.org/pipermail/flac-dev/2012-February/003083.html</link>
