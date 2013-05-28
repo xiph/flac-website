@@ -15,9 +15,9 @@
 	<link rel="stylesheet" type="text/css" href="flac.css" />
     <link rel="alternate" type="application/atom+xml" title="FLAC News" href="feeds/news-atom1.xml"/>
 	<title>FLAC - news</title>
-	
-	
-	<script>
+
+
+	<script type="text/javascript">
 	function loadXMLDoc(dname) {
 	  var xhttp;
 	  if (window.ActiveXObject) {
@@ -36,7 +36,7 @@
 
 	  xml=loadXMLDoc("feeds/feed.xml");
 	  xsl=loadXMLDoc("feeds/rss_transform_news.xsl");
-  
+
 	  // Proces main newsbox
 	  if (window.ActiveXObject) {
 	    // code for IE

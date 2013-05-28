@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="flac.css" />
 	<link rel="alternate" type="application/rss+xml" title="FLAC News" href="feeds/feed.xml"/>
 	<title>FLAC - Free Lossless Audio Codec</title>
-	<script>
+	<script type="text/javascript">
 	function loadXMLDoc(dname) {
 	  var xhttp;
 	  if (window.ActiveXObject) {
@@ -30,14 +30,14 @@
 
 	function displayResult() {
 	  var xml, xsl, xsl_sidebar, xsltProcessor, resultDocument;
-	  
+
 	  document.getElementById("newsbox").innerHTML='';
 	  document.getElementById("newssmallbox").innerHTML='';
 
 	  xml=loadXMLDoc("feeds/feed.xml");
 	  xsl=loadXMLDoc("feeds/rss_transform_home.xsl");
 	  xsl_sidebar=loadXMLDoc("feeds/rss_transform_sidebar.xsl");
-  
+
 	  // Proces newssection
 	  if (window.ActiveXObject) {
 	    // code for IE
@@ -50,7 +50,7 @@
 	    resultDocument = xsltProcessor.transformToFragment(xml,document);
 	    document.getElementById("newsbox").appendChild(resultDocument);
 	  }
-	  
+
 	  // Proces sidebar
 	  if (window.ActiveXObject) {
 	    // code for IE
@@ -112,7 +112,7 @@
 
 			<div class="box">
 				<div class="box_title">
-					<a name="latest">latest news&nbsp;&nbsp;<a href="feeds/feed.xml"><img src="images/feed-icon-16x16.png" border="0" hspace="0" style="text-align: center" /></a>
+					<a name="latest">latest news&nbsp;&nbsp;</a><a href="feeds/feed.xml"><img src="images/feed-icon-16x16.png" border="0" hspace="0" style="text-align: center" alt="logo"/></a>
 				</div>
 				<div class="box_header"></div>
 				<div class="box_body" id="newsbox">
@@ -128,7 +128,7 @@
 
 			<div class="smallbox">
 				<div class="smallbox_title">
-					news</a>
+					news
 				</div>
 				<div class="smallbox_header"></div>
 				<div class="smallbox_body" id="newssmallbox">
