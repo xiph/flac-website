@@ -5,6 +5,14 @@
     <link>http://xiph.org/flac</link>
     <description>The latest news about FLAC (Free Lossless Audio Codec)</description>
     <atom:link href="http://flac.sourceforge.net/feeds/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Sony launches its first FLAC-playing receiver</title>
+      <description>With the introduction of the STR-DN840 and STR-DN1040, Sony has introduced its first receivers supporting FLAC playback. While Sony had already a few products supporting FLAC through the Android operating system, these are the first non-Android Sony product supporting FLAC</description>
+      <link>http://store.sony.com/webapp/wcs/stores/servlet/CategoryDisplay?catalogId=10551&amp;storeId=10151&amp;langId=-1&amp;categoryId=27925</link>
+      <pubDate>Thu, 30 May 2013 09:49:00 +0200</pubDate>
+      <guid>http://flac.sourceforge.net/news.html#20130530</guid>
+    </item>
     
     <item>
       <title>New Pioneer receivers play FLAC gaplessly</title>
