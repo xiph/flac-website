@@ -13,7 +13,7 @@
       <pubDate>Thu, 30 May 2013 09:49:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130530</guid>
     </item>
-    
+
     <item>
       <title>New Pioneer receivers play FLAC gaplessly</title>
       <description>While Pioneer's receivers have had FLAC support for some years now, their new VSX receivers now finally support gapless playback.</description>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 15 Apr 2013 09:35:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130415</guid>
     </item>
-    
+
     <item>
       <title>VLC fixes FLAC 7 and 8 channel playback</title>
       <description>The FLAC channel ordering for 7 and 8 channel playback as defined a few months ago on the FLAC-dev mailinglist has found its way to VLC media player. Furthermore support for FLAC audio in MKV-files has been fixed too</description>
@@ -29,7 +29,7 @@
       <pubDate>Fri, 12 Apr 2013 11:40:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130409</guid>
     </item>
-    
+
     <item>
       <title>Sonos Playbar supports FLAC</title>
       <description>Sonos has released it's Playbar, a soundbar which can be directly connected to a device or used standalone. It is able to play FLAC-files from various network sources by using a smartphone or tablet as a remote control.</description>
@@ -37,7 +37,7 @@
       <pubDate>Tue, 9 Apr 2013 16:19:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130409</guid>
     </item>
-    
+
     <item>
       <title>Umphrey’s McGee offers show in FLAC format</title>
       <description>Umphrey’s McGee, an American progressive rock band, now offers an option to enjoy their shows live through headphones for the best experience plus a download of the whole show in either MP3 or FLAC for $40. A regular ticket to the show and a deposit (for renting the headphones) are required.</description>
@@ -45,7 +45,7 @@
       <pubDate>Fri, 5 Apr 2013 08:35:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130405</guid>
     </item>
-    
+
     <item>
       <title>Android-app enables multitrack FLAC recording</title>
       <description>eXtream Software Development has released a stand-alone app for Android devices titled USB Audio Recorder PRO. It’s a simple record and playback application that is the first to allow devices running Android 3.1 or higher to talk to a USB 1.0 or 2.0 compliant audio card, and vice-versa. It is able to record to WAV, FLAC and OGG Vorbis on the go.</description>
@@ -53,7 +53,7 @@
       <pubDate>Thu, 24 Jan 2013 12:18:00 +0100</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130124</guid>
     </item>
-    
+
     <item>
       <title>Soundtrack of Sins of a Solar Empire: Rebellion available as FLAC</title>
       <description>Steam now sells the soundtrack of the game Sins of a Solar Empire: Rebellion as a DLC. It contains over 2 hours of music from the game. The DLC consists of the soundtrack in two formats: MP3 and FLAC.</description>
@@ -61,7 +61,7 @@
       <pubDate>Sat, 12 Jan 2013 14:43:00 +0100</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20130112</guid>
     </item>
-    
+
     <item>
       <title>Google Play cloud service supports FLAC</title>
       <description>Google announces that Google Play, an online music shop, now has a cloud service that matches music on the users computer with music on Google Play and uploads music not on Google Play. This way, music can be streamed back to any PC or Android-device. The scanner, Google’s Music Manager, supports FLAC and OGG Vorbis alongside non-DRM WMA, AAC and MP3</description>
@@ -69,7 +69,7 @@
       <pubDate>Wed, 19 Dec 2012 16:28:22 +0100</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20121219</guid>
     </item>
-    
+
     <item>
       <title>Olive One with FLAC support</title>
       <description>Olive announces the One, their "All-in-One Home Music Player" as they call it. It supports WAV, AIF, FLAC and Apple Lossless as lossless formats as well as MP3, AAC, OGG Vorbis as lossy formats</description>
@@ -77,7 +77,7 @@
       <pubDate>Tue, 18 Dec 2012 20:56:25 +0100</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20121218</guid>
     </item>
-    
+
     <item>
       <title>Astell &amp; Kern AK100 with FLAC support</title>
       <description>At $699 not your average media player, but this Astell &amp; Kern AK100 from iRiver Japan comes with support for WAV, FLAC, APE, OGG Vorbis and of course MP3 and stands out for being able of playing 192kHz/24-bit files, the latter being only possible when using either WAV of FLAC as file format. Beside using it as a (portable) media player, it can be used as DAC as well</description>
@@ -85,7 +85,7 @@
       <pubDate>Mon, 17 Dec 2012 20:50:20 +0100</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20121217</guid>
     </item>
-    
+
     <item>
       <title>Highresaudio.com offers FLAC</title>
       <description>The European-based Highresaudio.com has started to offer high-resolution 'studio-master' versions of all kinds of music. They offer downloads as FLAC, ALAC and WAV and sell DVD's containing FLAC-files as burn-on-demand.</description>
@@ -93,7 +93,7 @@
       <pubDate>Tue, 28 Aug 2012 12:50:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20120828</guid>
     </item>
-    
+
     <item>
       <title>Javascript FLAC decoder released</title>
       <description>Developers from Official.fm have built a nice piece of javascript-code that is able to decode FLAC-files. The code can be used to feed FLAC-data to the 'web-audio' API which is to be included in the HTML5 standard. This would enable FLAC-driven DJ-apps or audioeditors with HTML5.</description>
@@ -101,7 +101,7 @@
       <pubDate>Sun, 17 Jun 2012 19:50:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20120617</guid>
     </item>
-    
+
     <item>
       <title>Cubase now supports FLAC</title>
       <description>With the release of version 6.5, Cubase now supports exporting to FLAC</description>
@@ -109,7 +109,7 @@
       <pubDate>Thu, 01 Mar 2012 21:32:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20120230</guid>
     </item>
-    
+
     <item>
       <title>FLAC development moved to Xiph.org</title>
       <description>Develoment of FLAC has been moved from Sourceforge to Xiph.org. For more information, see the linked mail</description>
@@ -117,7 +117,7 @@
       <pubDate>Wed, 01 Feb 2012 10:56:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20120201</guid>
     </item>
-    
+
     <item>
       <title>HP's WebOS now FLAC-enabled</title>
       <description>HP new release of the mobile-OS WebOS now features out-of-the-box support for OGG Vorbis en FLAC.</description>
@@ -125,7 +125,7 @@
       <pubDate>Wed, 19 Oct 2011 18:42:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20111019</guid>
     </item>
-    
+
     <item>
       <title>Android natively plays back FLAC</title>
       <description>With the release of Android 3.1 (Honeycomb) Android now supports playback of the FLAC format. This supports stereo, 44.1kHz/16-bit files. While 48kHz and 24-bit are played back, this is not correctly implemented in most devices.</description>
@@ -133,7 +133,7 @@
       <pubDate>Wed, 11 May 2011 20:18:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20110511</guid>
     </item>
-    
+
     <item>
       <title>BlackBerry start supporting FLAC playback</title>
       <description>RIM released an update for the BlackBerry Torch 9800 and Curve 9300 which adds support for both FLAC and OGG Vorbis playback</description>
@@ -141,7 +141,7 @@
       <pubDate>Fri, 24 Sep 2010 19:45:00 +0200</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20100924</guid>
     </item>
-    
+
     <item>
       <title>Beatles re-masters available in FLAC</title>
       <description>The Beatles have released 14 re-mastered albums in 24-bit FLAC on a themed USB drive.</description>
@@ -149,7 +149,7 @@
       <pubDate>Mon, 07 Dec 2009 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20091207</guid>
     </item>
-    
+
     <item>
       <title>Electric Arguments available in FLAC</title>
       <description>Paul McCartney's side project The Fireman has released its new album Electric Arguments as a digital download, and available in FLAC.</description>
@@ -157,7 +157,7 @@
       <pubDate>Wed, 10 Dec 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20081210</guid>
     </item>
-    
+
     <item>
       <title>Songbird 1.0 released</title>
       <description>Songbird, a new open and customizable music player, is out and it supports FLAC natively.  For Mac, Linux, and Windows.</description>
@@ -165,7 +165,7 @@
       <pubDate>Wed, 03 Dec 2008 23:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20081203</guid>
     </item>
-    
+
     <item>
       <title>Squeezebox Boom supports FLAC</title>
       <description>The Squeezebox Boom is out: Slim Devices' latest home audio player weds their award-winning receiver with built-in speakers and as always has excellent FLAC support out of the box.</description>
@@ -173,7 +173,7 @@
       <pubDate>Tue, 02 Sep 2008 23:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080902</guid>
     </item>
-    
+
     <item>
       <title>David Byrne, Brian Eno album available in FLAC</title>
       <description>David Byrne and Brian Eno's new album Everything That Happens Will Happen Today is also available in FLAC.</description>
@@ -181,7 +181,7 @@
       <pubDate>Tue, 19 Aug 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080819090000</guid>
     </item>
-    
+
     <item>
       <title>Pearl Jam 2008 Tour in FLAC</title>
       <description>Pearl Jam is bringing back their "bootleg" program for their upcoming 2008 tour. Shows will be available for download in FLAC and MP3.</description>
@@ -189,7 +189,7 @@
       <pubDate>Wed, 11 Jun 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080611090000</guid>
     </item>
-    
+
     <item>
       <title>"Divertimenti" available in hi-res FLAC</title>
       <description>TrondheimSolistene has released its new album Divertimenti in an interesting array of formats, including both 5.1 and stereo 24bit/96kHz FLAC downloads.</description>
@@ -197,7 +197,7 @@
       <pubDate>Mon, 02 Jun 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080602090000</guid>
     </item>
-    
+
     <item>
       <title>HDtracks sells music in FLAC</title>
       <description>HDtracks offers their large music catalog in FLAC, AIFF, and MP3, and plans to offer 96kHz/24-bit FLAC files soon.</description>
@@ -213,7 +213,7 @@
       <pubDate>Wed, 21 May 2008 18:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080421</guid>
     </item>
-    
+
     <item>
       <title>indietorrent.org up and selling FLAC</title>
       <description>A new site called indietorrent.org is up and running.  indietorrent.org is a digital music store which "enables independent musicians to sell their own music while keeping all profits."  FLAC is one of the available formats.</description>
@@ -221,7 +221,7 @@
       <pubDate>Wed, 14 May 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080514090000</guid>
     </item>
-    
+
     <item>
       <title>T+A E-Series supports FLAC</title>
       <description>The T+A E-Series Music Player supports FLAC.</description>
@@ -229,7 +229,7 @@
       <pubDate>Mon, 17 Mar 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080317090000</guid>
     </item>
-    
+
     <item>
       <title>FLAC in the New York Times</title>
       <description>FLAC love has spread to the New York Times in an article on digital music in the home.  The Squeezebox, Sonos, and McIntosh also get nods.</description>
@@ -237,7 +237,7 @@
       <pubDate>Wed, 12 Mar 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080312090000</guid>
     </item>
-    
+
     <item>
       <title>Teclast M25 supports FLAC</title>
       <description>The Teclast M25 portable supports FLAC.</description>
@@ -245,7 +245,7 @@
       <pubDate>Tue, 11 Mar 2008 07:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080311070000</guid>
     </item>
-    
+
     <item>
       <title>H-QuAD hardware FLAC decoder</title>
       <description>The H-QuAD project aims to create a FLAC decoder core implemented entirely in hardware.</description>
@@ -253,7 +253,7 @@
       <pubDate>Mon, 10 Mar 2008 18:20:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080310182000</guid>
     </item>
-    
+
     <item>
       <title>McIntosh MS750 supports FLAC</title>
       <description>The McIntosh MS750 music server supports FLAC.</description>
@@ -261,7 +261,7 @@
       <pubDate>Sun, 09 Mar 2008 20:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080309200000</guid>
     </item>
-    
+
     <item>
       <title>New FLAC portables</title>
       <description>A few new portables support FLAC: the Onda VX888, the Ainol U80SE, the Epoq EMP-TS30-4 and the WindTouch V80.</description>
@@ -269,7 +269,7 @@
       <pubDate>Sat, 08 Mar 2008 20:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080308200000</guid>
     </item>
-    
+
     <item>
       <title>Ripserver rips to FLAC</title>
       <description>Ripfactory has announced the Ripserver, a sleek NAS with a slot-loading CD drive.  Pop in a CD and it automatically rips to FLAC or MP3 and adds it to the media library.  Ripserver can also run Slimserver and Twonkymedia for easy integration with Slim Devices, Sonos and many other networked media players.</description>
@@ -277,7 +277,7 @@
       <pubDate>Thu, 06 Mar 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080306090000</guid>
     </item>
-    
+
     <item>
       <title>Merge Records launches online store</title>
       <description>Merge Records just launched their online store where you can buy albums in FLAC format.</description>
@@ -285,7 +285,7 @@
       <pubDate>Wed, 05 Mar 2008 09:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080305090000</guid>
     </item>
-    
+
     <item>
       <title>Video Touch supports FLAC</title>
       <description>The Video Touch PMP from PlayTomato supports FLAC.</description>
@@ -293,7 +293,7 @@
       <pubDate>Tue, 04 Mar 2008 19:00:00 -0700</pubDate>
       <guid>http://flac.sourceforge.net/news.html#20080304190000</guid>
     </item>
-    
+
     <item>
       <title>Ghosts I-IV available in FLAC</title>
       <description>Nine Inch Nails' Ghosts I-IV is on sale, with a FLAC download option.</description>
