@@ -4,14 +4,46 @@
     <title>FLAC News</title>
     <link>http://xiph.org/flac</link>
     <description>The latest news about FLAC (Free Lossless Audio Codec)</description>
-    <atom:link href="http://flac.sourceforge.net/feeds/feed.xml" rel="self" type="application/rss+xml" />
-
+    <atom:link href="http://xiph.org/flac/feeds/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AURALiC announces FLAC-capable device</title>
+      <description>AURALiC introduces a whole-house music solution at this year’s CES in Las Vegas: AURALiC Lightning Streaming. This device is capable of handling a surprising amount of formats, including FLAC, over WiFi</description>
+      <link>http://www.auralic.com/en/</link>
+      <pubDate>Thu, 2 Jan 2014 13:44:48 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20130102</guid>
+    </item>
+    
+    <item>
+      <title>Headphones with FLAC support announced</title>
+      <description>A new product with native FLAC support has been announced: Streamz headphones. These headphones feature built-in storage and playing capabilities (including playing FLAC files) and can be streamed to from various devices</description>
+      <link>http://www.streamzmedia.com/</link>
+      <pubDate>Wed, 25 Dec 2013 17:13:10 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20131227</guid>
+    </item>
+    
+    <item>
+      <title>VLC supports FLAC embedded in AVI</title>
+      <description>With the release of VLC 2.1.0, VLC player now supports FLAC audio streams in an AVI container. VLC has been supporting FLAC from MKV containers for a long time, but AVI support has only recently been added</description>
+      <link>http://www.videolan.org/vlc/releases/2.1.0.html</link>
+      <pubDate>Wed, 02 Oct 2013 16:34:20 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20131002</guid>
+    </item>
+    
+    <item>
+      <title>Marantz launches new FLAC-playing receivers</title>
+      <description>Marantz has unveiled their new Melody series, the Melody Media and the Melody Stream. Both are capable of decoding FLAC files</description>
+      <link>http://www.marantz.co.uk/uk/news/pages/newsdetails.aspx?newsid=95</link>
+      <pubDate>Mon, 29 Jul 2013 13:35:10 +0200</pubDate>
+      <guid>http://xiph.org/flac/news.html#20130729</guid>
+    </item>
+    
     <item>
       <title>FLAC 1.3.0 released</title>
       <description>First release in over 6 years from the new Xiph.Org maintainer team. No big changes. Many small code and build improvements.</description>
       <link>https://xiph.org/flac/changelog.html</link>
       <pubDate>Sat, 01 Jun 2013 12:00:00 +1000</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130530</guid>
+      <guid>http://xiph.org/flac/news.html#20130601</guid>
     </item>
 
     <item>
@@ -19,7 +51,7 @@
       <description>With the introduction of the STR-DN840 and STR-DN1040, Sony has introduced its first receivers supporting FLAC playback. While Sony had already a few products supporting FLAC through the Android operating system, these are the first non-Android Sony product supporting FLAC</description>
       <link>http://store.sony.com/webapp/wcs/stores/servlet/CategoryDisplay?catalogId=10551&amp;storeId=10151&amp;langId=-1&amp;categoryId=27925</link>
       <pubDate>Thu, 30 May 2013 09:49:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130530</guid>
+      <guid>http://xiph.org/flac/news.html#20130530</guid>
     </item>
 
     <item>
@@ -27,7 +59,7 @@
       <description>While Pioneer's receivers have had FLAC support for some years now, their new VSX receivers now finally support gapless playback.</description>
       <link>http://www.pioneer.eu/eur/newsroom/news/new_vsx-series/page.html</link>
       <pubDate>Mon, 15 Apr 2013 09:35:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130415</guid>
+      <guid>http://xiph.org/flac/news.html#20130415</guid>
     </item>
 
     <item>
@@ -35,7 +67,7 @@
       <description>The FLAC channel ordering for 7 and 8 channel playback as defined a few months ago on the FLAC-dev mailinglist has found its way to VLC media player. Furthermore support for FLAC audio in MKV-files has been fixed too</description>
       <link>http://www.videolan.org/vlc/releases/2.0.6.html</link>
       <pubDate>Fri, 12 Apr 2013 11:40:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130409</guid>
+      <guid>http://xiph.org/flac/news.html#20130412</guid>
     </item>
 
     <item>
@@ -43,7 +75,7 @@
       <description>Sonos has released it's Playbar, a soundbar which can be directly connected to a device or used standalone. It is able to play FLAC-files from various network sources by using a smartphone or tablet as a remote control.</description>
       <link>http://www.sonos.com/shop/products/playbar</link>
       <pubDate>Tue, 9 Apr 2013 16:19:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130409</guid>
+      <guid>http://xiph.org/flac/news.html#20130409</guid>
     </item>
 
     <item>
@@ -51,7 +83,7 @@
       <description>Umphrey’s McGee, an American progressive rock band, now offers an option to enjoy their shows live through headphones for the best experience plus a download of the whole show in either MP3 or FLAC for $40. A regular ticket to the show and a deposit (for renting the headphones) are required.</description>
       <link>http://blog.umphreys.com/2013/03/08/headphones-snowcones/</link>
       <pubDate>Fri, 5 Apr 2013 08:35:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130405</guid>
+      <guid>http://xiph.org/flac/news.html#20130405</guid>
     </item>
 
     <item>
@@ -59,7 +91,7 @@
       <description>eXtream Software Development has released a stand-alone app for Android devices titled USB Audio Recorder PRO. It’s a simple record and playback application that is the first to allow devices running Android 3.1 or higher to talk to a USB 1.0 or 2.0 compliant audio card, and vice-versa. It is able to record to WAV, FLAC and OGG Vorbis on the go.</description>
       <link>https://play.google.com/store/apps/details?id=com.extreamsd.usbaudiorecorderpro</link>
       <pubDate>Thu, 24 Jan 2013 12:18:00 +0100</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130124</guid>
+      <guid>http://xiph.org/flac/news.html#20130124</guid>
     </item>
 
     <item>
@@ -67,7 +99,7 @@
       <description>Steam now sells the soundtrack of the game Sins of a Solar Empire: Rebellion as a DLC. It contains over 2 hours of music from the game. The DLC consists of the soundtrack in two formats: MP3 and FLAC.</description>
       <link>http://store.steampowered.com/app/228600/</link>
       <pubDate>Sat, 12 Jan 2013 14:43:00 +0100</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20130112</guid>
+      <guid>http://xiph.org/flac/news.html#20130112</guid>
     </item>
 
     <item>
@@ -75,7 +107,7 @@
       <description>Google announces that Google Play, an online music shop, now has a cloud service that matches music on the users computer with music on Google Play and uploads music not on Google Play. This way, music can be streamed back to any PC or Android-device. The scanner, Google’s Music Manager, supports FLAC and OGG Vorbis alongside non-DRM WMA, AAC and MP3</description>
       <link>https://plus.google.com/u/0/+GooglePlay/posts/VZhB6EpsWKx</link>
       <pubDate>Wed, 19 Dec 2012 16:28:22 +0100</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20121219</guid>
+      <guid>http://xiph.org/flac/news.html#20121219</guid>
     </item>
 
     <item>
@@ -83,7 +115,7 @@
       <description>Olive announces the One, their "All-in-One Home Music Player" as they call it. It supports WAV, AIF, FLAC and Apple Lossless as lossless formats as well as MP3, AAC, OGG Vorbis as lossy formats</description>
       <link>http://www.myoliveone.com/</link>
       <pubDate>Tue, 18 Dec 2012 20:56:25 +0100</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20121218</guid>
+      <guid>http://xiph.org/flac/news.html#20121218</guid>
     </item>
 
     <item>
@@ -91,7 +123,7 @@
       <description>At $699 not your average media player, but this Astell &amp; Kern AK100 from iRiver Japan comes with support for WAV, FLAC, APE, OGG Vorbis and of course MP3 and stands out for being able of playing 192kHz/24-bit files, the latter being only possible when using either WAV of FLAC as file format. Beside using it as a (portable) media player, it can be used as DAC as well</description>
       <link>http://www.pcmag.com/article2/0,2817,2413076,00.asp</link>
       <pubDate>Mon, 17 Dec 2012 20:50:20 +0100</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20121217</guid>
+      <guid>http://xiph.org/flac/news.html#20121217</guid>
     </item>
 
     <item>
@@ -99,7 +131,7 @@
       <description>The European-based Highresaudio.com has started to offer high-resolution 'studio-master' versions of all kinds of music. They offer downloads as FLAC, ALAC and WAV and sell DVD's containing FLAC-files as burn-on-demand.</description>
       <link>http://www.highresaudio.com/</link>
       <pubDate>Tue, 28 Aug 2012 12:50:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20120828</guid>
+      <guid>http://xiph.org/flac/news.html#20120828</guid>
     </item>
 
     <item>
@@ -107,7 +139,7 @@
       <description>Developers from Official.fm have built a nice piece of javascript-code that is able to decode FLAC-files. The code can be used to feed FLAC-data to the 'web-audio' API which is to be included in the HTML5 standard. This would enable FLAC-driven DJ-apps or audioeditors with HTML5.</description>
       <link>http://labs.official.fm/articles/2012/06/15/flac-and-aurora/</link>
       <pubDate>Sun, 17 Jun 2012 19:50:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20120617</guid>
+      <guid>http://xiph.org/flac/news.html#20120617</guid>
     </item>
 
     <item>
@@ -115,7 +147,7 @@
       <description>With the release of version 6.5, Cubase now supports exporting to FLAC</description>
       <link>http://www.steinberg.net/en/company/press/archive/2012/cubase_65_and_cubase_artist_65.html</link>
       <pubDate>Thu, 01 Mar 2012 21:32:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20120230</guid>
+      <guid>http://xiph.org/flac/news.html#20120230</guid>
     </item>
 
     <item>
@@ -123,7 +155,7 @@
       <description>Develoment of FLAC has been moved from Sourceforge to Xiph.org. For more information, see the linked mail</description>
       <link>http://lists.xiph.org/pipermail/flac-dev/2012-February/003083.html</link>
       <pubDate>Wed, 01 Feb 2012 10:56:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20120201</guid>
+      <guid>http://xiph.org/flac/news.html#20120201</guid>
     </item>
 
     <item>
@@ -131,7 +163,7 @@
       <description>HP new release of the mobile-OS WebOS now features out-of-the-box support for OGG Vorbis en FLAC.</description>
       <link>http://kb.hpwebos.com/wps/portal/kb/na/touchpad/touchpad/wifi/solutions/article/18666_en.html</link>
       <pubDate>Wed, 19 Oct 2011 18:42:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20111019</guid>
+      <guid>http://xiph.org/flac/news.html#20111019</guid>
     </item>
 
     <item>
@@ -139,7 +171,7 @@
       <description>With the release of Android 3.1 (Honeycomb) Android now supports playback of the FLAC format. This supports stereo, 44.1kHz/16-bit files. While 48kHz and 24-bit are played back, this is not correctly implemented in most devices.</description>
       <link>http://developer.android.com/guide/appendix/media-formats.html</link>
       <pubDate>Wed, 11 May 2011 20:18:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20110511</guid>
+      <guid>http://xiph.org/flac/news.html#20110511</guid>
     </item>
 
     <item>
@@ -147,7 +179,7 @@
       <description>RIM released an update for the BlackBerry Torch 9800 and Curve 9300 which adds support for both FLAC and OGG Vorbis playback</description>
       <link>http://docs.blackberry.com/en/smartphone_users/deliverables/18577/Supported_audio_video_file_formats_60_1018040_11.jsp</link>
       <pubDate>Fri, 24 Sep 2010 19:45:00 +0200</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20100924</guid>
+      <guid>http://xiph.org/flac/news.html#20100924</guid>
     </item>
 
     <item>
@@ -155,7 +187,7 @@
       <description>The Beatles have released 14 re-mastered albums in 24-bit FLAC on a themed USB drive.</description>
       <link>http://www.thebeatles.com/news/Last_Apple_USBs_available_in</link>
       <pubDate>Mon, 07 Dec 2009 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20091207</guid>
+      <guid>http://xiph.org/flac/news.html#20091207</guid>
     </item>
 
     <item>
@@ -163,7 +195,7 @@
       <description>Paul McCartney's side project The Fireman has released its new album Electric Arguments as a digital download, and available in FLAC.</description>
       <link>http://www.thefiremanmusic.com/purchase/</link>
       <pubDate>Wed, 10 Dec 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20081210</guid>
+      <guid>http://xiph.org/flac/news.html#20081210</guid>
     </item>
 
     <item>
@@ -171,7 +203,7 @@
       <description>Songbird, a new open and customizable music player, is out and it supports FLAC natively.  For Mac, Linux, and Windows.</description>
       <link>http://getsongbird.com/</link>
       <pubDate>Wed, 03 Dec 2008 23:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20081203</guid>
+      <guid>http://xiph.org/flac/news.html#20081203</guid>
     </item>
 
     <item>
@@ -179,7 +211,7 @@
       <description>The Squeezebox Boom is out: Slim Devices' latest home audio player weds their award-winning receiver with built-in speakers and as always has excellent FLAC support out of the box.</description>
       <link>http://slimdevices.com/pi_boom.html</link>
       <pubDate>Tue, 02 Sep 2008 23:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080902</guid>
+      <guid>http://xiph.org/flac/news.html#20080902</guid>
     </item>
 
     <item>
@@ -187,7 +219,7 @@
       <description>David Byrne and Brian Eno's new album Everything That Happens Will Happen Today is also available in FLAC.</description>
       <link>http://www.everythingthathappens.com/order.html#flac</link>
       <pubDate>Tue, 19 Aug 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080819090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080819090000</guid>
     </item>
 
     <item>
@@ -195,7 +227,7 @@
       <description>Pearl Jam is bringing back their "bootleg" program for their upcoming 2008 tour. Shows will be available for download in FLAC and MP3.</description>
       <link>http://www.tenclub.net/news/</link>
       <pubDate>Wed, 11 Jun 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080611090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080611090000</guid>
     </item>
 
     <item>
@@ -203,7 +235,7 @@
       <description>TrondheimSolistene has released its new album Divertimenti in an interesting array of formats, including both 5.1 and stereo 24bit/96kHz FLAC downloads.</description>
       <link>http://www.2l.musiconline.no/shop/displayAlbum.asp?id=34188</link>
       <pubDate>Mon, 02 Jun 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080602090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080602090000</guid>
     </item>
 
     <item>
@@ -211,7 +243,7 @@
       <description>HDtracks offers their large music catalog in FLAC, AIFF, and MP3, and plans to offer 96kHz/24-bit FLAC files soon.</description>
       <link>http://www.hdtracks.com/index.php?file=staticpage&amp;pagename=audiophile_96khz</link>
       <pubDate>Fri, 23 May 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080523090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080523090000</guid>
     </item>
 
     <item>
@@ -219,7 +251,7 @@
       <description>The new Opus No.4 and Melody No.2 digital audio players from Olive support FLAC streams up to 96kHz/24bit and embedded cover-art, and feature hi-res color touchscreens and up to 1TB storage.  Stay tuned for a review here in May.</description>
       <link>http://olive.us/products/opus4.html</link>
       <pubDate>Wed, 21 May 2008 18:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080421</guid>
+      <guid>http://xiph.org/flac/news.html#20080421</guid>
     </item>
 
     <item>
@@ -227,7 +259,7 @@
       <description>A new site called indietorrent.org is up and running.  indietorrent.org is a digital music store which "enables independent musicians to sell their own music while keeping all profits."  FLAC is one of the available formats.</description>
       <link>http://indietorrent.org/</link>
       <pubDate>Wed, 14 May 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080514090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080514090000</guid>
     </item>
 
     <item>
@@ -235,7 +267,7 @@
       <description>The T+A E-Series Music Player supports FLAC.</description>
       <link>http://www.taelektroakustik.de/eng/ta2/e_system/music_player.htm</link>
       <pubDate>Mon, 17 Mar 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080317090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080317090000</guid>
     </item>
 
     <item>
@@ -243,7 +275,7 @@
       <description>FLAC love has spread to the New York Times in an article on digital music in the home.  The Squeezebox, Sonos, and McIntosh also get nods.</description>
       <link>http://www.nytimes.com/2008/02/21/technology/personaltech/21basics.html</link>
       <pubDate>Wed, 12 Mar 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080312090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080312090000</guid>
     </item>
 
     <item>
@@ -251,7 +283,7 @@
       <description>The Teclast M25 portable supports FLAC.</description>
       <link>http://www.engadget.com/2008/03/09/teclasts-m25-pmp-has-love-for-lots-of-formats/</link>
       <pubDate>Tue, 11 Mar 2008 07:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080311070000</guid>
+      <guid>http://xiph.org/flac/news.html#20080311070000</guid>
     </item>
 
     <item>
@@ -259,7 +291,7 @@
       <description>The H-QuAD project aims to create a FLAC decoder core implemented entirely in hardware.</description>
       <link>http://hquad.project.googlepages.com/</link>
       <pubDate>Mon, 10 Mar 2008 18:20:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080310182000</guid>
+      <guid>http://xiph.org/flac/news.html#20080310182000</guid>
     </item>
 
     <item>
@@ -267,15 +299,15 @@
       <description>The McIntosh MS750 music server supports FLAC.</description>
       <link>http://www.stereophile.com/mediaservers/108mac/</link>
       <pubDate>Sun, 09 Mar 2008 20:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080309200000</guid>
+      <guid>http://xiph.org/flac/news.html#20080309200000</guid>
     </item>
 
     <item>
       <title>New FLAC portables</title>
       <description>A few new portables support FLAC: the Onda VX888, the Ainol U80SE, the Epoq EMP-TS30-4 and the WindTouch V80.</description>
-      <link>http://flac.sourceforge.net/links.html#hardware</link>
+      <link>http://xiph.org/flac/links.html#hardware</link>
       <pubDate>Sat, 08 Mar 2008 20:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080308200000</guid>
+      <guid>http://xiph.org/flac/news.html#20080308200000</guid>
     </item>
 
     <item>
@@ -283,7 +315,7 @@
       <description>Ripfactory has announced the Ripserver, a sleek NAS with a slot-loading CD drive.  Pop in a CD and it automatically rips to FLAC or MP3 and adds it to the media library.  Ripserver can also run Slimserver and Twonkymedia for easy integration with Slim Devices, Sonos and many other networked media players.</description>
       <link>http://www.ripfactory.com/ripserver.html</link>
       <pubDate>Thu, 06 Mar 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080306090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080306090000</guid>
     </item>
 
     <item>
@@ -291,7 +323,7 @@
       <description>Merge Records just launched their online store where you can buy albums in FLAC format.</description>
       <link>http://www.mergerecords.com/store/</link>
       <pubDate>Wed, 05 Mar 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080305090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080305090000</guid>
     </item>
 
     <item>
@@ -299,7 +331,7 @@
       <description>The Video Touch PMP from PlayTomato supports FLAC.</description>
       <link>http://www.pcworld.com/article/id,141578-c,mp3players/article.html</link>
       <pubDate>Tue, 04 Mar 2008 19:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080304190000</guid>
+      <guid>http://xiph.org/flac/news.html#20080304190000</guid>
     </item>
 
     <item>
@@ -307,7 +339,7 @@
       <description>Nine Inch Nails' Ghosts I-IV is on sale, with a FLAC download option.</description>
       <link>http://ghosts.nin.com/main/order_options</link>
       <pubDate>Mon, 03 Mar 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080303</guid>
+      <guid>http://xiph.org/flac/news.html#20080303</guid>
     </item>
 
     <item>
@@ -315,7 +347,7 @@
       <description>There are some indications that the upcoming E100 from iRiver will support FLAC.</description>
       <link>http://www.themp3players.com/archives/2008/03/iriver-e100-to-play-flac/</link>
       <pubDate>Sun, 02 Mar 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080302090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080302090000</guid>
     </item>
 
     <item>
@@ -323,7 +355,7 @@
       <description>Best Wisdom Industrial's new PMP, the BW-M2802, supports FLAC.</description>
       <link>http://www.pmptoday.com/2008/02/20/best-of-mp4-wholesalers-best-wisdom-industrial-shenzhen-co-ltd-bw-m2802/</link>
       <pubDate>Fri, 29 Feb 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080229090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080229090000</guid>
     </item>
 
     <item>
@@ -331,7 +363,7 @@
       <description>The Celrun TV, an interesting HD multimedia player, supports FLAC.</description>
       <link>http://www.akihabaranews.com/en/news-15576-Celrun+TV%3A++The+Premium+HD+Multimedia+Player.html</link>
       <pubDate>Wed, 27 Feb 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080227090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080227090000</guid>
     </item>
 
     <item>
@@ -339,7 +371,7 @@
       <description>Gimell Records offers their catalog of The Tallis Scholars in FLAC format in three versions: "CD Quality" at 16-bit/44.1kHz, "Studio Master" at 16-bit/88.2kHz, and "Studio Master Pro" at 24-bit/88.2kHz.</description>
       <link>http://www.gimell.com/</link>
       <pubDate>Wed, 30 Jan 2008 09:00:01 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080130</guid>
+      <guid>http://xiph.org/flac/news.html#20080130</guid>
     </item>
 
     <item>
@@ -347,7 +379,7 @@
       <description>Ripfactory's automated CD ripping products support FLAC.</description>
       <link>http://www.ripfactory.com/</link>
       <pubDate>Fri, 18 Jan 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080118090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080118090000</guid>
     </item>
 
     <item>
@@ -355,7 +387,7 @@
       <description>DVD-Audio Solo DVD-A authoring software supports FLAC.</description>
       <link>http://www.cirlinca.com/products.htm</link>
       <pubDate>Thu, 17 Jan 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080117090000</guid>
+      <guid>http://xiph.org/flac/news.html#20080117090000</guid>
     </item>
 
     <item>
@@ -363,7 +395,7 @@
       <description>It's time again for a bunch of new FLAC-supporting portables: the one-of-a-kind Pacemaker pocket-sized DJ system by Tonium, Garmin's nuvi 800 series nav systems with built-in audio player functionality, Latte's Ice, Gemei's X-590 and X-900, the Onda VX868, and finally one from SAFA.</description>
       <link>http://blog.wired.com/gadgets/2008/01/ces-2008-hand-2.html</link>
       <pubDate>Mon, 14 Jan 2008 19:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080114190000</guid>
+      <guid>http://xiph.org/flac/news.html#20080114190000</guid>
     </item>
 
     <item>
@@ -371,7 +403,7 @@
       <description>Trent Reznor recently wrote about the sales numbers for Niggy Tardust, including that almost 20% of paying downloaders chose FLAC format.</description>
       <link>http://www.nin.com/</link>
       <pubDate>Sun, 13 Jan 2008 17:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080113170000</guid>
+      <guid>http://xiph.org/flac/news.html#20080113170000</guid>
     </item>
 
     <item>
@@ -379,7 +411,7 @@
       <description>The Eagles' latest album Long Road Out Of Eden has also been released in FLAC format, including the deluxe edition.</description>
       <link>http://eagles.shop.musictoday.com/Product.aspx?pc=E1DD02</link>
       <pubDate>Sun, 13 Jan 2008 15:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080113</guid>
+      <guid>http://xiph.org/flac/news.html#20080113</guid>
     </item>
 
     <item>
@@ -387,7 +419,7 @@
       <description>The new Squeezebox Duet continues Slim Devices' tradition of excellent FLAC support.</description>
       <link>http://slimdevices.com/pi_duet.html</link>
       <pubDate>Thu, 10 Jan 2008 09:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20080110</guid>
+      <guid>http://xiph.org/flac/news.html#20080110</guid>
     </item>
 
     <item>
@@ -395,7 +427,7 @@
       <description>Another handful of recent devices support FLAC: the SageTV HD Media Extender, the Pioneer X-Z7 and X-Z9 audio systems, the iStation U43, BW-M2404 and Ramos RM970 portables, and the DV-1 Digital Media Reader from CodexNovus.</description>
       <link>http://www.sagetv.com/hd_extender.html</link>
       <pubDate>Wed, 12 Dec 2007 21:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071212210000</guid>
+      <guid>http://xiph.org/flac/news.html#20071212210000</guid>
     </item>
 
     <item>
@@ -403,7 +435,7 @@
       <description>The European Broadcasting Union has adopted FLAC for distribution of audio over its Euroradio network.</description>
       <link>http://www.ebu.ch/en/radio/ops_rdo/faq/index.php</link>
       <pubDate>Tue, 11 Dec 2007 00:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071211000000</guid>
+      <guid>http://xiph.org/flac/news.html#20071211000000</guid>
     </item>
 
     <item>
@@ -411,7 +443,7 @@
       <description>Neuros' new Linux-based set-top box, the Neuros OSD, supports FLAC.</description>
       <link>http://www.neurostechnology.com/neuros-osd-specifications</link>
       <pubDate>Fri, 26 Oct 2007 00:00:02 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071026000002</guid>
+      <guid>http://xiph.org/flac/news.html#20071026000002</guid>
     </item>
 
     <item>
@@ -419,7 +451,7 @@
       <description>The new Digital Touch DT-2 portable audio player (which resembles the iPod Touch) supports FLAC.</description>
       <link>http://www.powerpage.org/2007/10/review_digital_touch.html</link>
       <pubDate>Fri, 26 Oct 2007 00:00:01 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071026000001</guid>
+      <guid>http://xiph.org/flac/news.html#20071026000001</guid>
     </item>
 
     <item>
@@ -427,7 +459,7 @@
       <description>Vegas Pro 8 supports FLAC, for both reading and writing.</description>
       <link>http://www.sonycreativesoftware.com/products/product.asp?PID=457&amp;PageID=107</link>
       <pubDate>Fri, 26 Oct 2007 00:00:00 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071026000000</guid>
+      <guid>http://xiph.org/flac/news.html#20071026000000</guid>
     </item>
 
     <item>
@@ -435,15 +467,15 @@
       <description>Several new devices support FLAC: Linn's Klimax DS networked digital music player, Pioneer's SC-LX90 amplifier, Denon's AVR-4308DAB receiver, Sound Devices' 7-Series recorders, the new WFR-20 Wi-Fi Internet Radio from Sangean, and OPPO's Super Five PMP.</description>
       <link>http://www.linn.co.uk/klimax_ds</link>
       <pubDate>Sun, 21 Oct 2007 09:00:30 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071021090030</guid>
+      <guid>http://xiph.org/flac/news.html#20071021090030</guid>
     </item>
 
     <item>
       <title>Buffer overflow vulnerabilities fixed</title>
       <description>Buffer overflow vulnerabilities reported by iDefense have been fixed in FLAC 1.2.1; make sure to upgrade.</description>
-      <link>http://flac.sourceforge.net/download.html</link>
+      <link>http://xiph.org/flac/download.html</link>
       <pubDate>Sun, 21 Oct 2007 09:00:29 -0700</pubDate>
-      <guid>http://flac.sourceforge.net/news.html#20071021090029</guid>
+      <guid>http://xiph.org/flac/news.html#20071021090029</guid>
      </item>
 
      <item>
@@ -451,7 +483,7 @@
        <description>SONAR 7 from Cakewalk supports FLAC for both importing and exporting.</description>
        <link>http://www.cakewalk.com/Products/SONAR/English/New/new.asp</link>
        <pubDate>Sun, 21 Oct 2007 09:00:28 -0700</pubDate>
-       <guid>http://flac.sourceforge.net/news.html#20071021090028</guid>
+       <guid>http://xiph.org/flac/news.html#20071021090028</guid>
      </item>
 
      <item>
@@ -459,15 +491,15 @@
        <description>ZeroPaid has an interview with Josh Bonnain of Grooveshark about their novel distribution method where "everybody gets paid."  Grooveshark supports FLAC, Vorbis and MP3.</description>
        <link>http://www.zeropaid.com/news/9035/Q&amp;%3BA+With+Grooveshark,+Where+'Everybody+Gets+Paid'+For+Sharing+Music/</link>
        <pubDate>Sun, 21 Oct 2007 09:00:27 -0700</pubDate>
-       <guid>http://flac.sourceforge.net/news.html#20071021090027</guid>
+       <guid>http://xiph.org/flac/news.html#20071021090027</guid>
      </item>
 
      <item>
        <title>FLAC 1.2.1 released</title>
        <description>New in this release is support for all RIFF/AIFF metadata, including Broadcast Wave Format (BWF). There are many other small improvements and bug fixes; see the changelog entry for complete details.</description>
-       <link>http://flac.sourceforge.net/changelog.html#flac_1_2_1</link>
+       <link>http://xiph.org/flac/changelog.html#flac_1_2_1</link>
        <pubDate>Sun, 21 Oct 2007 09:00:26 -0700</pubDate>
-       <guid>http://flac.sourceforge.net/news.html#20071021090026</guid>
+       <guid>http://xiph.org/flac/news.html#20071021090026</guid>
      </item>
 
      <item>
@@ -475,7 +507,7 @@
        <description>Sound Forge 9.0b supports FLAC, for both reading and writing.</description>
        <link>http://sony-696.vo.llnwd.net/dspcdn/releasenotes/soundforge90b_readme.htm</link>
        <pubDate>Sun, 21 Oct 2007 09:00:25 -0700</pubDate>
-       <guid>http://flac.sourceforge.net/news.html#20071021090025</guid>
+       <guid>http://xiph.org/flac/news.html#20071021090025</guid>
      </item>
 
      <item>
@@ -483,7 +515,7 @@
        <description>An installer for flac-1.1.4 on OS X is now available.  This includes universal binaries that will work on both Intel and PowerPC machines.  A 1.2.0 update will be available soon.</description>
        <link>http://downloads.sourceforge.net/flac/flac-1.1.4.dmg</link>
        <pubDate>Sun, 21 Oct 2007 09:00:24 -0700</pubDate>
-       <guid>http://flac.sourceforge.net/news.html#20071021090024</guid>
+       <guid>http://xiph.org/flac/news.html#20071021090024</guid>
      </item>
 
      <item>
@@ -491,7 +523,368 @@
        <description>Czech Radio has released complete recordings of Bach's Brandenburg concertos in FLAC format, free to download.</description>
        <link>http://www.rozhlas.cz/d-dur/download_eng</link>
        <pubDate>Sun, 21 Oct 2007 09:00:23 -0700</pubDate>
-       <guid>http://flac.sourceforge.net/news.html#20071021090023</guid>
+       <guid>http://xiph.org/flac/news.html#20071021090023</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.2.0 released</title>
+       <description>New in this release are small speed improvements, and some new options and bug fixes.  Also the decoder has been updated to pave the way for some format improvements, so if your software supports FLAC be sure to check it out.  See the changelog entry for complete details.</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Mon, 23 Jul 2007 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20070723</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.1.4 released</title>
+       <description>Increased compression and dramatic speedups for both encoding and decoding are the big improvements in FLAC 1.1.4.  There are also several new options and bugfixes.  See the changelog entry for complete details.</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Tue, 13 Feb 2007 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20070213</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.1.3 released</title>
+       <description>Almost 2 years in the making, FLAC 1.1.3 is a major release with improved compression, improved cover art and multichannel support, better recovery for corrupted files, many new features and options in the command-line tools, and several bug fixes.  For developers, the decoder and encoder APIs have also been simplified and there is a new porting guide.  See the changelog entry for complete details.</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Mon, 27 Nov 2006 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20061127</guid>
+     </item>
+     
+     <item>
+       <title>Winamp 5.31 ships with FLAC support</title>
+       <description>Winamp 5.31 now includes Nullsoft FLAC plugins for encoding and decoding. The decoder is based on our reference decoder plugin. However the current encoder plugin is based on a pre-release of flake and we recommend to not use it for archival yet.</description>
+       <link>http://winamp.com/player/</link>
+       <pubDate>Wed, 25 Oct 2006 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20061025</guid>
+     </item>
+     
+     <item>
+       <title>Volvo's Digital Jukebox plays FLAC</title>
+       <description>Want some FLAC with your Volvo?  Volvo's Digital Jukebox, developed with PhatNoise, is fully integrated with the car's audio system and available for the S60, V70, XC70, and S80. PhatNoise's PhatBox in 2002 was the first device to support FLAC natively and has gained a loyal following.  The Digital Jukebox and PhatBox also support Ogg Vorbis.</description>
+       <link>http://www.volvocars.com/DigitalJukebox/product_information/</link>
+       <pubDate>Tue, 20 Dec 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20051220</guid>
+     </item>
+     
+     <item>
+       <title>Live2496 now records directly to FLAC</title>
+       <description>Live2496, a program that can record 24-bit audio up to 96kHz on a Pocket PC (using Core Sound's PDAudio interface) now supports recording directly to FLAC.</description>
+       <link>http://www.gidluckmastering.com/live2496.html</link>
+       <pubDate>Wed, 21 Sep 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050921</guid>
+     </item>
+     
+     <item>
+       <title>Olive's new Symphony component supports FLAC</title>
+       <description>The new Symphony wireless digital music center by Olive supports FLAC</description>
+       <link>http://www.olive.us/</link>
+       <pubDate>Wed, 10 Aug 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050810</guid>
+     </item>
+     
+     <item>
+       <title>YME supports FLAC and Vorbis</title>
+       <description>Yahoo! Music Engine supports FLAC and Ogg Vorbis, for playback and ripping/encoding</description>
+       <link>http://music.yahoo.com/musicengine/</link>
+       <pubDate>Wed, 11 May 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050511</guid>
+     </item>
+     
+     <item>
+       <title>PONTIS' MS330 supports FLAC and Vorbis</title>
+       <description>The new MS330 Media Server from PONTIS supports FLAC and Ogg Vorbis.  In addition to playing from the internal hard disk, CD drive, and 6-in-1 flash card slot, it can also be connected to a network, and even a TV for graphical navigation, cover art, photo viewing, etc.</description>
+       <link>http://www.pontis.de/site_e/produkte/ms_330_e.htm</link>
+       <pubDate>Tue, 10 May 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050510</guid>
+     </item>
+     
+     <item>
+       <title>Sonos now supports FLAC and Vorbis</title>
+       <description>The Sonos Digital Music System now supports FLAC and Ogg Vorbis</description>
+       <link>http://www.sonos.com/</link>
+       <pubDate>Mon, 02 May 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050502</guid>
+     </item>
+     
+     <item>
+       <title>iAUDIO X5 portable supports FLAC and Vorbis</title>
+       <description>The new portable iAUDIO X5 from COWON supports FLAC and Ogg Vorbis</description>
+       <link>http://www.cowonamerica.com/products/iaudio/x5/</link>
+       <pubDate>Sat, 23 Apr 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050423</guid>
+     </item>
+     
+     <item>
+       <title>Squeezebox2 supports FLAC on the box</title>
+       <description>Slim Devices' new Squeezebox2 supports FLAC decoding on the box, reducing the amount of precious wireless bandwidth required for FLAC playback.</description>
+       <link>http://www.slimdevices.com/</link>
+       <pubDate>Wed, 09 Mar 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050309</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.1.2 released</title>
+       <description>New in this release are small decoding speedups for all platforms, small encoding speedups in fast (non-LPC) mode, streaming support in the XMMS plugin, and several bug fixes.  For developers there are also a few additions and changes to the metadata API to make working with tags easier.  See the changelog entry for complete details.  This release actually wasn't supposed to happen so soon, but needed to be made to fix library naming and build problems in FLAC 1.1.1 that caused trouble for package maintainers, so unless you are having trouble with one of the particular bugs that got fixed in 1.1.2 then there is not much of a need to upgrade.</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Sat, 05 Feb 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050205</guid>
+     </item>
+     
+     <item>
+       <title>Several new devices support FLAC</title>
+       <description>Another handful of devices that support FLAC are out or announced: the Zensonic Z500 Networked DVD Media Player, Escient's new FireBall E2-40, E2-160, and DVDM-300, the M300A Digital Music Player from Digital Techniques, Meda Systems' Bravo servers, and the MS300 Music Server by McIntosh Laboratory.</description>
+       <link>http://xiph.org/flac/links.html</link>
+       <pubDate>Mon, 17 Jan 2005 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20050117</guid>
+     </item>
+     
+     <item>
+       <title>Escient's new FireBall E2-300 supports FLAC</title>
+       <description>Escient has a new home stereo component that supports FLAC, the FireBall E2-300</description>
+       <link>http://www.escient.com/</link>
+       <pubDate>Fri, 12 Nov 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20041112</guid>
+     </item>
+     
+     <item>
+       <title>New Mindawn music store offers FLAC and Vorbis</title>
+       <description>Mindawn, a new online music service offering FLAC and Ogg Vorbis, is now open.  They also have a multi-platform (Windows, Linux, Mac OS X) CD ripper/encoder and are finishing up a multi-platform player</description>
+       <link>http://www.mindawn.com/</link>
+       <pubDate>Tue, 02 Nov 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20041102</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.1.1 released</title>
+       <description>There is a new changelog with a complete list of changes/fixes/improvements, but some of the main ones include: Better Ogg FLAC support including seeking and an official Ogg FLAC mapping, significant decoding speedup (almost 2x) on PowerPC (includes Macs with G4/G5), speedups in the plugins, several new options to flac and metaflac by popular demand, several API additions requested by developers and many bugfixes.</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Fri, 01 Oct 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20041001</guid>
+     </item>
+     
+     <item>
+       <title>The Furthur Network now supports FLAC</title>
+       <description>The Furthur Network, a legal-live music sharing P2P network, now supports FLAC</description>
+       <link>http://www.furthurnet.org/</link>
+       <pubDate>Tue, 27 Jul 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20040727</guid>
+     </item>
+     
+     <item>
+       <title>Bonnaroo soundboard recordings available in FLAC</title>
+       <description>Several sets from the Bonnaroo Music Festival are available in FLAC, including Dave Matthews &amp; Friends and String Cheese Incident, with more to follow as the soundboard recordings are approved by the bands.</description>
+       <link>http://www.livebonnaroo.com/catalog.html</link>
+       <pubDate>Mon, 21 Jun 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20040621</guid>
+     </item>
+
+     <item>
+       <title>Metallica offers live shows in FLAC</title>
+       <description>Metallica is offering soundboard recordings of live shows in FLAC format</description>
+       <link>http://www.livemetallica.com/</link>
+       <pubDate>Wed, 03 Mar 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20040303</guid>
+     </item>
+     
+     <item>
+       <title>Charlie Hunter makes select albums available in FLAC</title>
+       <description>Charlie Hunter is making select albums available for download in FLAC and MP3 formats.</description>
+       <link>http://www.charliehunter.com/news/main.htm#Solo8</link>
+       <pubDate>Tue, 03 Feb 2004 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20040203</guid>
+     </item>
+     
+     <item>
+       <title>PhatNoise's new Home Digital Media Player supports FLAC</title>
+       <description>PhatNoise (makers of the PhatBox, which also plays FLAC) just released their Home Digital Media Player.  It includes a DMS cartridge slot so you can pop out your FLAC tunes and pop 'em in your car.</description>
+       <link>http://www.phatnoise.com/products/homeplayer/index.php</link>
+       <pubDate>Wed, 19 Nov 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20031119</guid>
+     </item>
+     
+     <item>
+       <title>Slim's new 'Squeezebox' supports FLAC</title>
+       <description>Slim Devices' new Squeezebox, the wireless follow-on to the SliMP3 networked audio player, is available and supports FLAC and Ogg Vorbis</description>
+       <link>http://www.slimdevices.com</link>
+       <pubDate>Tue, 18 Nov 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20031118</guid>
+     </item>
+     
+     <item>
+       <title>Primus offers live shows in FLAC</title>
+       <description>Primus is offering soundboard recordings from 2003 Tour de Fromage in FLAC and MP3 on primuslive.com</description>
+       <link>http://www.primussucks.com/</link>
+       <pubDate>Tue, 11 Nov 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20031111</guid>
+     </item>
+     
+     <item>
+       <title>Magnatune catalog available in FLAC</title>
+       <description>Independent record label Magnatune is now offering their catalog in FLAC and Vorbis in addition to MP3</description>
+       <link>http://magnatune.com/</link>
+       <pubDate>Mon, 13 Oct 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20031013</guid>
+     </item>
+     
+     <item>
+       <title>New Rio Karma supports FLAC</title>
+       <description>Rio has announced a new portable, the Rio Karma, which supports FLAC and Ogg Vorbis</description>
+       <link>http://www.digitalnetworksna.com/shop/_templates/item_main_Rio.asp?model=220&amp;cat=53</link>
+       <pubDate>Mon, 11 Aug 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20030811</guid>
+     </item>
+     
+     <item>
+       <title>livephish.com offers FLAC shows</title>
+       <description>livephish.com is now offering soundboard recordings of live shows in FLAC format in addition to MP3</description>
+       <link>http://www.livephish.com/</link>
+       <pubDate>Mon, 23 Jun 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20030623</guid>
+     </item>
+     
+     <item>
+       <title>ReQuest adds FLAC support</title>
+       <description>ReQuest Multimedia's AudioReQuest music servers now support FLAC</description>
+       <link>http://www.request.com/</link>
+       <pubDate>Sun, 09 Feb 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20030209</guid>
+     </item>
+     
+     <item>
+       <title>FLAC joins the Xiph project</title>
+       <description>FLAC has joined the Xiph project. Xiph.org is behind other free codecs such as Vorbis, Theora, and Speex. Our merger with Xiph will bring FLAC into the ranks and lead to better integration with the Ogg multimedia framework. Note that the FLAC format is not changing, native FLAC will continue to exist, and the command-line tools and plugins will continue to work as before.  The codec libraries will now be available under Xiph's BSD-like license. Over the next few days we will be transitioning normal operations off SourceForge and over to Xiph.org; first will be CVS and the web pages, followed by the mailing lists, bug tracker, and file release area.  We will keep a mirror here until the transition is complete.  It's OK to send patches to the flac-dev list but they won't be able to be integrated until CVS is fully moved over.</description>
+       <link>http://xiph.org/flac/</link>
+       <pubDate>Wed, 29 Jan 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20030129</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.1.0 released</title>
+       <description>I didn't get everything in that I wanted, but it's high time for a release. Note that the minor version has incremented, meaning forward compatibility was broken (forward compatibility means an earlier decoder can play all streams made by a later decoder). This is only because of a bug in 1.0.4 and prior where the decoder could not properly skip unknown metadata.  The stream format itself has not changed and FLAC is still fully backward-compatible.  All it means is that a FLAC file containing cue sheet metadata will not decode in older decoders.  This bug is fixed in 1.1.0</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Sun, 26 Jan 2003 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20030126</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.0.4 released</title>
+       <description>There are a lot of improvements since 1.0.3, see the changelog for more</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Tue, 24 Sep 2002 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20020924</guid>
+     </item>
+     
+     <item>
+       <title>Rio Receiver</title>
+       <description>FLAC support has been added to the Rio Receiver and Dell Digital Audio Receiver via David Flowerday's RioPlay client. See here for the announcement.</description>
+       <link>http://rioreceiver.comms.net/php/showflat.php?Cat=&amp;Board=Technical&amp;Number=2262&amp;page=0&amp;view=collapsed&amp;sb=5&amp;o=0&amp;fpart=</link>
+       <pubDate>Thu, 22 Aug 2002 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20020822</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.0.3 released</title>
+       <description>Although by version number only a 0.0.1 increment, this release is significant.  Remember, micro-revisions mean the FLAC format remains both forward and backward compatible, however, the libFLAC API has changed for the better</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Wed, 03 Jul 2002 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20020703</guid>
+     </item>
+     
+     <item>
+       <title>FLAC goes hardware</title>
+       <description>PhatNoise has become the first commercial hardware platform to support FLAC.  Firmware is now available for the Phatbox player to play FLAC files</description>
+       <link>http://www.phatnoise.com/technology/encoding.php</link>
+       <pubDate>Wed, 13 Feb 2002 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20020213</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.0.2 released</title>
+       <description>This release is only to fix a bug that was causing some of the plugins to crash sporadically</description>
+       <link>http://www.geocrawler.com/lists/3/SourceForge/7206/0/7231340</link>
+       <pubDate>Mon, 03 Dec 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20011203</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.0.1 released</title>
+       <description>The core codec is unchanged but there have been some features added and some bugs fixed</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Wed, 14 Nov 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20011114</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 1.0 is out</title>
+       <description>It's finally here.  There are a few new features but mostly it is minor bug fixes since 0.10</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Fri, 20 Jul 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010720</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.10 released</title>
+       <description>This is probably the final beta.  There have been many improvements in the last two months</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Thu, 7 Jun 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010607</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.9 released</title>
+       <description>There were some format changes that broke backwards compatibility but these should be the last.  Also, there have been several bug fixes and some new features</description>
+       <link>http://xiph.org/flac/news.html#20010331</link>
+       <pubDate>Sat, 31 Mar 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010331</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.8 released</title>
+       <description>This release is a result of extensive testing and fixes several bugs encountered when pushing the encoder to the limit. I'm pretty confident in the stability of the encoder/decoder now for all kinds of input.  There have also been several features added.  Here is a complete list of the changes since 0.7</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Mon, 05 Mar 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010305</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.7 released</title>
+       <description>This is mainly a bug fix release</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Mon, 12 Feb 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010212</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.6 released</title>
+       <description>The encoder is now much faster.  The -m option has been sped up by 4x and -r improved, meaning that in the default compression mode (-6), encoding should be at least 3 times faster</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Sun, 28 Jan 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010128</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.5 released</title>
+       <description>This is the first beta version of FLAC.  Being beta, there will be no changes to the format that will break older streams, unless a serious bug involving the format is found.  What this means is that, barring such a bug, streams created with 0.5 will be decodable by future versions</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Mon, 15 Jan 2001 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20010115</guid>
+     </item>
+     
+     <item>
+       <title>FLAC 0.4 released</title>
+       <description>This version fixes a bug in the constant subframe detection.  More importantly, a verify option (-V) has been added to flac that verifies the encoding process.  With this option turned on, flac will create a parallel decoder while encoding to make sure that the encoded output decodes to exactly match the original input.  In this way, any unknown bug in the encoder will be caught and flac will abort with an error message</description>
+       <link>https://xiph.org/flac/changelog.html</link>
+       <pubDate>Sat, 23 Dec 2000 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20001223</guid>
+     </item>
+     
+     <item>
+       <title>FLAC debuts on SourceForge</title>
+       <description>The FLAC project is now being hosted on SourceForge.  Visit the FLAC project page to join the mailing list or sign up as a developer</description>
+       <link>http://flac.sourceforge.net/</link>
+       <pubDate>Sun, 10 Dec 2000 12:00:00 -0700</pubDate>
+       <guid>http://xiph.org/flac/news.html#20001210</guid>
      </item>
    </channel>
 </rss>
+
