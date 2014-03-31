@@ -7,11 +7,27 @@
     <atom:link href="http://xiph.org/flac/feeds/feed.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Pono and Pono Player announced</title>
+      <description>PonoMusic has announced it will launch a portable music player playing FLAC files and a music download service featuring only FLAC files. Both are expected to be available later this year</description>
+      <link>http://www.ponomusic.com/</link>
+      <pubDate>Thu, 13 Mar 2014 15:49:19 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20140312</guid>
+    </item>
+    
+    <item>
+      <title>Bruce Springsteen's live shows in FLAC</title>
+      <description>Bruce Springsteen's live shows are now available online in the FLAC format</description>
+      <link>http://www.thestar.com/entertainment/music/2014/01/24/bruce_springsteen_misstep_overstates_value_of_live_album_in_youtube_era.html</link>
+      <pubDate>Fri, 31 Jan 2014 15:58:11 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20140131</guid>
+    </item>
+    
+    <item>
       <title>AURALiC announces FLAC-capable device</title>
       <description>AURALiC introduces a whole-house music solution at this year’s CES in Las Vegas: AURALiC Lightning Streaming. This device is capable of handling a surprising amount of formats, including FLAC, over WiFi</description>
       <link>http://www.auralic.com/en/</link>
       <pubDate>Thu, 2 Jan 2014 13:44:48 +0100</pubDate>
-      <guid>http://xiph.org/flac/news.html#20130102</guid>
+      <guid>http://xiph.org/flac/news.html#20140102</guid>
     </item>
     
     <item>
