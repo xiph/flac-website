@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--  Copyright (c) 2000-2009  Josh Coalson, 2011-2013 Xiph.Org Foundation -->
+<!--  Copyright (c) 2000-2009  Josh Coalson, 2011-2014 Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->
@@ -335,10 +335,12 @@
 			<tr>
 				<td nowrap="nowrap" align="right" valign="top" bgcolor="#F4F4CC">
 					<a name="flac_options_skip" />
-					<span class="argument">--skip={#|mm:ss.ss}</span>
+					<span class="argument">--skip={#|mm:ss.ss}<br />--skip={#|mm:ss,ss}</span>
 				</td>
 				<td>
 					Skip over the first # of samples of the input.  This works for both encoding and decoding, but not testing.  The alternative form <span class="argument">mm:ss.ss</span> can be used to specify minutes, seconds, and fractions of a second.<br />
+					<br />
+					Note that the use of either a dot or a comma depends on the locale used for the system.<br />
 					<br />
 					Examples:<br />
 					<br />
@@ -349,15 +351,18 @@
 			<tr>
 				<td nowrap="nowrap" align="right" valign="top" bgcolor="#F4F4CC">
 					<a name="flac_options_until" />
-					<span class="argument">--until={#|[+|-]mm:ss.ss}</span>
+					<span class="argument">--until={#|[+|-]mm:ss.ss}<br />--until={#|[+|-]mm:ss,ss}</span>
 				</td>
 				<td>
 					Stop at the given sample number for each input file.  This works for both encoding and decoding, but not testing.  The given sample number is not included in the decoded output.  The alternative form <span class="argument">mm:ss.ss</span> can be used to specify minutes, seconds, and fractions of a second.  If a <span class="argument">+</span> sign is at the beginning, the <span class="argument">--until</span> point is relative to the <span class="argument">--skip</span> point.  If a <span class="argument">-</span> sign is at the beginning, the <span class="argument">--until</span> point is relative to end of the audio.<br />
+					<br />
+					Note that the use of either a dot or a comma depends on the locale used for the system.<br />
 					<br />
 					Examples:<br />
 					<br />
 					<span class="argument">--until=123</span> : decode only the first 123 samples of the input (samples 0-122, stopping at 123)<br />
 					<span class="argument">--until=1:23.45</span> : decode only the first 1 minute and 23.45 seconds of the input<br />
+					<span class="argument">--until=1:23,45</span> : decode only the first 1 minute and 23.45 seconds of the input, if your locale setting uses a comma as decimal separator<br />
 					<span class="argument">--skip=1:00 --until=+1:23.45</span> : decode 1:00.00 to 2:23.45<br />
 					<span class="argument">--until=-1:23.45</span> : decode everything except the last 1 minute and 23.45 seconds<br />
 					<span class="argument">--until=-0:00</span> : decode until the end of the input (the same as not specifying <span class="argument">--until</span>)
@@ -532,7 +537,7 @@
 					<span class="argument">--replay-gain</span>
 				</td>
 				<td>
-					Calculate <a href="http://www.replaygain.org/">ReplayGain</a> values and store them as FLAC tags, similar to <a href="http://packages.qa.debian.org/v/vorbisgain.html">VorbisGain</a>.  Title gains/peaks will be computed for each input file, and an album gain/peak will be computed for all files.  All input files must have the same resolution, sample rate, and number of channels.  Only mono and stereo files are allowed, and the sample rate must be one of 8, 11.025, 12, 16, 22.05, 24, 32, 44.1, or 48 kHz.  Also note that this option may leave a few extra bytes in a <span class="code">PADDING</span> block as the exact size of the tags is not known until all files are processed.<br />
+					Calculate <a href="http://wiki.hydrogenaud.io/index.php?title=ReplayGain_specification">ReplayGain</a> values and store them as FLAC tags, similar to <a href="http://packages.qa.debian.org/v/vorbisgain.html">VorbisGain</a>.  Title gains/peaks will be computed for each input file, and an album gain/peak will be computed for all files.  All input files must have the same resolution, sample rate, and number of channels.  Only mono and stereo files are allowed, and the sample rate must be one of 8, 11.025, 12, 16, 22.05, 24, 32, 44.1, or 48 kHz.  Also note that this option may leave a few extra bytes in a <span class="code">PADDING</span> block as the exact size of the tags is not known until all files are processed.<br />
 					<br />
 					Note that this option cannot be used when encoding to standard output (stdout).
 				</td>
@@ -960,7 +965,6 @@
 					<span class="argument">--no-adaptive-mid-side</span><br />
 					<span class="argument">--no-decode-through-errors</span><br />
 					<span class="argument">--no-delete-input-file</span><br />
-					<span class="argument">--no-escape-coding</span><br />
 					<span class="argument">--no-exhaustive-model-search</span><br />
 					<span class="argument">--no-lax</span><br />
 					<span class="argument">--no-mid-side</span><br />
@@ -1047,7 +1051,6 @@
 		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-adaptive-mid-side</span></a><br />
 		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-decode-through-errors</span></a><br />
 		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-delete-input-file</span></a><br />
-		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-escape-coding</span></a><br />
 		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-exhaustive-model-search</span></a><br />
 		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-lax</span></a><br />
 		<a href="documentation_tools_flac.html#negative_options"><span class="argument">--no-mid-side</span></a><br />
@@ -1112,7 +1115,7 @@
 	<table>
 		<tr>
 			<td align="left">
-				 Copyright (c) 2000-2009  Josh Coalson, 2011-2013 Xiph.Org Foundation
+				 Copyright (c) 2000-2009  Josh Coalson, 2011-2014 Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://validator.w3.org/check?uri=referer"><img src="images/valid-xhtml10.png" alt="Valid XHTML 1.0!" height="31" width="88" border="0" hspace="0" /></a>
