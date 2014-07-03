@@ -7,6 +7,14 @@
     <atom:link href="http://xiph.org/flac/feeds/feed.xml" rel="self" type="application/rss+xml" />
 
     <item>
+      <title>Baboom: FLAC streaming service</title>
+      <description>Kim Dotcom has announced a new music streaming platform which will stream in the FLAC audio format. It has been teased a few years ago and a launch date is not yet known, so it might still take some time before it is available</description>
+      <link>http://baboom.com/articles/5/aspirations-and-goals</link>
+      <pubDate>Thu, 03 Jul 2014 13:09:19 +0200</pubDate>
+      <guid>http://xiph.org/flac/news.html#20140703</guid>
+    </item>
+
+    <item>
       <title>Pono and Pono Player announced</title>
       <description>PonoMusic has announced it will launch a portable music player playing FLAC files and a music download service featuring only FLAC files. Both are expected to be available later this year</description>
       <link>http://www.ponomusic.com/</link>
