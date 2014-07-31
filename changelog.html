@@ -79,9 +79,9 @@
 			<li>
 				flac:
 				<ul>
-					<li>Added support for encoding from and decoding to the RF64 format, and a new corresponding option <span class="argument"><a href="#flac_options_force_rf64_format">--force-rf64-format</a></span>.  (<a href="http://sourceforge.net/p/flac/feature-requests/78/">SF #1762502</a>).  <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> is also supported.</li>
-					<li>Added support for encoding from and decoding to the Sony Wave64 format, and a new corresponding option <span class="argument"><a href="#flac_options_force_wave64_format">--force-wave64-format</a></span>.  (<a href="http://sourceforge.net/p/flac/feature-requests/79/">SF #1769582</a>).  <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> is also supported.</li>
-					<li>Added new options <span class="argument"><a href="documentation_tools_flac.html#flac_options_preserve_modtime">--preserve-modtime</a></span> and <span class="argument"><a href="documentation_tools_flac.html#flac_options_no_preserve_modtime">--no-preserve-modtime</a></span> to specify whether or not output files should copy the timestamp and permissions from their input files.  The default is <span class="argument"><a href="documentation_tools_flac.html#flac_options_preserve_modtime">--preserve-modtime</a></span> as in previous versions.  (<a href="http://sourceforge.net/p/flac/feature-requests/85/">SF #1805428</a>).</li>
+					<li>Added support for encoding from and decoding to the RF64 format, and a new corresponding option <span class="argument"><a href="documentation_tools_flac.html#flac_options_force_rf64_format">--force-rf64-format</a></span>.  (<a href="http://sourceforge.net/p/flac/feature-requests/78/">SF #1762502</a>).  <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> is also supported.</li>
+					<li>Added support for encoding from and decoding to the Sony Wave64 format, and a new corresponding option <span class="argument"><a href="documentation_tools_flac.html#flac_options_force_wave64_format">--force-wave64-format</a></span>.  (<a href="http://sourceforge.net/p/flac/feature-requests/79/">SF #1769582</a>).  <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> is also supported.</li>
+					<li>Added new options <span class="argument"><a href="documentation_tools_flac.html#flac_options_preserve_modtime">--preserve-modtime</a></span> and <span class="argument"><a href="documentation_tools_flac.html#negative_options">--no-preserve-modtime</a></span> to specify whether or not output files should copy the timestamp and permissions from their input files.  The default is <span class="argument"><a href="documentation_tools_flac.html#flac_options_preserve_modtime">--preserve-modtime</a></span> as in previous versions.  (<a href="http://sourceforge.net/p/flac/feature-requests/85/">SF #1805428</a>).</li>
 					<li>Allow MM:SS:FF and MM:SS.SS time formats in non-CD-DA cuesheets.  (<a href="http://sourceforge.net/p/flac/feature-requests/95/">SF #1947353</a>, <a href="http://sourceforge.net/p/flac/bugs/338/">SF #2182432</a>)</li>
 					<li>The <span class="argument"><a href="documentation_tools_flac.html#flac_options_sector_align">--sector-align</a></span> option of <span class="commandname">flac</span> has been deprecated and may not exist in future versions.  <a href="http://www.etree.org/shnutils/shntool/">shntool</a> provides similar functionality. (<a href="http://sourceforge.net/p/flac/feature-requests/86/">SF #1805946</a>)</li>
 					<li>Improved error message when user attempts to decode a non-FLAC file (<a href="http://sourceforge.net/p/flac/bugs/341/">SF #2222789</a>).</li>
@@ -277,7 +277,7 @@
 			<li>
 				FLAC format:
 				<ul>
-					<li>One of the reserved bits in the FLAC frame header has been assigned for future use; make sure to refer to the <a href="http://flac.sourceforge.net/api/group__porting__1__1__4__to__1__2__0.html">porting guide</a> if you parse FLAC streams manually.</li>
+					<li>One of the reserved bits in the FLAC frame header has been assigned for future use; make sure to refer to the <a href="api/group__porting__1__1__4__to__1__2__0.html">porting guide</a> if you parse FLAC streams manually.</li>
 				</ul>
 			</li>
 			<li>
@@ -320,7 +320,7 @@
 				</ul>
 			</li>
 			<li>
-				Interface changes (see also the <a href="http://flac.sourceforge.net/api/group__porting__1__1__4__to__1__2__0.html">porting guide</a> for specific instructions on porting to FLAC 1.2.0):
+				Interface changes (see also the <a href="api/group__porting__1__1__4__to__1__2__0.html">porting guide</a> for specific instructions on porting to FLAC 1.2.0):
 				<ul>
 					<li>
 						libFLAC:
@@ -546,7 +546,7 @@
 				</ul>
 			</li>
 			<li>
-				Interface changes (see also the <a href="http://flac.sourceforge.net/api/group__porting__1__1__2__to__1__1__3.html">porting guide</a> for specific instructions on porting to FLAC 1.1.3):
+				Interface changes (see also the <a href="api/group__porting__1__1__2__to__1__1__3.html">porting guide</a> for specific instructions on porting to FLAC 1.1.3):
 				<ul>
 					<li>
 						all libraries;
