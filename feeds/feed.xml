@@ -7,6 +7,30 @@
     <atom:link href="http://xiph.org/flac/feeds/feed.xml" rel="self" type="application/rss+xml" />
 
     <item>
+      <title>FLAC 1.3.1 released</title>
+      <description>A new release after 18 months of improvements, triggered by a security issue. Faster encoding and decoding, slightly better compression. Many small code and build improvements. See the changelog for more information</description>
+      <link>https://xiph.org/flac/changelog.html</link>
+      <pubDate>Thu, 27 Nov 2014 09:28:20 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20141127</guid>
+    </item>
+    
+    <item>
+      <title>Technics announces FLAC store</title>
+      <description>Technics announced that it will open a download store, serving high-resolution FLAC files. This will start January 2015 and will be available to people in the UK and Germany.</description>
+      <link>http://about.7digital.com/news/technics-launches-%E2%80%98technics-tracks%E2%80%99-new-premium-hi-resolution-audio-service</link>
+      <pubDate>Fri, 21 Nov 2014 13:01:58 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20141121</guid>
+    </item>
+    
+    <item>
+      <title>Two new FLAC streaming services</title>
+      <description>Two new FLAC streaming services have been announced recently: Deezer Elite and TIDAL. Deezer Elite, which streams exclusively in the FLAC format, will at first only be available to owners of a Sonos sound system living in the United States. TIDAL will stream in FLAC and Apple Lossless to mobile devices as well</description>
+      <link>http://www.forbes.com/sites/bobbyowsinski/2014/10/30/tidal-starts-the-streaming-race-to-the-top/</link>
+      <pubDate>Thu, 30 Oct 2014 20:32:22 +0100</pubDate>
+      <guid>http://xiph.org/flac/news.html#20140910</guid>
+    </item>
+    
+    <item>
       <title>Baboom: FLAC streaming service</title>
       <description>Kim Dotcom has announced a new music streaming platform which will stream in the FLAC audio format. It has been teased a few years ago and a launch date is not yet known, so it might still take some time before it is available</description>
       <link>http://baboom.com/articles/5/aspirations-and-goals</link>
