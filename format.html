@@ -44,9 +44,19 @@
 	</div>
 	<div class="box_header"></div>
 	<div class="box_body">
-		This is a detailed description of the FLAC format.  There is also a companion document that describes <a href="ogg_mapping.html">FLAC-to-Ogg mapping</a>.<br />
+		This page describes (and links to documents describing) various aspects of the FLAC format from a software developers points-of-view, in other words, which bits and bytes in a FLAC file contain what information and how these should be encoded to or decoded from. For a user-oriented overview, see <a href="documentation_format_overview.html">About the FLAC Format</a>.<br />
 		<br />
-		For a user-oriented overview, see <a href="documentation_format_overview.html">About the FLAC Format</a>.<br />
+		Descriptions of the FLAC format and its mappings into container formats are divided over a few documents:
+		<ul>
+			<li>The <b><a href="https://datatracker.ietf.org/doc/draft-ietf-cellar-flac/">latest draft of the FLAC specification</a></b> by the CELLAR working group of the IETF. This is an improved version of the format description you can find further down this page. Improvements over the document below include a better explanation of concepts like wasted bits, the implications on subframe bit-depth of using stereo decorrelation, explanantion of the actual symbols used in rice coding, inclusion of various decoding etc.</li>
+			<li>The <b><a href="ogg_mapping.html">FLAC-in-Ogg mapping</a></b>, for a description of how FLAC is encapsulated in a Ogg container.</li>
+			<li>The <a href="https://github.com/xiph/flac/blob/master/doc/isoflac.txt"><b>FLAC-in-MP4 mapping</b> (or ISO Base Media File Format)</a>, a document describing how FLAC is encapsulated in the MP4 container.</li>
+			<li>The <b><a href="https://datatracker.ietf.org/doc/draft-ietf-cellar-codec/">Matroska Media Container Codec Specifications</a></b> describes how FLAC is encapsulated in the Matroska (mkv) container.</li>
+			<li>Below you'll find the description of the FLAC format that has been here for many years and served as the basis for the CELLAR working group draft mentioned as the first item in this list. While it lacks detail in certain places, requiring the reader to look for details in the libFLAC source code to fully understand it, it is kept around for those already familiar with it, and because it is probably linked to from various places.</li>
+		</ul>
+		
+		<hr />
+		
 		<br />
 		<a name="toc"><font size="+1"><b><u>Table of Contents</u></b></font></a>
 		<ul>
