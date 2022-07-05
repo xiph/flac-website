@@ -1,0 +1,6 @@
+---
+layout: post
+title: FLAC 0.4 released
+---
+
+This version fixes a bug in the constant subframe detection.  More importantly, a verify option (-V) has been added to flac that verifies the encoding process.  With this option turned on, flac will create a parallel decoder while encoding to make sure that the encoded output decodes to exactly match the original input.  In this way, any unknown bug in the encoder will be caught and flac will abort with an error message

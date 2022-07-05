@@ -1,0 +1,18 @@
+---
+layout: default
+title: {{ post.title }}
+---
+<p><b>{{ page.date | date_to_string }}</b></p>
+
+<p>
+{{ content }}
+</p>
+
+{% if page.next.url %}
+	<p><a class="next" href="{{page.next.url}}">Next ({{page.next.title}}) &raquo;</a></p>
+{% endif %}
+{% if page.previous.url %}
+	<p><a class="prev" href="{{page.previous.url}}">&laquo; Previous ({{page.previous.title}})</a></p>
+{% endif %}
+
+
