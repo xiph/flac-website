@@ -9,10 +9,10 @@ title: {{ post.title }}
 </p>
 
 {% if page.next.url %}
-	<p><a class="next" href="{{page.next.url}}">Next ({{page.next.title}}) &raquo;</a></p>
+	<p><a class="next" href="{{page.next.url | relative_url}}">Next ({{page.next.title}}) &raquo;</a></p>
 {% endif %}
 {% if page.previous.url %}
-	<p><a class="prev" href="{{page.previous.url}}">&laquo; Previous ({{page.previous.title}})</a></p>
+	<p><a class="prev" href="{{page.previous.url | relative_url}}">&laquo; Previous ({{page.previous.title}})</a></p>
 {% endif %}
 
 

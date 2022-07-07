@@ -12,7 +12,7 @@ See <a href="features.html">About FLAC</a> for more, or <a href="documentation_t
 
 <div id="newsbox">
 {% for post in site.posts limit:5 %}
-<h3><a href="{{post.url}}">{{ post.title }}</a> - {{ post.date | date_to_string }}</h3>
+<h3><a href="{{post.url | relative_url}}">{{ post.title }}</a> - {{ post.date | date_to_string }}</h3>
 {% endfor %}
 <br />
 <p><a href="news.html">More news</a></p>
