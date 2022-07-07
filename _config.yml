@@ -1,2 +1,8 @@
 name: FLAC - Free Lossless Audio Codec
 baseurl: /flac
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: /feeds/feed.xml
