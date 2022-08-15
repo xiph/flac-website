@@ -1,0 +1,8 @@
+build:
+  image: jekyll/jekyll:4
+  script: jekyll build
+  artifacts:
+    paths:
+      - _site
+  tags:
+    - docker

@@ -1,0 +1,6 @@
+---
+layout: post
+title: FLAC 1.1.0 released
+---
+
+I didn't get everything in that I wanted, but it's high time for a release. Note that the minor version has incremented, meaning forward compatibility was broken (forward compatibility means an earlier decoder can play all streams made by a later decoder). This is only because of a bug in 1.0.4 and prior where the decoder could not properly skip unknown metadata.  The stream format itself has not changed and FLAC is still fully backward-compatible.  All it means is that a FLAC file containing cue sheet metadata will not decode in older decoders.  This bug is fixed in 1.1.0

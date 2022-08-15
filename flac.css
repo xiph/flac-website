@@ -1,5 +1,5 @@
 /*
- * Copyright (c)  2005,2006,2007  Josh Coalson
+ * Copyright (c) 2000-2009  Josh Coalson, 2011-2022 Xiph.Org Foundation
  * Permission is granted to copy, distribute and/or modify this document
  * under the terms of the GNU Free Documentation License, Version 1.1
  * or any later version published by the Free Software Foundation;
@@ -7,90 +7,108 @@
  * A copy of the license can be found at http://www.gnu.org/copyleft/fdl.html
  */
 
-body
+html
 {
-	background-color: #99CC99;
-	color: black;
-	margin: 0 auto;
-	padding: 0px;
-	max-width: 1200px;
+	background-color: #B3D9B3;
 }
 
-/*div
+body
 {
-	background-color: #99CC99;
-	margin: 0px;
-	padding: 0px;
-}*/
+	position: relative;
+	display: block;
+	background-color: #F2F2DE;
+	color: black;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	max-width: 1200px;
+
+	font-family: lucida, verdana, helvetica, arial, sans-serif;
+	font-weight: normal;
+	font-size: 100%;
+}
 
 div.logo
 {
+	position: relative;
 	background-color: black;
 	padding: 1px;
 	text-align: center;
 }
 
-div.navbar
-{
-	border-width: 2px 0px 2px 0px;
-	border-style: solid;
-	border-color: black;
-	background-color: #D3D4C5;
-	padding: 3px;
-	text-align: center;
-}
-
-div.langbar
-{
-	border-width: 0px 0px 2px 0px;
-	border-style: solid;
-	border-color: black;
-	background-color: #EEEED4;
-	padding: 3px;
-	text-align: center;
-}
-
-div.above_nav
-{
-	height: 25px;
-}
-
-div.below_nav
-{
-	height: 25px;
-}
-
-div.body_with_sidebar
-{
-/*	text-align: left; */
-}
-
-div.box
-{
-	text-align: left;
-	margin: 0;
-	background-color: #EEEED4;
-}
-
-div.box_title
-{
-	border-width: 1px 0px 0px 0px;
-	border-style: solid;
-	border-color: black;
-	background-color: #D3D4C5;
-	padding: 3px;
-	font-family: lucida, verdana, helvetica, arial, sans-serif;
+div.navbar {
 	font-weight: bold;
-	font-size: 150%;
 }
 
-div.box_header
+
+@media (min-width: 800px)
 {
-	border-width: 1px 0px 0px 0px;
-	border-style: solid;
-	border-color: black;
-	background-color: #EEEED4;
-	padding: 3px;
+	div.navbar
+	{
+		display: flex;
+		gap: 5px;
+		flex-direction: row;
+		padding: 8px;
+		text-align: center;
+	}
+
+	div.navbar:before, div.navbar:after
+	{
+		content: "";
+		flex: 1 1;
+		border-bottom: 2px solid;
+		margin: 10px;
+	}
+
+	div.navbar div:first-child a::after, div.navbar div:last-child a:not(:last-child)::after {
+		content: " - ";
+	}
+
+	#navbarshow
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 799px)
+{
+	div.navbar div
+	{
+		display: flex;
+		gap: 5px;
+		flex-direction: row;
+		padding: 8px;
+		text-align: center;
+	}
+
+	div.navbar div:before, div.navbar div:after
+	{
+		content: "";
+		flex: 1 1;
+		flex-grow: 3;
+		border-bottom: 2px solid;
+		margin: 10px;
+	}
+
+	div.navbar div a:not(:last-child)::after {
+		content: " - ";
+	}
+
+	#navbarshow
+	{
+		display: none;
+	}
+}
+
+div.navbar a
+{
+	color: #000;
+	text-decoration: none;
+
+}
+
+div.content
+{
+	padding: 0 25px;
 }
 
 div.box_footer
@@ -172,7 +190,10 @@ div.smallbox_body
 div.copyright
 {
 	text-align: left;
-	margin: 10px;
+	padding-bottom: 10px;
+}
+div.copyright hr {
+	margin: 20px 0;
 }
 
 span.commandname
@@ -197,7 +218,8 @@ span.code
 	font-family: monospace;
 }
 
-a:link    {color:#336699; background-color:transparent}
-a:visited {color:#336699; background-color:transparent}
-a:active  {color:#336699; background-color:transparent}
-a:hover   {color:#336699; background-color:transparent}
+a:link, a:visited, a:active, a:hover
+{
+	color:#336699;
+	background-color:transparent;
+}

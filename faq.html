@@ -1,49 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--  Copyright (c) 2000-2009  Josh Coalson, 2011-2014 Xiph.Org Foundation -->
-<!-- Permission is granted to copy, distribute and/or modify this document -->
-<!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
-<!-- or any later version published by the Free Software Foundation; -->
-<!-- with no invariant sections. -->
-<!-- A copy of the license can be found at http://www.gnu.org/copyleft/fdl.html -->
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<meta name="author" content="Josh Coalson" />
-	<meta name="description" content="A free, open source codec for lossless audio compression and decompression" />
-	<meta name="keywords" content="free,lossless,audio,codec,encoder,decoder,compression,compressor,archival,archive,archiving,backup,music" />
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="flac.css" />
-	<title>FLAC - faq</title>
-</head>
-
-<body>
-
-<div class="logo">
-	<a href="index.html"><img src="images/logo130.gif" alt="FLAC Logo" align="middle" border="0" hspace="0" /></a>
-</div>
-
-<div class="above_nav"></div>
-
-<div class="navbar">
-	&nbsp;<a href="index.html">home</a>&nbsp;&nbsp;|
-	&nbsp;faq&nbsp;&nbsp;|
-	&nbsp;<a href="news.html">news</a>&nbsp;&nbsp;|
-	&nbsp;<a href="download.html">download</a>&nbsp;&nbsp;|
-	&nbsp;<a href="documentation.html">documentation</a>&nbsp;&nbsp;|
-	&nbsp;<a href="comparison.html">comparison</a>&nbsp;&nbsp;|
-	&nbsp;<a href="changelog.html">changelog</a>&nbsp;&nbsp;|
-	&nbsp;<a href="links.html">links</a>&nbsp;&nbsp;|
-	&nbsp;<a href="developers.html">developers</a>&nbsp;
-</div>
-
-<div class="below_nav"></div>
-
-<div class="box">
-	<div class="box_title">
-		faq
-	</div>
-	<div class="box_header"></div>
-	<div class="box_body">
+---
+layout: default
+title: FAQ
+---
 		<b>General</b>
 		<ul>
 			<li>
@@ -295,11 +253,6 @@
 		<a name="tools__eac_and_flac"><b>How do I set up EAC to rip directly to FLAC?</b></a><br />
 		<br />
 		See Case's excellent <a href="http://www.saunalahti.fi/cse/EAC/index.html">EAC configuration page</a>.  Or use <a href="http://www.legroom.net/software/autoflac">AutoFLAC</a> or <a href="http://mareo.netfirms.com/">MAREO</a> to rip to FLAC or multiple formats at once.<br />
-		<br />
-		<a name="tools__runtime75"><b>Why am I getting "Run-time error '75': Path/File access error" with FLAC Frontend?</b></a><br />
-		<br />
-		You are probably using an old version of FLAC Frontend. Try downloading a new version from <a href="http://flacfrontend.sf.net/">this sourceforge page</a><br />
-		<br />
 		<a name="tools__option_blocking"><b>How do I encode a file that starts with a dash?</b></a><br />
 		<br />
 		When using <span class="commandname">flac</span> to encode on the command-line, a file that starts with a dash will be treated as an option, but there is a simple workaround.  Use <span class="argument">--</span> to signal the end of options and the beginning of filenames, like so:<br />
@@ -324,7 +277,7 @@
 		<br />
 		The problem is usually caused by overclocking/overheating the CPU or bad RAM.  Try one of the many free programs available for testing hardware (e.g. <a href="http://www.memtest.org/">Memtest</a>).<br />
 		<br />
-		If you ever have a verify error that fails at the same place every time, please <a href="faq.html#project__submit_bug">file a bug</a>, uploading a sample according to <a href="http://sourceforge.net/p/flac/bugs/42/">the instructions found at the bottom of this bug report</a>.<br />
+		If you ever have a verify error that fails at the same place every time, please <a href="https://github.com/xiph/flac/issues">file a bug</a> and provide a sample.<br />
 		<br />
 		<a name="tools__wave_flac_wave"><b>I compressed a WAVE file to FLAC, then decompressed to WAVE, and the two weren't identical.  Why?</b></a><br />
 		<a name="tools__skipped_subchunk"><b>I compressed a WAVE file to FLAC and it said "warning: skipping unknown sub-chunk LIST".  Why?</b></a><br />
@@ -369,25 +322,4 @@
 		<br />
 		<a name="project__submit_bug"><b>How do I submit a bug report?</b></a><br />
 		<br />
-		First, <a href="http://sourceforge.net/p/flac/bugs/">visit the bug tracking page</a> and do a little searching of both open and closed bugs to see if yours is already there.  If you have something truly new submit a new bug there.  <b>Make sure</b> to monitor the bug or include your email address in the description.  Include as much information as possible: the version of FLAC that you are running, the name and version of any frontend you are running, your operating system and version, your CPU type and speed, the amount of memory you have, where you downloaded FLAC from, the exact error message (if any) copied from the console, and anything else you may think will help.
-	</div>
-	<div class="box_footer"></div>
-</div>
-
-
-<div class="copyright">
-	<!-- @@@ oh so hacky -->
-	<table>
-		<tr>
-			<td align="left">
-				 Copyright (c) 2000-2009  Josh Coalson, 2011-2014 Xiph.Org Foundation
-			</td>
-			<td width="1%" align="right">
-				<a href="http://validator.w3.org/check?uri=referer"><img src="images/valid-xhtml10.png" alt="Valid XHTML 1.0!" height="31" width="88" border="0" hspace="0" /></a>
-			</td>
-		</tr>
-	</table>
-</div>
-
-</body>
-</html>
+		First, <a href="https://github.com/xiph/flac/issues">visit the bug tracking page</a> and do a little searching of both open and closed bugs to see if yours is already there.  If you have something truly new submit a new bug there.  <b>Make sure</b> to monitor the bug or include your email address in the description.  Include as much information as possible: the version of FLAC that you are running, the name and version of any frontend you are running, your operating system and version, your CPU type and speed, the amount of memory you have, where you downloaded FLAC from, the exact error message (if any) copied from the console, and anything else you may think will help.
