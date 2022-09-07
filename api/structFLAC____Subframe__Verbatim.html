@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -52,8 +52,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ga6abc78689650804550ac517ada884584"><td class="memItemLeft" align="right" valign="top">const FLAC__int32 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga6abc78689650804550ac517ada884584">data</a></td></tr>
-<tr class="separator:ga6abc78689650804550ac517ada884584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5405602c0b51a96b8b527a575fa5c888"><td class="memItemLeft" >
+union {</td></tr>
+<tr class="memitem:ga2e692ef67b97800f7a13c0fd035bfc3b"><td class="memItemLeft" >&#160;&#160;&#160;const FLAC__int32 *&#160;&#160;&#160;<a class="el" href="group__flac__format.html#ga6bdc2b756ad4151110ec9f86b5fca3e5">FLAC__Subframe_Verbatim::int32</a></td></tr>
+<tr class="separator:ga2e692ef67b97800f7a13c0fd035bfc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a0fa9100d8d356ca936bfaca3e9d371"><td class="memItemLeft" >&#160;&#160;&#160;const FLAC__int64 *&#160;&#160;&#160;<a class="el" href="group__flac__format.html#ga20ca19c50b671487f5d1da78b07f1b66">FLAC__Subframe_Verbatim::int64</a></td></tr>
+<tr class="separator:ga9a0fa9100d8d356ca936bfaca3e9d371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5405602c0b51a96b8b527a575fa5c888"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:ga5405602c0b51a96b8b527a575fa5c888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d08bf8d5aa31df04f7f415e4d743345"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__flac__format.html#gabf8b5851429eae13f26267bafe7c5d32">FLAC__VerbatimSubframeDataType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data_type</b></td></tr>
+<tr class="separator:ga8d08bf8d5aa31df04f7f415e4d743345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VERBATIM subframe. (c.f. <a href="../format.html#subframe_verbatim">format specification</a>) </p>
@@ -69,7 +78,7 @@ Public Attributes</h2></td></tr>
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -78,7 +87,7 @@ Public Attributes</h2></td></tr>
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

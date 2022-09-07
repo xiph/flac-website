@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -349,7 +349,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b">FLAC__METADATA_TYPE_APPLICATION</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b">FLAC__METADATA_TYPE_APPLICATION</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_APPLICATION</div><div class="ttdef"><b>Definition:</b> format.h:497</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b">FLAC__METADATA_TYPE_APPLICATION</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_APPLICATION</div><div class="ttdef"><b>Definition:</b> format.h:505</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (data != NULL &amp;&amp; length &gt; 0) ||</div>
 <div class="line">(data == NULL &amp;&amp; length == 0 &amp;&amp; copy == <span class="keyword">false</span>) </div>
 </div><!-- fragment --> </dd></dl>
@@ -388,7 +388,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resize the seekpoint array.</p>
-<p>If the size shrinks, elements will truncated; if it grows, new placeholder points will be added to the end.</p>
+<p>If the size shrinks, elements will truncated; if it grows, new placeholder points will be added to the end. If this function returns false, the object is left untouched.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>A pointer to an existing SEEKTABLE object. </td></tr>
@@ -398,7 +398,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_SEEKTABLE</div><div class="ttdef"><b>Definition:</b> format.h:500</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_SEEKTABLE</div><div class="ttdef"><b>Definition:</b> format.h:508</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (<span class="keywordtype">object</span>-&gt;data.seek_table.points == NULL &amp;&amp; <span class="keywordtype">object</span>-&gt;data.seek_table.num_points == 0) ||</div>
 <div class="line">(object-&gt;data.seek_table.points != NULL &amp;&amp; object-&gt;data.seek_table.num_points &gt; 0) </div>
 </div><!-- fragment --> </dd></dl>
@@ -935,7 +935,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_VORBIS_COMMENT</div><div class="ttdef"><b>Definition:</b> format.h:503</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_VORBIS_COMMENT</div><div class="ttdef"><b>Definition:</b> format.h:511</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||</div>
 <div class="line">(entry.entry == NULL &amp;&amp; entry.length == 0) </div>
 </div><!-- fragment --> </dd></dl>
@@ -974,7 +974,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resize the comment array.</p>
-<p>If the size shrinks, elements will truncated; if it grows, new empty fields will be added to the end.</p>
+<p>If the size shrinks, elements will truncated; if it grows, new empty fields will be added to the end. If this function returns false, the object is left untouched.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>A pointer to an existing VORBIS_COMMENT object. </td></tr>
@@ -1717,7 +1717,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resize a track's index point array.</p>
-<p>If the size shrinks, elements will truncated; if it grows, new blank indices will be added to the end.</p>
+<p>If the size shrinks, elements will truncated; if it grows, new blank indices will be added to the end. If this function returns false, the track object is left untouched.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>A pointer to an existing CUESHEET object. </td></tr>
@@ -1728,7 +1728,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_CUESHEET</div><div class="ttdef"><b>Definition:</b> format.h:506</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_CUESHEET</div><div class="ttdef"><b>Definition:</b> format.h:514</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt; track_num </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (<span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].indices == NULL &amp;&amp; <span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].num_indices == 0) ||</div>
 <div class="line">(object-&gt;data.cue_sheet.tracks[track_num].indices != NULL &amp;&amp; object-&gt;data.cue_sheet.tracks[track_num].num_indices &gt; 0) </div>
@@ -1938,7 +1938,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resize the track array.</p>
-<p>If the size shrinks, elements will truncated; if it grows, new blank tracks will be added to the end.</p>
+<p>If the size shrinks, elements will truncated; if it grows, new blank tracks will be added to the end. If this function returns false, the object is left untouched.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>A pointer to an existing CUESHEET object. </td></tr>
@@ -2307,7 +2307,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_PICTURE</div><div class="ttdef"><b>Definition:</b> format.h:509</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_PICTURE</div><div class="ttdef"><b>Definition:</b> format.h:517</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">(mime_type != NULL) </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2491,7 +2491,7 @@ Functions</h2></td></tr>
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -2500,7 +2500,7 @@ Functions</h2></td></tr>
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->
