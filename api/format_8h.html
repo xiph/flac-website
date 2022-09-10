@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -126,9 +127,9 @@ Macros</h2></td></tr>
 <tr class="separator:ga30b0f21abbb2cdfd461fe04b425b5438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0156d56751e80241fa349d1e25064a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#gad0156d56751e80241fa349d1e25064a6">FLAC__MAX_BITS_PER_SAMPLE</a>&#160;&#160;&#160;(32u)</td></tr>
 <tr class="separator:gad0156d56751e80241fa349d1e25064a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fc418d96053d385fd2f56dce8007fbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga0fc418d96053d385fd2f56dce8007fbc">FLAC__REFERENCE_CODEC_MAX_BITS_PER_SAMPLE</a>&#160;&#160;&#160;(24u)</td></tr>
+<tr class="memitem:ga0fc418d96053d385fd2f56dce8007fbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga0fc418d96053d385fd2f56dce8007fbc">FLAC__REFERENCE_CODEC_MAX_BITS_PER_SAMPLE</a>&#160;&#160;&#160;(32u)</td></tr>
 <tr class="separator:ga0fc418d96053d385fd2f56dce8007fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99abeef0c05c6bc76eacfa865abbfa70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga99abeef0c05c6bc76eacfa865abbfa70">FLAC__MAX_SAMPLE_RATE</a>&#160;&#160;&#160;(655350u)</td></tr>
+<tr class="memitem:ga99abeef0c05c6bc76eacfa865abbfa70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga99abeef0c05c6bc76eacfa865abbfa70">FLAC__MAX_SAMPLE_RATE</a>&#160;&#160;&#160;(1048575u)</td></tr>
 <tr class="separator:ga99abeef0c05c6bc76eacfa865abbfa70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16108d413f524329f338cff6e05f3aff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga16108d413f524329f338cff6e05f3aff">FLAC__MAX_LPC_ORDER</a>&#160;&#160;&#160;(32u)</td></tr>
 <tr class="separator:ga16108d413f524329f338cff6e05f3aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +154,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ga706a29b8a14902c457783bfd4fd7bab2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga706a29b8a14902c457783bfd4fd7bab2">FLAC__STREAM_METADATA_HEADER_LENGTH</a>&#160;&#160;&#160;(4u)</td></tr>
 <tr class="separator:ga706a29b8a14902c457783bfd4fd7bab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga37ced8d328607ea72b2e51c8ef9e2e58"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga37ced8d328607ea72b2e51c8ef9e2e58">FLAC__StreamMetadata</a></td></tr>
+<tr class="separator:ga37ced8d328607ea72b2e51c8ef9e2e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga951733d2ea01943514290012cd622d3a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga951733d2ea01943514290012cd622d3a">FLAC__EntropyCodingMethodType</a> { <a class="el" href="group__flac__format.html#gga951733d2ea01943514290012cd622d3aa5253f8b8edc61220739f229a299775dd">FLAC__ENTROPY_CODING_METHOD_PARTITIONED_RICE</a> = 0
@@ -165,6 +171,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__flac__format.html#gga1f431eaf213e74d7747589932d263348a31437462c3e4c3a5a214a91eff8cc3af">FLAC__SUBFRAME_TYPE_LPC</a> = 3
  }</td></tr>
 <tr class="separator:ga1f431eaf213e74d7747589932d263348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf8b5851429eae13f26267bafe7c5d32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#gabf8b5851429eae13f26267bafe7c5d32">FLAC__VerbatimSubframeDataType</a> { <a class="el" href="group__flac__format.html#ggabf8b5851429eae13f26267bafe7c5d32a9c1ed26317d9c2fe252bc92a4d1c6e4a">FLAC__VERBATIM_SUBFRAME_DATA_TYPE_INT32</a>
+, <a class="el" href="group__flac__format.html#ggabf8b5851429eae13f26267bafe7c5d32aaf4bfde2c07ab557250a2bdc63e7ad6a">FLAC__VERBATIM_SUBFRAME_DATA_TYPE_INT64</a>
+ }</td></tr>
+<tr class="separator:gabf8b5851429eae13f26267bafe7c5d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79855f8525672e37f299bbe02952ef9c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__format.html#ga79855f8525672e37f299bbe02952ef9c">FLAC__ChannelAssignment</a> { <a class="el" href="group__flac__format.html#gga79855f8525672e37f299bbe02952ef9ca3c554e4c8512c2de31dfd3305f8b31b3">FLAC__CHANNEL_ASSIGNMENT_INDEPENDENT</a> = 0
 , <a class="el" href="group__flac__format.html#gga79855f8525672e37f299bbe02952ef9ca28d41295b20593561dc9934cc977d5cb">FLAC__CHANNEL_ASSIGNMENT_LEFT_SIDE</a> = 1
 , <a class="el" href="group__flac__format.html#gga79855f8525672e37f299bbe02952ef9cad155b61582140b2b90362005f1a93e2e">FLAC__CHANNEL_ASSIGNMENT_RIGHT_SIDE</a> = 2
@@ -420,7 +430,7 @@ Variables</h2></td></tr>
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -429,7 +439,7 @@ Variables</h2></td></tr>
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -122,6 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac0fe4955fb5e49f4a97cb5bf942c3b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66c62377bda60758c7ebf5c5abb8a516"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#a66c62377bda60758c7ebf5c5abb8a516">set_metadata</a> (<a class="el" href="classFLAC_1_1Metadata_1_1Prototype.html">FLAC::Metadata::Prototype</a> **metadata, uint32_t num_blocks)</td></tr>
 <tr class="separator:a66c62377bda60758c7ebf5c5abb8a516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f17583a5d4d35b89ce742c0c1bc401d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#a1f17583a5d4d35b89ce742c0c1bc401d">set_limit_min_bitrate</a> (bool value)</td></tr>
+<tr class="separator:a1f17583a5d4d35b89ce742c0c1bc401d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10fe1df856bdf720c598d8512c0b91d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFLAC_1_1Encoder_1_1Stream_1_1State.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#aa10fe1df856bdf720c598d8512c0b91d">get_state</a> () const</td></tr>
 <tr class="separator:aa10fe1df856bdf720c598d8512c0b91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5bd3b3bcf7bb28ac5bd99045227d71"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFLAC_1_1Decoder_1_1Stream_1_1State.html">Decoder::Stream::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#a8e5bd3b3bcf7bb28ac5bd99045227d71">get_verify_decoder_state</a> () const</td></tr>
@@ -162,6 +164,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab61f5dc890c98a122ae9aa9646d845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb2d26a0546b741fcccd5ede2756072"><td class="memItemLeft" align="right" valign="top">virtual FLAC__uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#acfb2d26a0546b741fcccd5ede2756072">get_total_samples_estimate</a> () const</td></tr>
 <tr class="separator:acfb2d26a0546b741fcccd5ede2756072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70c897d3648ca801dd161a6cae17838"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#ac70c897d3648ca801dd161a6cae17838">get_limit_min_bitrate</a> () const</td></tr>
+<tr class="separator:ac70c897d3648ca801dd161a6cae17838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bfdc6402a626db36ee23985ee959b6"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">FLAC__StreamEncoderInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#a17bfdc6402a626db36ee23985ee959b6">init</a> ()</td></tr>
 <tr class="separator:a17bfdc6402a626db36ee23985ee959b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cd96756d387c89555b4fb36e3323f35"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">FLAC__StreamEncoderInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFLAC_1_1Encoder_1_1Stream.html#a6cd96756d387c89555b4fb36e3323f35">init_ogg</a> ()</td></tr>
@@ -904,6 +908,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1f17583a5d4d35b89ce742c0c1bc401d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f17583a5d4d35b89ce742c0c1bc401d">&#9670;&nbsp;</a></span>set_limit_min_bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool FLAC::Encoder::Stream::set_limit_min_bitrate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="group__flac__stream__encoder.html#gac8c5f361b441d528b7a6791b66bb9d40">FLAC__stream_encoder_set_limit_min_bitrate()</a> </p>
+
+</div>
+</div>
 <a id="aa10fe1df856bdf720c598d8512c0b91d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa10fe1df856bdf720c598d8512c0b91d">&#9670;&nbsp;</a></span>get_state()</h2>
 
@@ -1471,6 +1503,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac70c897d3648ca801dd161a6cae17838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70c897d3648ca801dd161a6cae17838">&#9670;&nbsp;</a></span>get_limit_min_bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool FLAC::Encoder::Stream::get_limit_min_bitrate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="group__flac__stream__encoder.html#ga741c26084d203ac24d16c875b5d902ac">FLAC__stream_encoder_get_limit_min_bitrate()</a> </p>
+
+</div>
+</div>
 <a id="a17bfdc6402a626db36ee23985ee959b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17bfdc6402a626db36ee23985ee959b6">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -1798,7 +1857,7 @@ Protected Attributes</h2></td></tr>
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -1807,7 +1866,7 @@ Protected Attributes</h2></td></tr>
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

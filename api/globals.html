@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -168,9 +168,6 @@ $(function() {
 </li>
 <li>FLAC__FrameNumberTypeString
 : <a class="el" href="group__flac__format.html#ga931a0e63c0f2b31fab801e1dd693fa4e">format.h</a>
-</li>
-<li>FLAC__get_decoder_client_data()
-: <a class="el" href="group__flac__stream__decoder.html#gaec91a1f3e5e0d3ff15eb208fe1f2b8bd">stream_decoder.h</a>
 </li>
 <li>FLAC__IOCallback_Close
 : <a class="el" href="group__flac__callbacks.html#ga0032267fac38220689778833e08f7387">callback.h</a>
@@ -658,6 +655,9 @@ $(function() {
 <li>FLAC__STREAM_DECODER_ERROR_STATUS_BAD_HEADER
 : <a class="el" href="group__flac__stream__decoder.html#gga130e70bd9a73d3c2416247a3e5132ecfae393a9b91a6b2f23398675b5b57e1e86">stream_decoder.h</a>
 </li>
+<li>FLAC__STREAM_DECODER_ERROR_STATUS_BAD_METADATA
+: <a class="el" href="group__flac__stream__decoder.html#gga130e70bd9a73d3c2416247a3e5132ecfa67ee497c6fe564b50d7a7964ef5cd30a">stream_decoder.h</a>
+</li>
 <li>FLAC__STREAM_DECODER_ERROR_STATUS_FRAME_CRC_MISMATCH
 : <a class="el" href="group__flac__stream__decoder.html#gga130e70bd9a73d3c2416247a3e5132ecfa208fe77a04e6ff684e50f0eae1214e26">stream_decoder.h</a>
 </li>
@@ -684,6 +684,9 @@ $(function() {
 </li>
 <li>FLAC__stream_decoder_get_channels()
 : <a class="el" href="group__flac__stream__decoder.html#ga802d5f4c48a711b690d6d66d2e3f20a5">stream_decoder.h</a>
+</li>
+<li>FLAC__stream_decoder_get_client_data()
+: <a class="el" href="group__flac__stream__decoder.html#gab14d8d4fa1a66a5a603f96090c2deb07">stream_decoder.h</a>
 </li>
 <li>FLAC__stream_decoder_get_decode_position()
 : <a class="el" href="group__flac__stream__decoder.html#gaffd9b0d0832ed01e6d75930b5391def5">stream_decoder.h</a>
@@ -883,6 +886,9 @@ $(function() {
 <li>FLAC__stream_encoder_get_do_qlp_coeff_prec_search()
 : <a class="el" href="group__flac__stream__encoder.html#ga65bee5a769d4c5fdc95b81c2fb95061c">stream_encoder.h</a>
 </li>
+<li>FLAC__stream_encoder_get_limit_min_bitrate()
+: <a class="el" href="group__flac__stream__encoder.html#ga741c26084d203ac24d16c875b5d902ac">stream_encoder.h</a>
+</li>
 <li>FLAC__stream_encoder_get_loose_mid_side_stereo()
 : <a class="el" href="group__flac__stream__encoder.html#ga1455859cf3d233bd4dfff86af010f4fa">stream_encoder.h</a>
 </li>
@@ -1053,6 +1059,9 @@ $(function() {
 </li>
 <li>FLAC__stream_encoder_set_do_qlp_coeff_prec_search()
 : <a class="el" href="group__flac__stream__encoder.html#ga495890067203958e5d67a641f8757b1c">stream_encoder.h</a>
+</li>
+<li>FLAC__stream_encoder_set_limit_min_bitrate()
+: <a class="el" href="group__flac__stream__encoder.html#gac8c5f361b441d528b7a6791b66bb9d40">stream_encoder.h</a>
 </li>
 <li>FLAC__stream_encoder_set_loose_mid_side_stereo()
 : <a class="el" href="group__flac__stream__encoder.html#ga7965d51b93f14cbd6ad5bb9d34f10536">stream_encoder.h</a>
@@ -1450,6 +1459,9 @@ $(function() {
 <li>FLAC__StreamEncoderWriteStatusString
 : <a class="el" href="group__flac__stream__encoder.html#ga9f64480accd01525cbfa25c11e6bb74e">stream_encoder.h</a>
 </li>
+<li>FLAC__StreamMetadata
+: <a class="el" href="group__flac__format.html#ga37ced8d328607ea72b2e51c8ef9e2e58">format.h</a>
+</li>
 <li>FLAC__StreamMetadata_Picture_Type
 : <a class="el" href="group__flac__format.html#gaf6d3e836cee023e0b8d897f1fdc9825d">format.h</a>
 </li>
@@ -1513,6 +1525,15 @@ $(function() {
 <li>FLAC__VENDOR_STRING
 : <a class="el" href="group__flac__format.html#gad5cccab0de3adda58914edf3c31fd64f">format.h</a>
 </li>
+<li>FLAC__VERBATIM_SUBFRAME_DATA_TYPE_INT32
+: <a class="el" href="group__flac__format.html#ggabf8b5851429eae13f26267bafe7c5d32a9c1ed26317d9c2fe252bc92a4d1c6e4a">format.h</a>
+</li>
+<li>FLAC__VERBATIM_SUBFRAME_DATA_TYPE_INT64
+: <a class="el" href="group__flac__format.html#ggabf8b5851429eae13f26267bafe7c5d32aaf4bfde2c07ab557250a2bdc63e7ad6a">format.h</a>
+</li>
+<li>FLAC__VerbatimSubframeDataType
+: <a class="el" href="group__flac__format.html#gabf8b5851429eae13f26267bafe7c5d32">format.h</a>
+</li>
 <li>FLAC__VERSION_STRING
 : <a class="el" href="group__flac__format.html#ga52e2616f9a0b94881cd7711c18d62a35">format.h</a>
 </li>
@@ -1538,7 +1559,7 @@ $(function() {
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -1547,7 +1568,7 @@ $(function() {
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

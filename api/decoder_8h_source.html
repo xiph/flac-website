@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -50,7 +50,7 @@ $(function() {
 <div class="contents">
 <a href="decoder_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* libFLAC++ - Free Lossless Audio Codec library</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2002-2009  Josh Coalson</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2011-2016  Xiph.Org Foundation</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2011-2022  Xiph.Org Foundation</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Redistribution and use in source and binary forms, with or without</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * modification, are permitted provided that the following conditions</span></div>
@@ -158,7 +158,7 @@ $(function() {
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classFLAC_1_1Decoder_1_1Stream.html#af5a61e9ff720cca3eb38d1f2790f00fb">  176</a></span>&#160;            <a class="code" href="group__flac__stream__decoder.html#ga73f67eb9e0ab57945afe038751bc62c8">virtual ::FLAC__StreamDecoderWriteStatus</a> <a class="code" href="classFLAC_1_1Decoder_1_1Stream.html#af5a61e9ff720cca3eb38d1f2790f00fb">write_callback</a>(const ::FLAC__Frame *frame, <span class="keyword">const</span> FLAC__int32 * <span class="keyword">const</span> buffer[]) = 0;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classFLAC_1_1Decoder_1_1Stream.html#a20d0873073d9542e08fb48becaa607c9">  179</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFLAC_1_1Decoder_1_1Stream.html#a20d0873073d9542e08fb48becaa607c9">metadata_callback</a>(const ::FLAC__StreamMetadata *metadata);</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classFLAC_1_1Decoder_1_1Stream.html#a20d0873073d9542e08fb48becaa607c9">  179</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFLAC_1_1Decoder_1_1Stream.html#a20d0873073d9542e08fb48becaa607c9">metadata_callback</a>(<a class="code" href="group__flac__format.html#ga37ced8d328607ea72b2e51c8ef9e2e58">const ::FLAC__StreamMetadata</a> *metadata);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classFLAC_1_1Decoder_1_1Stream.html#a0dbadd163ade7bc2d1858e7a435d5e52">  182</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classFLAC_1_1Decoder_1_1Stream.html#a0dbadd163ade7bc2d1858e7a435d5e52">error_callback</a>(::<a class="code" href="group__flac__stream__decoder.html#ga130e70bd9a73d3c2416247a3e5132ecf">FLAC__StreamDecoderErrorStatus</a> status) = 0;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
@@ -174,7 +174,7 @@ $(function() {
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="group__flac__stream__decoder.html#gad5860157c2bb34501b8b9370472d727a">static ::FLAC__StreamDecoderLengthStatus</a> length_callback_(const ::FLAC__StreamDecoder *decoder, FLAC__uint64 *stream_length, <span class="keywordtype">void</span> *client_data);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keyword">static</span> FLAC__bool eof_callback_(const ::FLAC__StreamDecoder *decoder, <span class="keywordtype">void</span> *client_data);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="group__flac__stream__decoder.html#ga73f67eb9e0ab57945afe038751bc62c8">static ::FLAC__StreamDecoderWriteStatus</a> write_callback_(const ::FLAC__StreamDecoder *decoder, const ::FLAC__Frame *frame, <span class="keyword">const</span> FLAC__int32 * <span class="keyword">const</span> buffer[], <span class="keywordtype">void</span> *client_data);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> metadata_callback_(const ::FLAC__StreamDecoder *decoder, const ::FLAC__StreamMetadata *metadata, <span class="keywordtype">void</span> *client_data);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> metadata_callback_(const ::FLAC__StreamDecoder *decoder, <a class="code" href="group__flac__format.html#ga37ced8d328607ea72b2e51c8ef9e2e58">const ::FLAC__StreamMetadata</a> *metadata, <span class="keywordtype">void</span> *client_data);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> error_callback_(const ::FLAC__StreamDecoder *decoder, ::<a class="code" href="group__flac__stream__decoder.html#ga130e70bd9a73d3c2416247a3e5132ecf">FLAC__StreamDecoderErrorStatus</a> status, <span class="keywordtype">void</span> *client_data);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="comment">// Private and undefined so you can&#39;t use them:</span></div>
@@ -255,9 +255,10 @@ $(function() {
 <div class="ttc" id="aclassFLAC_1_1Decoder_1_1Stream_html_af6f7e0811f34837752fbe20f3348f895"><div class="ttname"><a href="classFLAC_1_1Decoder_1_1Stream.html#af6f7e0811f34837752fbe20f3348f895">FLAC::Decoder::Stream::seek_callback</a></div><div class="ttdeci">virtual ::FLAC__StreamDecoderSeekStatus seek_callback(FLAC__uint64 absolute_byte_offset)</div><div class="ttdoc">see FLAC__StreamDecoderSeekCallback</div></div>
 <div class="ttc" id="aclassFLAC_1_1Decoder_1_1Stream_html_af91735b6c715ca648493e837f513ef3d"><div class="ttname"><a href="classFLAC_1_1Decoder_1_1Stream.html#af91735b6c715ca648493e837f513ef3d">FLAC::Decoder::Stream::read_callback</a></div><div class="ttdeci">virtual ::FLAC__StreamDecoderReadStatus read_callback(FLAC__byte buffer[], size_t *bytes)=0</div><div class="ttdoc">see FLAC__StreamDecoderReadCallback</div></div>
 <div class="ttc" id="aclassFLAC_1_1Decoder_1_1Stream_html_afbd6ff20477cae1ace00b8c304a4795a"><div class="ttname"><a href="classFLAC_1_1Decoder_1_1Stream.html#afbd6ff20477cae1ace00b8c304a4795a">FLAC::Decoder::Stream::process_until_end_of_stream</a></div><div class="ttdeci">virtual bool process_until_end_of_stream()</div><div class="ttdoc">See FLAC__stream_decoder_process_until_end_of_stream()</div></div>
-<div class="ttc" id="agroup__flac__format_html_ga79855f8525672e37f299bbe02952ef9c"><div class="ttname"><a href="group__flac__format.html#ga79855f8525672e37f299bbe02952ef9c">FLAC__ChannelAssignment</a></div><div class="ttdeci">FLAC__ChannelAssignment</div><div class="ttdef"><b>Definition:</b> format.h:381</div></div>
-<div class="ttc" id="agroup__flac__format_html_gac71714ba8ddbbd66d26bb78a427fac01"><div class="ttname"><a href="group__flac__format.html#gac71714ba8ddbbd66d26bb78a427fac01">FLAC__MetadataType</a></div><div class="ttdeci">FLAC__MetadataType</div><div class="ttdef"><b>Definition:</b> format.h:489</div></div>
-<div class="ttc" id="agroup__flac__stream__decoder_html_ga130e70bd9a73d3c2416247a3e5132ecf"><div class="ttname"><a href="group__flac__stream__decoder.html#ga130e70bd9a73d3c2416247a3e5132ecf">FLAC__StreamDecoderErrorStatus</a></div><div class="ttdeci">FLAC__StreamDecoderErrorStatus</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:427</div></div>
+<div class="ttc" id="agroup__flac__format_html_ga37ced8d328607ea72b2e51c8ef9e2e58"><div class="ttname"><a href="group__flac__format.html#ga37ced8d328607ea72b2e51c8ef9e2e58">FLAC__StreamMetadata</a></div><div class="ttdeci">struct FLAC__StreamMetadata FLAC__StreamMetadata</div></div>
+<div class="ttc" id="agroup__flac__format_html_ga79855f8525672e37f299bbe02952ef9c"><div class="ttname"><a href="group__flac__format.html#ga79855f8525672e37f299bbe02952ef9c">FLAC__ChannelAssignment</a></div><div class="ttdeci">FLAC__ChannelAssignment</div><div class="ttdef"><b>Definition:</b> format.h:389</div></div>
+<div class="ttc" id="agroup__flac__format_html_gac71714ba8ddbbd66d26bb78a427fac01"><div class="ttname"><a href="group__flac__format.html#gac71714ba8ddbbd66d26bb78a427fac01">FLAC__MetadataType</a></div><div class="ttdeci">FLAC__MetadataType</div><div class="ttdef"><b>Definition:</b> format.h:497</div></div>
+<div class="ttc" id="agroup__flac__stream__decoder_html_ga130e70bd9a73d3c2416247a3e5132ecf"><div class="ttname"><a href="group__flac__stream__decoder.html#ga130e70bd9a73d3c2416247a3e5132ecf">FLAC__StreamDecoderErrorStatus</a></div><div class="ttdeci">FLAC__StreamDecoderErrorStatus</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:431</div></div>
 <div class="ttc" id="agroup__flac__stream__decoder_html_ga3adb6891c5871a87cd5bbae6c770ba2d"><div class="ttname"><a href="group__flac__stream__decoder.html#ga3adb6891c5871a87cd5bbae6c770ba2d">FLAC__StreamDecoderState</a></div><div class="ttdeci">FLAC__StreamDecoderState</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:202</div></div>
 <div class="ttc" id="agroup__flac__stream__decoder_html_ga73f67eb9e0ab57945afe038751bc62c8"><div class="ttname"><a href="group__flac__stream__decoder.html#ga73f67eb9e0ab57945afe038751bc62c8">FLAC__StreamDecoderWriteStatus</a></div><div class="ttdeci">FLAC__StreamDecoderWriteStatus</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:394</div></div>
 <div class="ttc" id="agroup__flac__stream__decoder_html_ga83708207969383bd7b5c1e9148528845"><div class="ttname"><a href="group__flac__stream__decoder.html#ga83708207969383bd7b5c1e9148528845">FLAC__StreamDecoderTellStatus</a></div><div class="ttdeci">FLAC__StreamDecoderTellStatus</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:348</div></div>
@@ -268,7 +269,7 @@ $(function() {
 <div class="ttc" id="agroup__flac__stream__decoder_html_gad5860157c2bb34501b8b9370472d727a"><div class="ttname"><a href="group__flac__stream__decoder.html#gad5860157c2bb34501b8b9370472d727a">FLAC__StreamDecoderLengthStatus</a></div><div class="ttdeci">FLAC__StreamDecoderLengthStatus</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:371</div></div>
 <div class="ttc" id="agroup__flac__stream__decoder_html_gad793ead451206c64a91dc0b851027b93"><div class="ttname"><a href="group__flac__stream__decoder.html#gad793ead451206c64a91dc0b851027b93">FLAC__StreamDecoderReadStatus</a></div><div class="ttdeci">FLAC__StreamDecoderReadStatus</div><div class="ttdef"><b>Definition:</b> stream_decoder.h:294</div></div>
 <div class="ttc" id="astream__decoder_8h_html"><div class="ttname"><a href="stream__decoder_8h.html">stream_decoder.h</a></div><div class="ttdoc">This module contains the functions which implement the stream decoder.</div></div>
-<div class="ttc" id="astructFLAC____StreamDecoder_html"><div class="ttname"><a href="structFLAC____StreamDecoder.html">FLAC__StreamDecoder</a></div><div class="ttdef"><b>Definition:</b> stream_decoder.h:463</div></div>
+<div class="ttc" id="astructFLAC____StreamDecoder_html"><div class="ttname"><a href="structFLAC____StreamDecoder.html">FLAC__StreamDecoder</a></div><div class="ttdef"><b>Definition:</b> stream_decoder.h:470</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 <hr size="1"/>
@@ -278,7 +279,7 @@ $(function() {
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -287,7 +288,7 @@ $(function() {
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

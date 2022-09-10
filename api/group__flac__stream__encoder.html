@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -179,6 +179,8 @@ Functions</h2></td></tr>
 <tr class="separator:gab943094585d1c0a4bec497e73567cf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80d57f9069e354cbf1a15a3e3ad9ca78"><td class="memItemLeft" align="right" valign="top">FLAC__bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga80d57f9069e354cbf1a15a3e3ad9ca78">FLAC__stream_encoder_set_metadata</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, <a class="el" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a> **metadata, uint32_t num_blocks)</td></tr>
 <tr class="separator:ga80d57f9069e354cbf1a15a3e3ad9ca78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8c5f361b441d528b7a6791b66bb9d40"><td class="memItemLeft" align="right" valign="top">FLAC__bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#gac8c5f361b441d528b7a6791b66bb9d40">FLAC__stream_encoder_set_limit_min_bitrate</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, FLAC__bool value)</td></tr>
+<tr class="separator:gac8c5f361b441d528b7a6791b66bb9d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0803321b37189dc5eea4fe1cea25c29a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__encoder.html#gac5e9db4fc32ca2fa74abd9c8a87c02a5">FLAC__StreamEncoderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga0803321b37189dc5eea4fe1cea25c29a">FLAC__stream_encoder_get_state</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
 <tr class="separator:ga0803321b37189dc5eea4fe1cea25c29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga820704b95a711e77d55363e8753f9f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__decoder.html#ga3adb6891c5871a87cd5bbae6c770ba2d">FLAC__StreamDecoderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga820704b95a711e77d55363e8753f9f9f">FLAC__stream_encoder_get_verify_decoder_state</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
@@ -221,6 +223,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaca0e38f283b2772b92da7cb4495d909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa22d8935bd985b9cccf6592160ffc6f2"><td class="memItemLeft" align="right" valign="top">FLAC__uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#gaa22d8935bd985b9cccf6592160ffc6f2">FLAC__stream_encoder_get_total_samples_estimate</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
 <tr class="separator:gaa22d8935bd985b9cccf6592160ffc6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga741c26084d203ac24d16c875b5d902ac"><td class="memItemLeft" align="right" valign="top">FLAC__bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga741c26084d203ac24d16c875b5d902ac">FLAC__stream_encoder_get_limit_min_bitrate</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
+<tr class="separator:ga741c26084d203ac24d16c875b5d902ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d801879812b48fcbc40f409800c453c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">FLAC__StreamEncoderInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga7d801879812b48fcbc40f409800c453c">FLAC__stream_encoder_init_stream</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, <a class="el" href="group__flac__stream__encoder.html#ga2998a0af774d793928a7cc3bbc84dcdf">FLAC__StreamEncoderWriteCallback</a> write_callback, <a class="el" href="group__flac__stream__encoder.html#ga70b85349d5242e4401c4d8ddf6d9bbca">FLAC__StreamEncoderSeekCallback</a> seek_callback, <a class="el" href="group__flac__stream__encoder.html#gabefdf2279e1d0347d9f98f46da4e415b">FLAC__StreamEncoderTellCallback</a> tell_callback, <a class="el" href="group__flac__stream__encoder.html#ga091fbf3340d85bcbda1090c31bc320cf">FLAC__StreamEncoderMetadataCallback</a> metadata_callback, void *client_data)</td></tr>
 <tr class="separator:ga7d801879812b48fcbc40f409800c453c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d1981bcd30b8db4d73b5466be5570f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">FLAC__StreamEncoderInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga9d1981bcd30b8db4d73b5466be5570f5">FLAC__stream_encoder_init_ogg_stream</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, <a class="el" href="group__flac__stream__encoder.html#ga18b7941b93bae067192732e913536d44">FLAC__StreamEncoderReadCallback</a> read_callback, <a class="el" href="group__flac__stream__encoder.html#ga2998a0af774d793928a7cc3bbc84dcdf">FLAC__StreamEncoderWriteCallback</a> write_callback, <a class="el" href="group__flac__stream__encoder.html#ga70b85349d5242e4401c4d8ddf6d9bbca">FLAC__StreamEncoderSeekCallback</a> seek_callback, <a class="el" href="group__flac__stream__encoder.html#gabefdf2279e1d0347d9f98f46da4e415b">FLAC__StreamEncoderTellCallback</a> tell_callback, <a class="el" href="group__flac__stream__encoder.html#ga091fbf3340d85bcbda1090c31bc320cf">FLAC__StreamEncoderMetadataCallback</a> metadata_callback, void *client_data)</td></tr>
@@ -1403,7 +1407,6 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set the precision, in bits, of the quantized linear predictor coefficients, or <code>0</code> to let the encoder select it based on the blocksize.</p>
-<dl class="section note"><dt>Note</dt><dd>In the current implementation, qlp_coeff_precision + bits_per_sample must be less than 32.</dd></dl>
 <dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1803,6 +1806,51 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">FLAC__bool</td><td><code>false</code> if the encoder is already initialized, else <code>true</code>. <code>false</code> if the encoder is already initialized, or if <em>num_blocks</em> &gt; 65535 if encoding to Ogg FLAC, else <code>true</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac8c5f361b441d528b7a6791b66bb9d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8c5f361b441d528b7a6791b66bb9d40">&#9670;&nbsp;</a></span>FLAC__stream_encoder_set_limit_min_bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLAC__bool FLAC__stream_encoder_set_limit_min_bitrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FLAC__bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set to <code>true</code> to make the encoder not output frames which contain only constant subframes. This is beneficial for streaming applications: very small frames can cause problems with buffering as bitrates can drop as low 1kbit/s for CDDA audio encoded within subset. The minimum bitrate for a FLAC file encoded with this function used is raised to 1bit/sample (i.e. 48kbit/s for 48kHz material).</p>
+<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
+    <tr><td class="paramname">value</td><td>Flag value (see above). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+</div><!-- fragment --> </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">FLAC__bool</td><td><code>false</code> if the encoder is already initialized, else <code>true</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2542,6 +2590,39 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
 
 </div>
 </div>
+<a id="ga741c26084d203ac24d16c875b5d902ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga741c26084d203ac24d16c875b5d902ac">&#9670;&nbsp;</a></span>FLAC__stream_encoder_get_limit_min_bitrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLAC__bool FLAC__stream_encoder_get_limit_min_bitrate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the "limit_min_bitrate" flag.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encoder</td><td>An encoder instance to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+</div><!-- fragment --> </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">FLAC__bool</td><td>See <a class="el" href="group__flac__stream__encoder.html#gac8c5f361b441d528b7a6791b66bb9d40">FLAC__stream_encoder_set_limit_min_bitrate()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga7d801879812b48fcbc40f409800c453c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d801879812b48fcbc40f409800c453c">&#9670;&nbsp;</a></span>FLAC__stream_encoder_init_stream()</h2>
 
@@ -2859,7 +2940,8 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
       </table>
 </div><div class="memdoc">
 <p>Initialize the encoder instance to encode native FLAC files.</p>
-<p>This flavor of initialization sets up the encoder to encode to a plain FLAC file. If POSIX fopen() semantics are not sufficient (for example, with Unicode filenames on Windows), you must use <a class="el" href="group__flac__stream__encoder.html#ga12789a1c4a4e31cd2e7187259fe127f8">FLAC__stream_encoder_init_FILE()</a>, or <a class="el" href="group__flac__stream__encoder.html#ga7d801879812b48fcbc40f409800c453c">FLAC__stream_encoder_init_stream()</a> and provide callbacks for the I/O.</p>
+<p>This flavor of initialization sets up the encoder to encode to a plain FLAC file. If POSIX fopen() semantics are not sufficient you must use <a class="el" href="group__flac__stream__encoder.html#ga12789a1c4a4e31cd2e7187259fe127f8">FLAC__stream_encoder_init_FILE()</a>, or <a class="el" href="group__flac__stream__encoder.html#ga7d801879812b48fcbc40f409800c453c">FLAC__stream_encoder_init_stream()</a> and provide callbacks for the I/O.</p>
+<p>On Windows, filename must be a UTF-8 encoded filename, which libFLAC internally translates to an appropriate representation to use with _wfopen. On all other systems, filename is passed to fopen without any translation.</p>
 <p>This function should be called after <a class="el" href="group__flac__stream__encoder.html#gab09f7620a0ba9c30020c189ce112a52f">FLAC__stream_encoder_new()</a> and FLAC__stream_encoder_set_*() but before <a class="el" href="group__flac__stream__encoder.html#ga87b9c361292da5c5928a8fb5fda7c423">FLAC__stream_encoder_process()</a> or <a class="el" href="group__flac__stream__encoder.html#ga6e31c221f7e23345267c52f53c046c24">FLAC__stream_encoder_process_interleaved()</a>. initialization succeeded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2919,7 +3001,8 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
       </table>
 </div><div class="memdoc">
 <p>Initialize the encoder instance to encode Ogg FLAC files.</p>
-<p>This flavor of initialization sets up the encoder to encode to a plain Ogg FLAC file. If POSIX fopen() semantics are not sufficient (for example, with Unicode filenames on Windows), you must use <a class="el" href="group__flac__stream__encoder.html#ga57fc668f50ffd99a93df326bfab5e2b1">FLAC__stream_encoder_init_ogg_FILE()</a>, or <a class="el" href="group__flac__stream__encoder.html#ga9d1981bcd30b8db4d73b5466be5570f5">FLAC__stream_encoder_init_ogg_stream()</a> and provide callbacks for the I/O.</p>
+<p>This flavor of initialization sets up the encoder to encode to a plain Ogg FLAC file. If POSIX fopen() semantics are not sufficient, you must use <a class="el" href="group__flac__stream__encoder.html#ga57fc668f50ffd99a93df326bfab5e2b1">FLAC__stream_encoder_init_ogg_FILE()</a>, or <a class="el" href="group__flac__stream__encoder.html#ga9d1981bcd30b8db4d73b5466be5570f5">FLAC__stream_encoder_init_ogg_stream()</a> and provide callbacks for the I/O.</p>
+<p>On Windows, filename must be a UTF-8 encoded filename, which libFLAC internally translates to an appropriate representation to use with _wfopen. On all other systems, filename is passed to fopen without any translation.</p>
 <p>This function should be called after <a class="el" href="group__flac__stream__encoder.html#gab09f7620a0ba9c30020c189ce112a52f">FLAC__stream_encoder_new()</a> and FLAC__stream_encoder_set_*() but before <a class="el" href="group__flac__stream__encoder.html#ga87b9c361292da5c5928a8fb5fda7c423">FLAC__stream_encoder_process()</a> or <a class="el" href="group__flac__stream__encoder.html#ga6e31c221f7e23345267c52f53c046c24">FLAC__stream_encoder_process_interleaved()</a>. initialization succeeded.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3238,7 +3321,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -3247,7 +3330,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

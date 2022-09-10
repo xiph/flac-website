@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.3.3</span>
+   &#160;<span id="projectnumber">1.4.0</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -188,6 +188,8 @@ Functions</h2></td></tr>
 <tr class="separator:gab943094585d1c0a4bec497e73567cf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80d57f9069e354cbf1a15a3e3ad9ca78"><td class="memItemLeft" align="right" valign="top">FLAC__bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga80d57f9069e354cbf1a15a3e3ad9ca78">FLAC__stream_encoder_set_metadata</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, <a class="el" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a> **metadata, uint32_t num_blocks)</td></tr>
 <tr class="separator:ga80d57f9069e354cbf1a15a3e3ad9ca78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8c5f361b441d528b7a6791b66bb9d40"><td class="memItemLeft" align="right" valign="top">FLAC__bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#gac8c5f361b441d528b7a6791b66bb9d40">FLAC__stream_encoder_set_limit_min_bitrate</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, FLAC__bool value)</td></tr>
+<tr class="separator:gac8c5f361b441d528b7a6791b66bb9d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0803321b37189dc5eea4fe1cea25c29a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__encoder.html#gac5e9db4fc32ca2fa74abd9c8a87c02a5">FLAC__StreamEncoderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga0803321b37189dc5eea4fe1cea25c29a">FLAC__stream_encoder_get_state</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
 <tr class="separator:ga0803321b37189dc5eea4fe1cea25c29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga820704b95a711e77d55363e8753f9f9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__decoder.html#ga3adb6891c5871a87cd5bbae6c770ba2d">FLAC__StreamDecoderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga820704b95a711e77d55363e8753f9f9f">FLAC__stream_encoder_get_verify_decoder_state</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
@@ -230,6 +232,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaca0e38f283b2772b92da7cb4495d909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa22d8935bd985b9cccf6592160ffc6f2"><td class="memItemLeft" align="right" valign="top">FLAC__uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#gaa22d8935bd985b9cccf6592160ffc6f2">FLAC__stream_encoder_get_total_samples_estimate</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
 <tr class="separator:gaa22d8935bd985b9cccf6592160ffc6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga741c26084d203ac24d16c875b5d902ac"><td class="memItemLeft" align="right" valign="top">FLAC__bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga741c26084d203ac24d16c875b5d902ac">FLAC__stream_encoder_get_limit_min_bitrate</a> (const <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder)</td></tr>
+<tr class="separator:ga741c26084d203ac24d16c875b5d902ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d801879812b48fcbc40f409800c453c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">FLAC__StreamEncoderInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga7d801879812b48fcbc40f409800c453c">FLAC__stream_encoder_init_stream</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, <a class="el" href="group__flac__stream__encoder.html#ga2998a0af774d793928a7cc3bbc84dcdf">FLAC__StreamEncoderWriteCallback</a> write_callback, <a class="el" href="group__flac__stream__encoder.html#ga70b85349d5242e4401c4d8ddf6d9bbca">FLAC__StreamEncoderSeekCallback</a> seek_callback, <a class="el" href="group__flac__stream__encoder.html#gabefdf2279e1d0347d9f98f46da4e415b">FLAC__StreamEncoderTellCallback</a> tell_callback, <a class="el" href="group__flac__stream__encoder.html#ga091fbf3340d85bcbda1090c31bc320cf">FLAC__StreamEncoderMetadataCallback</a> metadata_callback, void *client_data)</td></tr>
 <tr class="separator:ga7d801879812b48fcbc40f409800c453c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d1981bcd30b8db4d73b5466be5570f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__flac__stream__encoder.html#ga3bb869620af2b188d77982a5c30b047d">FLAC__StreamEncoderInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__stream__encoder.html#ga9d1981bcd30b8db4d73b5466be5570f5">FLAC__stream_encoder_init_ogg_stream</a> (<a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> *encoder, <a class="el" href="group__flac__stream__encoder.html#ga18b7941b93bae067192732e913536d44">FLAC__StreamEncoderReadCallback</a> read_callback, <a class="el" href="group__flac__stream__encoder.html#ga2998a0af774d793928a7cc3bbc84dcdf">FLAC__StreamEncoderWriteCallback</a> write_callback, <a class="el" href="group__flac__stream__encoder.html#ga70b85349d5242e4401c4d8ddf6d9bbca">FLAC__StreamEncoderSeekCallback</a> seek_callback, <a class="el" href="group__flac__stream__encoder.html#gabefdf2279e1d0347d9f98f46da4e415b">FLAC__StreamEncoderTellCallback</a> tell_callback, <a class="el" href="group__flac__stream__encoder.html#ga091fbf3340d85bcbda1090c31bc320cf">FLAC__StreamEncoderMetadataCallback</a> metadata_callback, void *client_data)</td></tr>
@@ -276,7 +280,7 @@ Variables</h2></td></tr>
 		<tr>
 			<td align="left">
 				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2016  Xiph.Org Foundation
+				Copyright (c) 2011-2022  Xiph.Org Foundation
 			</td>
 			<td width="1%" align="right">
 				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
@@ -285,7 +289,7 @@ Variables</h2></td></tr>
 	</table>
 </div>
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2016  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->

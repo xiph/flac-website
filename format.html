@@ -13,6 +13,8 @@ title: Format
 			<li>The <b><a href="https://datatracker.ietf.org/doc/draft-ietf-cellar-codec/">Matroska Media Container Codec Specifications</a></b> describes how FLAC is encapsulated in the Matroska (mkv) container.</li>
                         <li>Below you'll find the description of the FLAC format that has been here for many years and served as the basis for the CELLAR working group draft mentioned as the first item in this list. While it lacks detail in certain places, requiring the reader to look for details in the libFLAC source code to fully understand it, it remains a useful overview and historical reference.</li>
 		</ul>
+
+		To test whether a decoder has properly implemented all features of the FLAC format as described here, a set of <a href="https://github.com/ietf-wg-cellar/flac-test-files">FLAC format conformance test files</a> is available.
 		
 		<hr />
 		
@@ -507,7 +509,7 @@ title: Format
 				&lt;5&gt;
 			</td>
 			<td>
-				(bits per sample)-1.  FLAC supports from 4 to 32 bits per sample.  Currently the reference encoder and decoders only support up to 24 bits per sample.
+				(bits per sample)-1.  FLAC supports from 4 to 32 bits per sample.
 			</td>
 		</tr>
 		<tr>
@@ -1259,7 +1261,7 @@ title: Format
 					<tt>110</tt> : 24 bits per sample
 				</li>
 				<li>
-					<tt>111</tt> : reserved
+					<tt>111</tt> : 32 bits per sample
 				</li>
 				</ul>
 			</td>
