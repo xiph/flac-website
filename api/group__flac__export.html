@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -50,8 +50,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga56ca07df8a23310707732b1c0007d6f5"><td class="memItemLeft" align="right" valign="top"><a id="ga56ca07df8a23310707732b1c0007d6f5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC_API</b></td></tr>
+<tr class="memitem:ga56ca07df8a23310707732b1c0007d6f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__export.html#ga56ca07df8a23310707732b1c0007d6f5">FLAC_API</a></td></tr>
 <tr class="separator:ga56ca07df8a23310707732b1c0007d6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31180fe15eea416cd8957cfca1a4c4f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flac__export.html#ga31180fe15eea416cd8957cfca1a4c4f8">FLAC_API_VERSION_CURRENT</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:ga31180fe15eea416cd8957cfca1a4c4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -67,8 +66,24 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module contains #defines and symbols for exporting function calls, and providing version information and compiled-in features. </p>
-<p>If you are compiling with MSVC and will link to the static library (libFLAC.lib) you should define FLAC__NO_DLL in your project to make sure the symbols are exported properly. </p>
+<p>If you are compiling for Windows (with Visual Studio or MinGW for example) and will link to the static library (libFLAC++.lib) you should define FLAC__NO_DLL in your project to make sure the symbols are exported properly. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga56ca07df8a23310707732b1c0007d6f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56ca07df8a23310707732b1c0007d6f5">&#9670;&nbsp;</a></span>FLAC_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAC_API</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This #define is used internally in libFLAC and its headers to make sure the correct symbols are exported when working with shared libraries. On Windows, this #define is set to __declspec(dllexport) when compiling libFLAC into a library and to __declspec(dllimport) when the headers are used to link to that DLL. On non-Windows systems it is used to set symbol visibility.</p>
+<p>Because of this, the define FLAC__NO_DLL must be defined when linking to libFLAC statically or linking will fail. </p>
+
+</div>
+</div>
 <a id="ga31180fe15eea416cd8957cfca1a4c4f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga31180fe15eea416cd8957cfca1a4c4f8">&#9670;&nbsp;</a></span>FLAC_API_VERSION_CURRENT</h2>
 

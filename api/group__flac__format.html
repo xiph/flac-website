@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -853,7 +853,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The maximum sample rate permitted by the format. The value is ((2 ^ 16) - 1) * 10; see <a href="../format.html">FLAC format</a> as to why. </p>
+<p>The maximum sample rate permitted by the format. The value is ((2 ^ 20) - 1) </p>
 
 </div>
 </div>
@@ -1374,7 +1374,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">name != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">name != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1419,7 +1419,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">value != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">value != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1464,7 +1464,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">value != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">value != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1497,7 +1497,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">seek_table != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">seek_table != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1530,7 +1530,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">seek_table != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">seek_table != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1581,7 +1581,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">cue_sheet != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">cue_sheet != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1625,7 +1625,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">picture != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">picture != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">

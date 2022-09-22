@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -211,7 +211,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -245,7 +245,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">block1 != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">block1 != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">block2 != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -347,9 +347,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b">FLAC__METADATA_TYPE_APPLICATION</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b">FLAC__METADATA_TYPE_APPLICATION</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_APPLICATION</div><div class="ttdef"><b>Definition:</b> format.h:505</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b">FLAC__METADATA_TYPE_APPLICATION</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_APPLICATION</div><div class="ttdef"><b>Definition:</b> format.h:504</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (data != NULL &amp;&amp; length &gt; 0) ||</div>
 <div class="line">(data == NULL &amp;&amp; length == 0 &amp;&amp; copy == <span class="keyword">false</span>) </div>
 </div><!-- fragment --> </dd></dl>
@@ -396,9 +396,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_SEEKTABLE</div><div class="ttdef"><b>Definition:</b> format.h:508</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_SEEKTABLE</div><div class="ttdef"><b>Definition:</b> format.h:507</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (<span class="keywordtype">object</span>-&gt;data.seek_table.points == NULL &amp;&amp; <span class="keywordtype">object</span>-&gt;data.seek_table.num_points == 0) ||</div>
 <div class="line">(object-&gt;data.seek_table.points != NULL &amp;&amp; object-&gt;data.seek_table.num_points &gt; 0) </div>
 </div><!-- fragment --> </dd></dl>
@@ -451,7 +451,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.seek_table.num_points &gt; point_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -498,7 +498,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.seek_table.num_points &gt;= point_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -544,7 +544,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.seek_table.num_points &gt; point_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -579,7 +579,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -625,7 +625,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -671,7 +671,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -724,7 +724,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -777,7 +777,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">total_samples &gt; 0 </div>
 </div><!-- fragment --> </dd></dl>
@@ -831,7 +831,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">samples &gt; 0 </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">total_samples &gt; 0 </div>
@@ -878,7 +878,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91">FLAC__METADATA_TYPE_SEEKTABLE</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -933,9 +933,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_VORBIS_COMMENT</div><div class="ttdef"><b>Definition:</b> format.h:511</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_VORBIS_COMMENT</div><div class="ttdef"><b>Definition:</b> format.h:510</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||</div>
 <div class="line">(entry.entry == NULL &amp;&amp; entry.length == 0) </div>
 </div><!-- fragment --> </dd></dl>
@@ -982,7 +982,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (<span class="keywordtype">object</span>-&gt;data.vorbis_comment.comments == NULL &amp;&amp; <span class="keywordtype">object</span>-&gt;data.vorbis_comment.num_comments == 0) ||</div>
 <div class="line">(object-&gt;data.vorbis_comment.comments != NULL &amp;&amp; object-&gt;data.vorbis_comment.num_comments &gt; 0) </div>
@@ -1046,7 +1046,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">comment_num &lt; <span class="keywordtype">object</span>-&gt;data.vorbis_comment.num_comments </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||</div>
@@ -1111,7 +1111,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.vorbis_comment.num_comments &gt;= comment_num </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||</div>
@@ -1169,7 +1169,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||</div>
 <div class="line">(entry.entry == NULL &amp;&amp; entry.length == 0 &amp;&amp; copy == <span class="keyword">false</span>) </div>
@@ -1234,7 +1234,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (entry.entry != NULL &amp;&amp; entry.length &gt; 0) ||</div>
 <div class="line">(entry.entry == NULL &amp;&amp; entry.length == 0 &amp;&amp; copy == <span class="keyword">false</span>) </div>
@@ -1281,7 +1281,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.vorbis_comment.num_comments &gt; comment_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -1335,7 +1335,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">entry != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">entry != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">field_name != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">field_value != NULL </div>
 </div><!-- fragment --> </dd></dl>
@@ -1389,7 +1389,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">(entry.entry != NULL &amp;&amp; entry.length &gt; 0) </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">(entry.entry != NULL &amp;&amp; entry.length &gt; 0) </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">memchr(entry.entry, <span class="charliteral">&#39;=&#39;</span>, entry.length) != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">field_name != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">field_value != NULL </div>
@@ -1443,7 +1443,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">(entry.entry != NULL &amp;&amp; entry.length &gt; 0) </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">(entry.entry != NULL &amp;&amp; entry.length &gt; 0) </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1495,7 +1495,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">field_name != NULL </div>
 </div><!-- fragment --> </dd></dl>
@@ -1541,7 +1541,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1586,7 +1586,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520">FLAC__METADATA_TYPE_VORBIS_COMMENT</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1647,7 +1647,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1680,7 +1680,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -1726,9 +1726,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_CUESHEET</div><div class="ttdef"><b>Definition:</b> format.h:514</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_CUESHEET</div><div class="ttdef"><b>Definition:</b> format.h:513</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt; track_num </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (<span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].indices == NULL &amp;&amp; <span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].num_indices == 0) ||</div>
 <div class="line">(object-&gt;data.cue_sheet.tracks[track_num].indices != NULL &amp;&amp; object-&gt;data.cue_sheet.tracks[track_num].num_indices &gt; 0) </div>
@@ -1789,7 +1789,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt; track_num </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].num_indices &gt;= index_num </div>
@@ -1844,7 +1844,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt; track_num </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].num_indices &gt;= index_num </div>
@@ -1898,7 +1898,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt; track_num </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks[track_num].num_indices &gt; index_num </div>
@@ -1946,7 +1946,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (<span class="keywordtype">object</span>-&gt;data.cue_sheet.tracks == NULL &amp;&amp; <span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks == 0) ||</div>
 <div class="line">(object-&gt;data.cue_sheet.tracks != NULL &amp;&amp; object-&gt;data.cue_sheet.num_tracks &gt; 0) </div>
@@ -2008,7 +2008,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">track_num &lt; <span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (track-&gt;indices != NULL &amp;&amp; track-&gt;num_indices &gt; 0) ||</div>
@@ -2071,7 +2071,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt;= track_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -2118,7 +2118,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt;= track_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -2164,7 +2164,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;data.cue_sheet.num_tracks &gt; track_num </div>
 </div><!-- fragment --> </dd></dl>
@@ -2217,7 +2217,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2251,7 +2251,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65">FLAC__METADATA_TYPE_CUESHEET</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2305,9 +2305,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a> </div>
-<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_PICTURE</div><div class="ttdef"><b>Definition:</b> format.h:517</div></div>
+<div class="ttc" id="agroup__flac__format_html_ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e"><div class="ttname"><a href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a></div><div class="ttdeci">@ FLAC__METADATA_TYPE_PICTURE</div><div class="ttdef"><b>Definition:</b> format.h:516</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line">(mime_type != NULL) </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2361,7 +2361,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">(description != NULL) </div>
 </div><!-- fragment --> </dd></dl>
@@ -2423,7 +2423,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a> </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"> (data != NULL &amp;&amp; length &gt; 0) ||</div>
 <div class="line">(data == NULL &amp;&amp; length == 0 &amp;&amp; copy == <span class="keyword">false</span>) </div>
@@ -2470,7 +2470,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">object</span> != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">object</span>-&gt;type == <a class="code" href="group__flac__format.html#ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e">FLAC__METADATA_TYPE_PICTURE</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
