@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -841,7 +841,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -873,7 +873,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
 </div><div class="memdoc">
 <p>Set the serial number for the FLAC stream within the Ogg container. The default behavior is to use the serial number of the first Ogg page. Setting a serial number here will explicitly specify which stream is to be decoded.</p>
 <dl class="section note"><dt>Note</dt><dd>This does not need to be set for native FLAC decoding.</dd></dl>
-<dl class="section user"><dt>Default Value:\n <code>use</code> serial number of first page</dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>use</code> serial number of first page</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
@@ -881,7 +881,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -920,7 +920,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
 <p>Set the "MD5 signature checking" flag. If <code>true</code>, the decoder will compute the MD5 signature of the unencoded audio data while decoding and compare it to the signature from the STREAMINFO block, if it exists, during <a class="el" href="group__flac__stream__decoder.html#ga96c47c96920f363cd0972b54067818a9">FLAC__stream_decoder_finish()</a>.</p>
 <p>MD5 signature checking will be turned off (until the next <a class="el" href="group__flac__stream__decoder.html#gaa4183c2d925d5a5edddde9d1ca145725">FLAC__stream_decoder_reset()</a>) if there is no signature in the STREAMINFO block or when a seek is attempted.</p>
 <p>Clients that do not use the MD5 check should leave this off to speed up decoding.</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
@@ -928,7 +928,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -965,7 +965,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 <p>Direct the decoder to pass on all metadata blocks of type <em>type</em>.</p>
-<dl class="section user"><dt>Default Value:\n By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
+<dl class="section user"><dt>Default Value: By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
@@ -973,7 +973,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <em>type</em> is valid </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1010,7 +1010,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 <p>Direct the decoder to pass on all APPLICATION metadata blocks of the given <em>id</em>.</p>
-<dl class="section user"><dt>Default Value:\n By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
+<dl class="section user"><dt>Default Value: By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
@@ -1018,7 +1018,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">id</span> != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1046,14 +1046,14 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 <p>Direct the decoder to pass on all metadata blocks of any type.</p>
-<dl class="section user"><dt>Default Value:\n By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
+<dl class="section user"><dt>Default Value: By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1090,7 +1090,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 <p>Direct the decoder to filter out all metadata blocks of type <em>type</em>.</p>
-<dl class="section user"><dt>Default Value:\n By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
+<dl class="section user"><dt>Default Value: By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
@@ -1098,7 +1098,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <em>type</em> is valid </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1135,7 +1135,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 <p>Direct the decoder to filter out all APPLICATION metadata blocks of the given <em>id</em>.</p>
-<dl class="section user"><dt>Default Value:\n By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
+<dl class="section user"><dt>Default Value: By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
@@ -1143,7 +1143,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">id</span> != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1171,14 +1171,14 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 <p>Direct the decoder to filter out all metadata blocks of any type.</p>
-<dl class="section user"><dt>Default Value:\n By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
+<dl class="section user"><dt>Default Value: By default, only the <code>STREAMINFO</code> block is returned via the</dt><dd>metadata callback. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decoder</td><td>A decoder instance to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1211,7 +1211,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1244,7 +1244,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1277,7 +1277,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1310,7 +1310,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1343,7 +1343,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1376,7 +1376,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1409,7 +1409,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1442,7 +1442,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1475,7 +1475,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1520,7 +1520,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">position != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1654,7 +1654,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1757,7 +1757,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1831,7 +1831,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">file != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1907,7 +1907,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">file != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1983,7 +1983,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2059,7 +2059,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2093,7 +2093,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2126,7 +2126,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2161,7 +2161,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2196,7 +2196,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2230,7 +2230,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2264,7 +2264,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2301,7 +2301,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2345,7 +2345,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">decoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">

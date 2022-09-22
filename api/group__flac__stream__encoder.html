@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.4.1</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -344,11 +344,11 @@ The "set" functions may only be called when the encoder is in the state FLAC__ST
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa69b94eeab60e07d5fd33f2b3c8b85759">FLAC__STREAM_ENCODER_READ_STATUS_ABORT</a>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_ga2e81f007fb0a7414c0bbb453f37ea37f"><div class="ttname"><a href="group__flac__stream__encoder.html#ga2e81f007fb0a7414c0bbb453f37ea37f">FLAC__StreamEncoderReadStatus</a></div><div class="ttdeci">FLAC__StreamEncoderReadStatus</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:363</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gga2e81f007fb0a7414c0bbb453f37ea37fa4bdd691d3666f19ec96ff99402347a2e"><div class="ttname"><a href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa4bdd691d3666f19ec96ff99402347a2e">FLAC__STREAM_ENCODER_READ_STATUS_CONTINUE</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_READ_STATUS_CONTINUE</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:365</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gga2e81f007fb0a7414c0bbb453f37ea37fa562fef84bf86a9a39682e23066d9cfee"><div class="ttname"><a href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa562fef84bf86a9a39682e23066d9cfee">FLAC__STREAM_ENCODER_READ_STATUS_END_OF_STREAM</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_READ_STATUS_END_OF_STREAM</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:368</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gga2e81f007fb0a7414c0bbb453f37ea37fa69b94eeab60e07d5fd33f2b3c8b85759"><div class="ttname"><a href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa69b94eeab60e07d5fd33f2b3c8b85759">FLAC__STREAM_ENCODER_READ_STATUS_ABORT</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_READ_STATUS_ABORT</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:371</div></div>
-<div class="ttc" id="astructFLAC____StreamEncoder_html"><div class="ttname"><a href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a></div><div class="ttdef"><b>Definition:</b> stream_encoder.h:465</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_ga2e81f007fb0a7414c0bbb453f37ea37f"><div class="ttname"><a href="group__flac__stream__encoder.html#ga2e81f007fb0a7414c0bbb453f37ea37f">FLAC__StreamEncoderReadStatus</a></div><div class="ttdeci">FLAC__StreamEncoderReadStatus</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:362</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gga2e81f007fb0a7414c0bbb453f37ea37fa4bdd691d3666f19ec96ff99402347a2e"><div class="ttname"><a href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa4bdd691d3666f19ec96ff99402347a2e">FLAC__STREAM_ENCODER_READ_STATUS_CONTINUE</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_READ_STATUS_CONTINUE</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:364</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gga2e81f007fb0a7414c0bbb453f37ea37fa562fef84bf86a9a39682e23066d9cfee"><div class="ttname"><a href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa562fef84bf86a9a39682e23066d9cfee">FLAC__STREAM_ENCODER_READ_STATUS_END_OF_STREAM</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_READ_STATUS_END_OF_STREAM</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:367</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gga2e81f007fb0a7414c0bbb453f37ea37fa69b94eeab60e07d5fd33f2b3c8b85759"><div class="ttname"><a href="group__flac__stream__encoder.html#gga2e81f007fb0a7414c0bbb453f37ea37fa69b94eeab60e07d5fd33f2b3c8b85759">FLAC__STREAM_ENCODER_READ_STATUS_ABORT</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_READ_STATUS_ABORT</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:370</div></div>
+<div class="ttc" id="astructFLAC____StreamEncoder_html"><div class="ttname"><a href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a></div><div class="ttdef"><b>Definition:</b> stream_encoder.h:464</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> functions which change the state should not be called on the <em>encoder</em> while in the callback.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -428,10 +428,10 @@ In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEn
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaa99853066610d798627888ec2e5afa667">FLAC__STREAM_ENCODER_SEEK_STATUS_OK</a>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_ga6d5be3489f45fcf0c252022c65d87aca"><div class="ttname"><a href="group__flac__stream__encoder.html#ga6d5be3489f45fcf0c252022c65d87aca">FLAC__StreamEncoderSeekStatus</a></div><div class="ttdeci">FLAC__StreamEncoderSeekStatus</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:409</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gga6d5be3489f45fcf0c252022c65d87acaa8930179a426134caf30a70147448f037"><div class="ttname"><a href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaa8930179a426134caf30a70147448f037">FLAC__STREAM_ENCODER_SEEK_STATUS_UNSUPPORTED</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_SEEK_STATUS_UNSUPPORTED</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:417</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gga6d5be3489f45fcf0c252022c65d87acaa99853066610d798627888ec2e5afa667"><div class="ttname"><a href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaa99853066610d798627888ec2e5afa667">FLAC__STREAM_ENCODER_SEEK_STATUS_OK</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_SEEK_STATUS_OK</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:411</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gga6d5be3489f45fcf0c252022c65d87acaabf93227938b4e1bf3656fe4ba4159c60"><div class="ttname"><a href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaabf93227938b4e1bf3656fe4ba4159c60">FLAC__STREAM_ENCODER_SEEK_STATUS_ERROR</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_SEEK_STATUS_ERROR</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:414</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_ga6d5be3489f45fcf0c252022c65d87aca"><div class="ttname"><a href="group__flac__stream__encoder.html#ga6d5be3489f45fcf0c252022c65d87aca">FLAC__StreamEncoderSeekStatus</a></div><div class="ttdeci">FLAC__StreamEncoderSeekStatus</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:408</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gga6d5be3489f45fcf0c252022c65d87acaa8930179a426134caf30a70147448f037"><div class="ttname"><a href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaa8930179a426134caf30a70147448f037">FLAC__STREAM_ENCODER_SEEK_STATUS_UNSUPPORTED</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_SEEK_STATUS_UNSUPPORTED</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:416</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gga6d5be3489f45fcf0c252022c65d87acaa99853066610d798627888ec2e5afa667"><div class="ttname"><a href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaa99853066610d798627888ec2e5afa667">FLAC__STREAM_ENCODER_SEEK_STATUS_OK</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_SEEK_STATUS_OK</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:410</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gga6d5be3489f45fcf0c252022c65d87acaabf93227938b4e1bf3656fe4ba4159c60"><div class="ttname"><a href="group__flac__stream__encoder.html#gga6d5be3489f45fcf0c252022c65d87acaabf93227938b4e1bf3656fe4ba4159c60">FLAC__STREAM_ENCODER_SEEK_STATUS_ERROR</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_SEEK_STATUS_ERROR</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:413</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> functions which change the state should not be called on the <em>encoder</em> while in the callback.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -477,10 +477,10 @@ In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEn
 <div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffa48e071d89494ac8f5471e7c0d7a6f43b">FLAC__STREAM_ENCODER_TELL_STATUS_OK</a>;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_gab628f63181250eb977a28bf12b7dd9ff"><div class="ttname"><a href="group__flac__stream__encoder.html#gab628f63181250eb977a28bf12b7dd9ff">FLAC__StreamEncoderTellStatus</a></div><div class="ttdeci">FLAC__StreamEncoderTellStatus</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:432</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_ggab628f63181250eb977a28bf12b7dd9ffa48e071d89494ac8f5471e7c0d7a6f43b"><div class="ttname"><a href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffa48e071d89494ac8f5471e7c0d7a6f43b">FLAC__STREAM_ENCODER_TELL_STATUS_OK</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_TELL_STATUS_OK</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:434</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_ggab628f63181250eb977a28bf12b7dd9ffa9d6bbd317f85fd2d6fc72f64e3cb56e7"><div class="ttname"><a href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffa9d6bbd317f85fd2d6fc72f64e3cb56e7">FLAC__STREAM_ENCODER_TELL_STATUS_UNSUPPORTED</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_TELL_STATUS_UNSUPPORTED</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:440</div></div>
-<div class="ttc" id="agroup__flac__stream__encoder_html_ggab628f63181250eb977a28bf12b7dd9ffaf638882e04d7c58e6c29dcc7f410864b"><div class="ttname"><a href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffaf638882e04d7c58e6c29dcc7f410864b">FLAC__STREAM_ENCODER_TELL_STATUS_ERROR</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_TELL_STATUS_ERROR</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:437</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_gab628f63181250eb977a28bf12b7dd9ff"><div class="ttname"><a href="group__flac__stream__encoder.html#gab628f63181250eb977a28bf12b7dd9ff">FLAC__StreamEncoderTellStatus</a></div><div class="ttdeci">FLAC__StreamEncoderTellStatus</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:431</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_ggab628f63181250eb977a28bf12b7dd9ffa48e071d89494ac8f5471e7c0d7a6f43b"><div class="ttname"><a href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffa48e071d89494ac8f5471e7c0d7a6f43b">FLAC__STREAM_ENCODER_TELL_STATUS_OK</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_TELL_STATUS_OK</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:433</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_ggab628f63181250eb977a28bf12b7dd9ffa9d6bbd317f85fd2d6fc72f64e3cb56e7"><div class="ttname"><a href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffa9d6bbd317f85fd2d6fc72f64e3cb56e7">FLAC__STREAM_ENCODER_TELL_STATUS_UNSUPPORTED</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_TELL_STATUS_UNSUPPORTED</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:439</div></div>
+<div class="ttc" id="agroup__flac__stream__encoder_html_ggab628f63181250eb977a28bf12b7dd9ffaf638882e04d7c58e6c29dcc7f410864b"><div class="ttname"><a href="group__flac__stream__encoder.html#ggab628f63181250eb977a28bf12b7dd9ffaf638882e04d7c58e6c29dcc7f410864b">FLAC__STREAM_ENCODER_TELL_STATUS_ERROR</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_TELL_STATUS_ERROR</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:436</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEncoder</a> functions which change the state should not be called on the <em>encoder</em> while in the callback.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -614,7 +614,7 @@ In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEn
 </td></tr>
 <tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047da0541c4f827f081b9f1c54c9441e4aa65"></a>FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_NUMBER_OF_CHANNELS&#160;</td><td class="fielddoc"><p>The encoder has an invalid setting for number of channels. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047dad6d2631f464183c0c165155200882e6b"></a>FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_BITS_PER_SAMPLE&#160;</td><td class="fielddoc"><p>The encoder has an invalid setting for bits-per-sample. FLAC supports 4-32 bps but the reference encoder currently supports only up to 24 bps. </p>
+<tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047dad6d2631f464183c0c165155200882e6b"></a>FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_BITS_PER_SAMPLE&#160;</td><td class="fielddoc"><p>The encoder has an invalid setting for bits-per-sample. FLAC supports 4-32 bps. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047da6fdcde9e18c37450c79e8f12b9d9c134"></a>FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_SAMPLE_RATE&#160;</td><td class="fielddoc"><p>The encoder has an invalid setting for the input sample rate. </p>
 </td></tr>
@@ -782,7 +782,7 @@ In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEn
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -816,7 +816,7 @@ In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEn
 <dl class="section note"><dt>Note</dt><dd>This does not need to be set for native FLAC encoding.</dd>
 <dd>
 It is recommended to set a serial number explicitly as the default of '0' may collide with other streams.</dd></dl>
-<dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -824,7 +824,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -861,7 +861,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set the "verify" flag. If <code>true</code>, the encoder will verify it's own encoded output by feeding it through an internal decoder and comparing the original signal against the decoded signal. If a mismatch occurs, the process call will return <code>false</code>. Note that this will slow the encoding process by the extra time required for decoding and comparison.</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -869,7 +869,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -907,7 +907,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 </div><div class="memdoc">
 <p>Set the <a href="../format.html#subset">Subset</a> flag. If <code>true</code>, the encoder will comply with the Subset and will check the settings during FLAC__stream_encoder_init_*() to see if all settings comply. If <code>false</code>, the settings may take advantage of the full range that the format allows.</p>
 <p>Make sure you know what it entails before setting this to <code>false</code>.</p>
-<dl class="section user"><dt>Default Value:\n <code>true</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>true</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -915,7 +915,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -952,7 +952,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set the number of channels to be encoded.</p>
-<dl class="section user"><dt>Default Value:\n <code>2</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>2</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -960,7 +960,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -998,7 +998,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 </div><div class="memdoc">
 <p>Set the sample resolution of the input to be encoded.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Do not feed the encoder data that is wider than the value you set here or you will generate an invalid stream.</dd></dl>
-<dl class="section user"><dt>Default Value:\n <code>16</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>16</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1006,7 +1006,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1043,7 +1043,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set the sample rate (in Hz) of the input to be encoded.</p>
-<dl class="section user"><dt>Default Value:\n <code>44100</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>44100</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1051,7 +1051,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1107,25 +1107,25 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 <tr>
 <td><b>level</b> </td><td>do mid-side stereo </td><td>loose mid-side stereo </td><td>apodization </td><td>max lpc order </td><td>qlp coeff precision </td><td>qlp coeff prec search </td><td>escape coding </td><td>exhaustive model search </td><td>min residual partition order </td><td>max residual partition order </td><td>rice parameter search dist  </td></tr>
 <tr>
-<td><b>0</b> </td><td>false </td><td>false </td><td>tukey(0.5)</td><td></td><td>0 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>3 </td><td>0  </td></tr>
+<td><b>0</b> </td><td>false </td><td>false </td><td>tukey(0.5) </td><td>0 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>3 </td><td>0  </td></tr>
 <tr>
-<td><b>1</b> </td><td>true </td><td>true </td><td>tukey(0.5)</td><td></td><td>0 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>3 </td><td>0  </td></tr>
+<td><b>1</b> </td><td>true </td><td>true </td><td>tukey(0.5) </td><td>0 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>3 </td><td>0  </td></tr>
 <tr>
-<td><b>2</b> </td><td>true </td><td>false </td><td>tukey(0.5)</td><td></td><td>0 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>3 </td><td>0  </td></tr>
+<td><b>2</b> </td><td>true </td><td>false </td><td>tukey(0.5) </td><td>0 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>3 </td><td>0  </td></tr>
 <tr>
-<td><b>3</b> </td><td>false </td><td>false </td><td>tukey(0.5)</td><td></td><td>6 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>4 </td><td>0  </td></tr>
+<td><b>3</b> </td><td>false </td><td>false </td><td>tukey(0.5) </td><td>6 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>4 </td><td>0  </td></tr>
 <tr>
-<td><b>4</b> </td><td>true </td><td>true </td><td>tukey(0.5)</td><td></td><td>8 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>4 </td><td>0  </td></tr>
+<td><b>4</b> </td><td>true </td><td>true </td><td>tukey(0.5) </td><td>8 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>4 </td><td>0  </td></tr>
 <tr>
-<td><b>5</b> </td><td>true </td><td>false </td><td>tukey(0.5)</td><td></td><td>8 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>5 </td><td>0  </td></tr>
+<td><b>5</b> </td><td>true </td><td>false </td><td>tukey(0.5) </td><td>8 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>5 </td><td>0  </td></tr>
 <tr>
-<td><b>6</b> </td><td>true </td><td>false </td><td>tukey(0.5);partial_tukey(2)</td><td></td><td>8 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>6 </td><td>0  </td></tr>
+<td><b>6</b> </td><td>true </td><td>false </td><td>subdivide_tukey(2) </td><td>8 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>6 </td><td>0  </td></tr>
 <tr>
-<td><b>7</b> </td><td>true </td><td>false </td><td>tukey(0.5);partial_tukey(2)</td><td></td><td>12 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>6 </td><td>0  </td></tr>
+<td><b>7</b> </td><td>true </td><td>false </td><td>subdivide_tukey(2) </td><td>12 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>6 </td><td>0  </td></tr>
 <tr>
-<td><b>8</b> </td><td>true </td><td>false </td><td>tukey(0.5);partial_tukey(2);punchout_tukey(3) </td><td>12 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>6 </td><td>0  </td></tr>
+<td><b>8</b> </td><td>true </td><td>false </td><td>subdivide_tukey(2) </td><td>12 </td><td>0 </td><td>false </td><td>false </td><td>false </td><td>0 </td><td>6 </td><td>0  </td></tr>
 </table>
-<dl class="section user"><dt>Default Value:\n <code>5</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>5</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1133,7 +1133,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1171,7 +1171,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 </div><div class="memdoc">
 <p>Set the blocksize to use while encoding.</p>
 <p>The number of samples to use per frame. Use <code>0</code> to let the encoder estimate a blocksize; this is usually best.</p>
-<dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1179,7 +1179,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1216,7 +1216,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set to <code>true</code> to enable mid-side encoding on stereo input. The number of channels must be 2 for this to have any effect. Set to <code>false</code> to use only independent channel coding.</p>
-<dl class="section user"><dt>Default Value:\n <code>true</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>true</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1224,7 +1224,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1261,7 +1261,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set to <code>true</code> to enable adaptive switching between mid-side and left-right encoding on stereo input. Set to <code>false</code> to use exhaustive searching. Setting this to <code>true</code> requires <a class="el" href="group__flac__stream__encoder.html#ga3bff001a1efc2e4eb520c954066330f4">FLAC__stream_encoder_set_do_mid_side_stereo()</a> to also be set to <code>true</code> in order to have any effect.</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1269,7 +1269,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1307,16 +1307,17 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 </div><div class="memdoc">
 <p>Sets the apodization function(s) the encoder will use when windowing audio data for LPC analysis.</p>
 <p>The <em>specification</em> is a plain ASCII string which specifies exactly which functions to use. There may be more than one (up to 32), separated by <code>'</code>;' characters. Some functions take one or more comma-separated arguments in parentheses.</p>
-<p>The available functions are <code>bartlett</code>, <code>bartlett_hann</code>, <code>blackman</code>, <code>blackman_harris_4term_92db</code>, <code>connes</code>, <code>flattop</code>, <code>gauss(STDDEV)</code>, <code>hamming</code>, <code>hann</code>, <code>kaiser_bessel</code>, <code>nuttall</code>, <code>rectangle</code>, <code>triangle</code>, <code>tukey(P)</code>, <code>partial_tukey</code>(n[/ov[/P]]), <code>punchout_tukey</code>(n[/ov[/P]]), <code>welch</code>.</p>
+<p>The available functions are <code>bartlett</code>, <code>bartlett_hann</code>, <code>blackman</code>, <code>blackman_harris_4term_92db</code>, <code>connes</code>, <code>flattop</code>, <code>gauss(STDDEV)</code>, <code>hamming</code>, <code>hann</code>, <code>kaiser_bessel</code>, <code>nuttall</code>, <code>rectangle</code>, <code>triangle</code>, <code>tukey(P)</code>, <code>partial_tukey</code>(n[/ov[/P]]), <code>punchout_tukey</code>(n[/ov[/P]]), <code>subdivide_tukey</code>(n[/P]), <code>welch</code>.</p>
 <p>For <code>gauss(STDDEV)</code>, STDDEV specifies the standard deviation (0&lt;STDDEV&lt;=0.5).</p>
 <p>For <code>tukey(P)</code>, P specifies the fraction of the window that is tapered (0&lt;=P&lt;=1). P=0 corresponds to <code>rectangle</code> and P=1 corresponds to <code>hann</code>.</p>
 <p>Specifying <code>partial_tukey</code> or <code>punchout_tukey</code> works a little different. These do not specify a single apodization function, but a series of them with some overlap. partial_tukey specifies a series of small windows (all treated separately) while punchout_tukey specifies a series of windows that have a hole in them. In this way, the predictor is constructed with only a part of the block, which helps in case a block consists of dissimilar parts.</p>
 <p>The three parameters that can be specified for the functions are n, ov and P. n is the number of functions to add, ov is the overlap of the windows in case of partial_tukey and the overlap in the gaps in case of punchout_tukey. P is the fraction of the window that is tapered, like with a regular tukey window. The function can be specified with only a number, a number and an overlap, or a number an overlap and a P, for example, partial_tukey(3), partial_tukey(3/0.3) and partial_tukey(3/0.3/0.5) are all valid. ov should be smaller than 1 and can be negative.</p>
+<p>subdivide_tukey(n) is a more efficient reimplementation of partial_tukey and punchout_tukey taken together, recycling as much data as possible. It combines all possible non-redundant partial_tukey(n) and punchout_tukey(n) up to the n specified. Specifying subdivide_tukey(3) is equivalent to specifying tukey, partial_tukey(2), partial_tukey(3) and punchout_tukey(3), specifying subdivide_tukey(5) equivalently adds partial_tukey(4), punchout_tukey(4), partial_tukey(5) and punchout_tukey(5). To be able to reuse data as much as possible, the tukey taper is taken equal for all windows, and the P specified is applied for the smallest used window. In other words, subdivide_tukey(2/0.5) results in a taper equal to that of tukey(0.25) and subdivide_tukey(5) in a taper equal to that of tukey(0.1). The default P for subdivide_tukey when none is specified is 0.5.</p>
 <p>Example specifications are <code>"blackman"</code> or <code>"hann;triangle;tukey(0.5);tukey(0.25);tukey(0.125)"</code> </p>
 <p>Any function that is specified erroneously is silently dropped. Up to 32 functions are kept, the rest are dropped. If the specification is empty the encoder defaults to <code>"tukey(0.5)"</code>.</p>
 <p>When more than one function is specified, then for every subframe the encoder will try each of them separately and choose the window that results in the smallest compressed subframe.</p>
-<p>Note that each function specified causes the encoder to occupy a floating point array in which to store the window. Also note that the values of P, STDDEV and ov are locale-specific, so if the comma separator specified by the locale is a comma, a comma should be used.</p>
-<dl class="section user"><dt>Default Value:\n <code>"tukey(0.5)"</code> </dt><dd></dd></dl>
+<p>Note that each function specified causes the encoder to occupy a floating point array in which to store the window. Also note that the values of P, STDDEV and ov are locale-specific, so if the comma separator specified by the locale is a comma, a comma should be used. A locale-independent way is to specify using scientific notation, e.g. 5e-1 instad of 0.5 or 0,5.</p>
+<dl class="section user"><dt>Default Value: <code>"tukey(0.5)"</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1324,7 +1325,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">specification != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1362,7 +1363,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set the maximum LPC order, or <code>0</code> to use only the fixed predictors.</p>
-<dl class="section user"><dt>Default Value:\n <code>8</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>8</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1370,7 +1371,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1407,7 +1408,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set the precision, in bits, of the quantized linear predictor coefficients, or <code>0</code> to let the encoder select it based on the blocksize.</p>
-<dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1415,7 +1416,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1452,7 +1453,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set to <code>false</code> to use only the specified quantized linear predictor coefficient precision, or <code>true</code> to search neighboring precision values and use the best one.</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1460,7 +1461,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1497,7 +1498,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Deprecated. Setting this value has no effect.</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1505,7 +1506,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1542,7 +1543,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set to <code>false</code> to let the encoder estimate the best model order based on the residual signal energy, or <code>true</code> to force the encoder to evaluate all order models and select the best.</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1550,7 +1551,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1589,7 +1590,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 <p>Set the minimum partition order to search when coding the residual. This is used in tandem with <a class="el" href="group__flac__stream__encoder.html#gab9e02bfbbb1d4fcdb666e2e9a678b4f6">FLAC__stream_encoder_set_max_residual_partition_order()</a>.</p>
 <p>The partition order determines the context size in the residual. The context size will be approximately <code>blocksize / (2 ^ order)</code>.</p>
 <p>Set both min and max values to <code>0</code> to force a single context, whose Rice parameter is based on the residual signal variance. Otherwise, set a min and max order, and the encoder will search all orders, using the mean of each context for its Rice parameter, and use the best.</p>
-<dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1597,7 +1598,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1636,7 +1637,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
 <p>Set the maximum partition order to search when coding the residual. This is used in tandem with <a class="el" href="group__flac__stream__encoder.html#ga8f2ed5a2b35bfea13e6605b0fe55f0fa">FLAC__stream_encoder_set_min_residual_partition_order()</a>.</p>
 <p>The partition order determines the context size in the residual. The context size will be approximately <code>blocksize / (2 ^ order)</code>.</p>
 <p>Set both min and max values to <code>0</code> to force a single context, whose Rice parameter is based on the residual signal variance. Otherwise, set a min and max order, and the encoder will search all orders, using the mean of each context for its Rice parameter, and use the best.</p>
-<dl class="section user"><dt>Default Value:\n <code>5</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>5</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1644,7 +1645,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1681,7 +1682,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Deprecated. Setting this value has no effect.</p>
-<dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1689,7 +1690,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1726,7 +1727,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
       </table>
 </div><div class="memdoc">
 <p>Set an estimate of the total samples that will be encoded. This is merely an estimate and may be set to <code>0</code> if unknown. This value will be written to the STREAMINFO block before encoding, and can remove the need for the caller to rewrite the value later if the value is known before encoding.</p>
-<dl class="section user"><dt>Default Value:\n <code>0</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>0</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1734,7 +1735,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1792,7 +1793,7 @@ A VORBIS_COMMENT block may be supplied. The vendor string in it will be ignored.
 The Ogg FLAC mapping requires that the VORBIS_COMMENT block be the second metadata block of the stream. The encoder already supplies the STREAMINFO block automatically. If <em>metadata</em> does not contain a VORBIS_COMMENT block, the encoder will supply that too. Otherwise, if <em>metadata</em> does contain a VORBIS_COMMENT block and it is not the first, the init function will reorder <em>metadata</em> by moving the VORBIS_COMMENT block to the front; the relative ordering of the other blocks will remain as they were.</dd>
 <dd>
 The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65535</code>. If <em>num_blocks</em> exceeds this the function will return <code>false</code>.</dd></dl>
-<dl class="section user"><dt>Default Value:\n <code>NULL</code>, 0</dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>NULL</code>, 0</dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1801,7 +1802,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1838,7 +1839,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
       </table>
 </div><div class="memdoc">
 <p>Set to <code>true</code> to make the encoder not output frames which contain only constant subframes. This is beneficial for streaming applications: very small frames can cause problems with buffering as bitrates can drop as low 1kbit/s for CDDA audio encoded within subset. The minimum bitrate for a FLAC file encoded with this function used is raised to 1bit/sample (i.e. 48kbit/s for 48kHz material).</p>
-<dl class="section user"><dt>Default Value:\n <code>false</code> </dt><dd></dd></dl>
+<dl class="section user"><dt>Default Value: <code>false</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to set. </td></tr>
@@ -1846,7 +1847,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1879,7 +1880,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1912,7 +1913,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -1945,7 +1946,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2024,7 +2025,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -2051,7 +2052,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2084,7 +2085,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2117,7 +2118,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2150,7 +2151,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2183,7 +2184,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2216,7 +2217,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2249,7 +2250,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2282,7 +2283,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2315,7 +2316,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2348,7 +2349,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2381,7 +2382,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2414,7 +2415,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2447,7 +2448,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2480,7 +2481,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2513,7 +2514,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2546,7 +2547,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2579,7 +2580,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2612,7 +2613,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2687,7 +2688,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2769,7 +2770,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -2829,7 +2830,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">file != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2890,7 +2891,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line">file != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2952,7 +2953,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -3013,7 +3014,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -3048,7 +3049,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -3100,7 +3101,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><a class="code" href="group__flac__stream__encoder.html#ga0803321b37189dc5eea4fe1cea25c29a">FLAC__stream_encoder_get_state</a>(encoder) == <a class="code" href="group__flac__stream__encoder.html#ggac5e9db4fc32ca2fa74abd9c8a87c02a5a3a6666ae61a64d955341cec285695bf6">FLAC__STREAM_ENCODER_OK</a> </div>
 <div class="ttc" id="agroup__flac__stream__encoder_html_ga0803321b37189dc5eea4fe1cea25c29a"><div class="ttname"><a href="group__flac__stream__encoder.html#ga0803321b37189dc5eea4fe1cea25c29a">FLAC__stream_encoder_get_state</a></div><div class="ttdeci">FLAC__StreamEncoderState FLAC__stream_encoder_get_state(const FLAC__StreamEncoder *encoder)</div></div>
 <div class="ttc" id="agroup__flac__stream__encoder_html_ggac5e9db4fc32ca2fa74abd9c8a87c02a5a3a6666ae61a64d955341cec285695bf6"><div class="ttname"><a href="group__flac__stream__encoder.html#ggac5e9db4fc32ca2fa74abd9c8a87c02a5a3a6666ae61a64d955341cec285695bf6">FLAC__STREAM_ENCODER_OK</a></div><div class="ttdeci">@ FLAC__STREAM_ENCODER_OK</div><div class="ttdef"><b>Definition:</b> stream_encoder.h:243</div></div>
@@ -3155,7 +3156,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
   </table>
   </dd>
 </dl>
-<dl class="section user"><dt>Assertions:\n</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
+<dl class="section user"><dt>Assertions:</dt><dd><div class="fragment"><div class="line">encoder != NULL </div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><a class="code" href="group__flac__stream__encoder.html#ga0803321b37189dc5eea4fe1cea25c29a">FLAC__stream_encoder_get_state</a>(encoder) == <a class="code" href="group__flac__stream__encoder.html#ggac5e9db4fc32ca2fa74abd9c8a87c02a5a3a6666ae61a64d955341cec285695bf6">FLAC__STREAM_ENCODER_OK</a> </div>
 </div><!-- fragment --> </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
