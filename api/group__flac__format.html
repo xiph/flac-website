@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.4.2</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -717,7 +717,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module contains structure definitions for the representation of FLAC format components in memory. These are the basic structures used by the rest of the interfaces. </p>
-<p>First, you should be familiar with the <a href="../format.html">FLAC format</a>. Many of the values here follow directly from the specification. As a user of libFLAC, the interesting parts really are the structures that describe the frame header and metadata blocks.</p>
+<p>First, you should be familiar with the <a href="https://xiph.org/flac/format.html">FLAC format</a>. Many of the values here follow directly from the specification. As a user of libFLAC, the interesting parts really are the structures that describe the frame header and metadata blocks.</p>
 <p>The format structures here are very primitive, designed to store information in an efficient way. Reading information from the structures is easy but creating or modifying them directly is more complex. For the most part, as a user of a library, editing is not necessary; however, for metadata blocks it is, so there are convenience functions provided in the <a class="el" href="group__flac__metadata.html">metadata module </a> to simplify the manipulation of metadata blocks.</p>
 <dl class="section note"><dt>Note</dt><dd>It's not the best convention, but symbols ending in _LEN are in bits and _LENGTH are in bytes. _LENGTH symbols are #defines instead of global variables because they are usually used when declaring byte arrays and some compilers require compile-time knowledge of array sizes when declared on the stack. </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -1034,7 +1034,7 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
         </tr>
       </table>
 </div><div class="memdoc">
-<p>FLAC metadata block structure. (c.f. <a href="../format.html#metadata_block">format specification</a>) </p>
+<p>FLAC metadata block structure. (c.f. <a href="https://xiph.org/flac/format.html#metadata_block">format specification</a>) </p>
 
 </div>
 </div>
@@ -1165,19 +1165,19 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
 </div><div class="memdoc">
 <p>An enumeration of the available metadata block types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01acffa517e969ba6a868dcf10e5da75c28"></a>FLAC__METADATA_TYPE_STREAMINFO&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_streaminfo">STREAMINFO</a> block </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01acffa517e969ba6a868dcf10e5da75c28"></a>FLAC__METADATA_TYPE_STREAMINFO&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_streaminfo">STREAMINFO</a> block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a6dcb741fc0aef389580f110e88beb896"></a>FLAC__METADATA_TYPE_PADDING&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_padding">PADDING</a> block </p>
+<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a6dcb741fc0aef389580f110e88beb896"></a>FLAC__METADATA_TYPE_PADDING&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_padding">PADDING</a> block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b"></a>FLAC__METADATA_TYPE_APPLICATION&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_application">APPLICATION</a> block </p>
+<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a2b287a22a1ac9440b309127884c8d41b"></a>FLAC__METADATA_TYPE_APPLICATION&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_application">APPLICATION</a> block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91"></a>FLAC__METADATA_TYPE_SEEKTABLE&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_seektable">SEEKTABLE</a> block </p>
+<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a5f6323e489be1318f0e3747960ebdd91"></a>FLAC__METADATA_TYPE_SEEKTABLE&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_seektable">SEEKTABLE</a> block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520"></a>FLAC__METADATA_TYPE_VORBIS_COMMENT&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_vorbis_comment">VORBISCOMMENT</a> block (a.k.a. FLAC tags) </p>
+<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01ad013576bc5196b907547739518605520"></a>FLAC__METADATA_TYPE_VORBIS_COMMENT&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_vorbis_comment">VORBISCOMMENT</a> block (a.k.a. FLAC tags) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65"></a>FLAC__METADATA_TYPE_CUESHEET&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_cuesheet">CUESHEET</a> block </p>
+<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01a0b3f07ae60609126562cd0233ce00a65"></a>FLAC__METADATA_TYPE_CUESHEET&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_cuesheet">CUESHEET</a> block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e"></a>FLAC__METADATA_TYPE_PICTURE&#160;</td><td class="fielddoc"><p><a href="../format.html#metadata_block_picture">PICTURE</a> block </p>
+<tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01acf28ae2788366617c1aeab81d5961c6e"></a>FLAC__METADATA_TYPE_PICTURE&#160;</td><td class="fielddoc"><p><a href="https://xiph.org/flac/format.html#metadata_block_picture">PICTURE</a> block </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggac71714ba8ddbbd66d26bb78a427fac01acf6ac61fcc866608f5583c275dc34d47"></a>FLAC__METADATA_TYPE_UNDEFINED&#160;</td><td class="fielddoc"><p>marker to denote beginning of undefined type range; this number will increase as new metadata types are added </p>
 </td></tr>
@@ -4403,20 +4403,8 @@ FLAC__byte *&#160;</td><td class="memItemRight" valign="bottom"><b>FLAC__StreamM
 </div><!-- contents -->
 
 <hr size="1"/>
-<div class="copyright">
-	<!-- @@@ oh so hacky -->
-	<table>
-		<tr>
-			<td align="left">
-				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2022  Xiph.Org Foundation
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
-			</td>
-		</tr>
-	</table>
-</div>
+Copyright (c) 2000-2009  Josh Coalson
+Copyright (c) 2011-2022  Xiph.Org Foundation
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
 <!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->

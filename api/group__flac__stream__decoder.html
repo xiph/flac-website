@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.4.2</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -520,7 +520,7 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
   <table class="params">
     <tr><td class="paramname">decoder</td><td>The decoder instance calling the callback. </td></tr>
     <tr><td class="paramname">frame</td><td>The description of the decoded frame. See <a class="el" href="structFLAC____Frame.html">FLAC__Frame</a>. </td></tr>
-    <tr><td class="paramname">buffer</td><td>An array of pointers to decoded channels of data. Each pointer will point to an array of signed samples of length <em>frame-&gt;header.blocksize</em>. Channels will be ordered according to the FLAC specification; see the documentation for the <a href="../format.html#frame_header">frame header</a>. </td></tr>
+    <tr><td class="paramname">buffer</td><td>An array of pointers to decoded channels of data. Each pointer will point to an array of signed samples of length <em>frame-&gt;header.blocksize</em>. Channels will be ordered according to the FLAC specification; see the documentation for the <a href="https://xiph.org/flac/format.html#frame_header">frame header</a>. </td></tr>
     <tr><td class="paramname">client_data</td><td>The callee's client data set through FLAC__stream_decoder_init_*(). </td></tr>
   </table>
   </dd>
@@ -2552,20 +2552,8 @@ struct FLAC__StreamDecoderPrivate *&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 
 <hr size="1"/>
-<div class="copyright">
-	<!-- @@@ oh so hacky -->
-	<table>
-		<tr>
-			<td align="left">
-				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2022  Xiph.Org Foundation
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
-			</td>
-		</tr>
-	</table>
-</div>
+Copyright (c) 2000-2009  Josh Coalson
+Copyright (c) 2011-2022  Xiph.Org Foundation
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
 <!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
