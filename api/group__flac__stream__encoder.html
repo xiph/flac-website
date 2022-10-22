@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.1</span>
+   &#160;<span id="projectnumber">1.4.2</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -295,7 +295,7 @@ struct FLAC__StreamEncoderPrivate *&#160;</td><td class="memItemRight" valign="b
 <li>The instance may be used again or deleted with <a class="el" href="group__flac__stream__encoder.html#ga7212e6846f543618b6289666de216b29">FLAC__stream_encoder_delete()</a>.</li>
 </ul>
 <p>In more detail, the stream encoder functions similarly to the <a class="el" href="group__flac__stream__decoder.html">stream decoder </a>, but has fewer callbacks and more options. Typically the client will create a new instance by calling <a class="el" href="group__flac__stream__encoder.html#gab09f7620a0ba9c30020c189ce112a52f">FLAC__stream_encoder_new()</a>, then set the necessary parameters with FLAC__stream_encoder_set_*(), and initialize it by calling one of the FLAC__stream_encoder_init_*() functions.</p>
-<p>Unlike the decoders, the stream encoder has many options that can affect the speed and compression ratio. When setting these parameters you should have some basic knowledge of the format (see the <a href="../documentation_format_overview.html">user-level documentation</a> or the <a href="../format.html">formal description</a>). The FLAC__stream_encoder_set_*() functions themselves do not validate the values as many are interdependent. The FLAC__stream_encoder_init_*() functions will do this, so make sure to pay attention to the state returned by FLAC__stream_encoder_init_*() to make sure that it is FLAC__STREAM_ENCODER_INIT_STATUS_OK. Any parameters that are not set before FLAC__stream_encoder_init_*() will take on the defaults from the constructor.</p>
+<p>Unlike the decoders, the stream encoder has many options that can affect the speed and compression ratio. When setting these parameters you should have some basic knowledge of the format (see the <a href="https://xiph.org/flac/documentation_format_overview.html">user-level documentation</a> or the <a href="https://xiph.org/flac/format.html">formal description</a>). The FLAC__stream_encoder_set_*() functions themselves do not validate the values as many are interdependent. The FLAC__stream_encoder_init_*() functions will do this, so make sure to pay attention to the state returned by FLAC__stream_encoder_init_*() to make sure that it is FLAC__STREAM_ENCODER_INIT_STATUS_OK. Any parameters that are not set before FLAC__stream_encoder_init_*() will take on the defaults from the constructor.</p>
 <p>There are three initialization functions for native FLAC, one for setting up the encoder to encode FLAC data to the client via callbacks, and two for encoding directly to a file.</p>
 <p>For encoding via callbacks, use <a class="el" href="group__flac__stream__encoder.html#ga7d801879812b48fcbc40f409800c453c">FLAC__stream_encoder_init_stream()</a>. You must also supply a write callback which will be called anytime there is raw encoded data to write. If the client can seek the output it is best to also supply seek and tell callbacks, as this allows the encoder to go back after encoding is finished to write back information that was collected while encoding, like seek point offsets, frame sizes, etc.</p>
 <p>For encoding directly to a file, use <a class="el" href="group__flac__stream__encoder.html#ga12789a1c4a4e31cd2e7187259fe127f8">FLAC__stream_encoder_init_FILE()</a> or <a class="el" href="group__flac__stream__encoder.html#ga9d5117c2ac0eeb572784116bf2eb541b">FLAC__stream_encoder_init_file()</a>. Then you must only supply a filename or open <code>FILE*</code>; the encoder will handle all the callbacks internally. You may also supply a progress callback for periodic notification of the encoding progress.</p>
@@ -626,7 +626,7 @@ In general, <a class="el" href="structFLAC____StreamEncoder.html">FLAC__StreamEn
 </td></tr>
 <tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047da62a17a3ed3c05ddf8ea7f6fecbd4e4a1"></a>FLAC__STREAM_ENCODER_INIT_STATUS_BLOCK_SIZE_TOO_SMALL_FOR_LPC_ORDER&#160;</td><td class="fielddoc"><p>The specified block size is less than the maximum LPC order. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047daa793405c858c7606539082750080a47e"></a>FLAC__STREAM_ENCODER_INIT_STATUS_NOT_STREAMABLE&#160;</td><td class="fielddoc"><p>The encoder is bound to the <a href="../format.html#subset">Subset</a> but other settings violate it. </p>
+<tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047daa793405c858c7606539082750080a47e"></a>FLAC__STREAM_ENCODER_INIT_STATUS_NOT_STREAMABLE&#160;</td><td class="fielddoc"><p>The encoder is bound to the <a href="https://xiph.org/flac/format.html#subset">Subset</a> but other settings violate it. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga3bb869620af2b188d77982a5c30b047daa85afdd1849c75a19594416cef63e3e9"></a>FLAC__STREAM_ENCODER_INIT_STATUS_INVALID_METADATA&#160;</td><td class="fielddoc"><p>The metadata input to the encoder is invalid, in one of the following ways:</p><ul>
 <li><a class="el" href="group__flac__stream__encoder.html#ga80d57f9069e354cbf1a15a3e3ad9ca78">FLAC__stream_encoder_set_metadata()</a> was called with a null pointer but a block count &gt; 0</li>
@@ -905,7 +905,7 @@ It is recommended to set a serial number explicitly as the default of '0' may co
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the <a href="../format.html#subset">Subset</a> flag. If <code>true</code>, the encoder will comply with the Subset and will check the settings during FLAC__stream_encoder_init_*() to see if all settings comply. If <code>false</code>, the settings may take advantage of the full range that the format allows.</p>
+<p>Set the <a href="https://xiph.org/flac/format.html#subset">Subset</a> flag. If <code>true</code>, the encoder will comply with the Subset and will check the settings during FLAC__stream_encoder_init_*() to see if all settings comply. If <code>false</code>, the settings may take advantage of the full range that the format allows.</p>
 <p>Make sure you know what it entails before setting this to <code>false</code>.</p>
 <dl class="section user"><dt>Default Value: <code>true</code> </dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2078,7 +2078,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the &lt;A HREF="../format.html::subset&gt;Subset flag.</p>
+<p>Get the <a href="https://xiph.org/flac/format.html#subset">Subset</a> flag.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An encoder instance to query. </td></tr>
@@ -3092,7 +3092,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
       </table>
 </div><div class="memdoc">
 <p>Submit data for encoding. This version allows you to supply the input data via an array of pointers, each pointer pointing to an array of <em>samples</em> samples representing one channel. The samples need not be block-aligned, but each channel should have the same number of samples. Each sample should be a signed integer, right-justified to the resolution set by <a class="el" href="group__flac__stream__encoder.html#ga7453fc29d7e86b499f23b1adfba98da1">FLAC__stream_encoder_set_bits_per_sample()</a>. For example, if the resolution is 16 bits per sample, the samples should all be in the range [-32768,32767].</p>
-<p>For applications where channel order is important, channels must follow the order as described in the <a href="../format.html#frame_header">frame header</a>.</p>
+<p>For applications where channel order is important, channels must follow the order as described in the <a href="https://xiph.org/flac/format.html#frame_header">frame header</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An initialized encoder instance in the OK state. </td></tr>
@@ -3147,7 +3147,7 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
       </table>
 </div><div class="memdoc">
 <p>Submit data for encoding. This version allows you to supply the input data where the channels are interleaved into a single array (i.e. channel0_sample0, channel1_sample0, ... , channelN_sample0, channel0_sample1, ...). The samples need not be block-aligned but they must be sample-aligned, i.e. the first value should be channel0_sample0 and the last value channelN_sampleM. Each sample should be a signed integer, right-justified to the resolution set by <a class="el" href="group__flac__stream__encoder.html#ga7453fc29d7e86b499f23b1adfba98da1">FLAC__stream_encoder_set_bits_per_sample()</a>. For example, if the resolution is 16 bits per sample, the samples should all be in the range [-32768,32767].</p>
-<p>For applications where channel order is important, channels must follow the order as described in the <a href="../format.html#frame_header">frame header</a>.</p>
+<p>For applications where channel order is important, channels must follow the order as described in the <a href="https://xiph.org/flac/format.html#frame_header">frame header</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder</td><td>An initialized encoder instance in the OK state. </td></tr>
@@ -3316,20 +3316,8 @@ The Ogg FLAC mapping limits the number of metadata blocks per stream to <code>65
 </div><!-- contents -->
 
 <hr size="1"/>
-<div class="copyright">
-	<!-- @@@ oh so hacky -->
-	<table>
-		<tr>
-			<td align="left">
-				Copyright (c) 2000-2009  Josh Coalson
-				Copyright (c) 2011-2022  Xiph.Org Foundation
-			</td>
-			<td width="1%" align="right">
-				<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=13478&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
-			</td>
-		</tr>
-	</table>
-</div>
+Copyright (c) 2000-2009  Josh Coalson
+Copyright (c) 2011-2022  Xiph.Org Foundation
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
 <!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
