@@ -223,3 +223,25 @@ a:link, a:visited, a:active, a:hover
 	color:#336699;
 	background-color:transparent;
 }
+
+div.imageflex
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 0 20px
+}
+
+div.imageflex div
+{
+width: 200px;
+height: 125px;
+padding: 10px;
+text-align: center;
+}
+
+
+div.imageflex div span {
+display: block;
+text-align: center;
+}
