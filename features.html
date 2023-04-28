@@ -15,7 +15,7 @@ title: Features
 		Notable features of FLAC:
 		<ul>
 			<li>
-				<b>Lossless</b>: The encoding of audio (PCM) data incurs no loss of information, and the decoded audio is bit-for-bit identical to what went into the encoder.  Each frame contains a 16-bit CRC of the frame data for detecting transmission errors.  The integrity of the audio data is further insured by storing an <a href="http://userpages.umbc.edu/~mabzug1/cs/md5/md5.html">MD5 signature</a> of the original unencoded audio data in the file header, which can be compared against later during decoding or testing.
+				<b>Lossless</b>: The encoding of audio (PCM) data incurs no loss of information, and the decoded audio is bit-for-bit identical to what went into the encoder.  Each frame contains a 16-bit CRC of the frame data for detecting transmission errors.  The integrity of the audio data is further insured by storing an <a href="https://en.wikipedia.org/wiki/MD5">MD5 signature</a> of the original unencoded audio data in the file header, which can be compared against later during decoding or testing.
 			</li>
 			<li>
 				<b>Fast</b>: FLAC is asymmetric in favor of decode speed.  Decoding requires only integer arithmetic, and is much less compute-intensive than for most perceptual codecs.  Real-time decode performance is easily achievable on even modest hardware.
