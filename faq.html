@@ -80,9 +80,6 @@ title: FAQ
 				<a href="faq.html#tools__eac_and_flac"><b>How do I set up EAC to rip directly to FLAC?</b></a>
 			</li>
 			<li>
-				<a href="faq.html#tools__runtime75"><b>Why am I getting "Run-time error '75': Path/File access error" with FLAC Frontend?</b></a>
-			</li>
-			<li>
 				<a href="faq.html#tools__option_blocking"><b>How do I encode a file that starts with a dash?</b></a>
 			</li>
 			<li>
@@ -193,11 +190,11 @@ title: FAQ
 		<a name="general__no_wave_metadata"><b>Why doesn't FLAC store all WAVE metadata?</b></a><br />
 		<a name="general__not_wave_compressor"><b>If flac compresses WAVE files, why isn't it technically a WAVE file compressor?</b></a><br />
 		<br />
-		(By default, <span class="commandname">flac</span> does not store WAVE metadata, but it can with the <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> option described below.)<br />
+		(By default, <span class="commandname">flac</span> does not store WAVE metadata, but it can with the <span class="argument"><a href="documentation_tools_flac.html#general-options">--keep-foreign-metadata</a></span> option described below.)<br />
 		<br />
 		FLAC is a general-purpose audio format, not just a compressed WAVE file format.  There's a subtle difference.  WAVE is a complicated standard; many kinds of data besides audio data can be put in it.  FLAC's purpose is not to reproduce a WAVE file, including all the non-audio data that is in it, it is to losslessly compress the audio.<br />
 		<br />
-		However, if you really need to store the non-audio parts of a WAVE or AIFF file, you can use the <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> option to <span class="commandname">flac</span> when encoding to store it in FLAC metadata, then use the option again when decoding to restore in to the decoded WAVE/AIFF file.<br />
+		However, if you really need to store the non-audio parts of a WAVE or AIFF file, you can use the <span class="argument"><a href="documentation_tools_flac.html#general-options">--keep-foreign-metadata</a></span> option to <span class="commandname">flac</span> when encoding to store it in FLAC metadata, then use the option again when decoding to restore in to the decoded WAVE/AIFF file.<br />
 		<br />
 		<a name="general__no_riff_subchunks"><b>Why do some lossless comparisons say FLAC does not support RIFF chunks?</b></a><br />
 		<br />
@@ -282,7 +279,7 @@ title: FAQ
 		<a name="tools__wave_flac_wave"><b>I compressed a WAVE file to FLAC, then decompressed to WAVE, and the two weren't identical.  Why?</b></a><br />
 		<a name="tools__skipped_subchunk"><b>I compressed a WAVE file to FLAC and it said "warning: skipping unknown sub-chunk LIST".  Why?</b></a><br />
 		<br />
-		WAVE is a complicated standard; many kinds of data besides audio data can be put in it.  Most likely what has happened is that the application that created the original WAVE file also added some extra information for it's own use, which FLAC does not store or recreate by default (but can with the <span class="argument"><a href="documentation_tools_flac.html#flac_options_keep_foreign_metadata">--keep-foreign-metadata</a></span> option) (<a href="faq.html#tools__two_bytes_short">see also</a>).  The audio data in the two WAVE files will be identical.  There are other tools to compare just the audio content of two WAVE files; <a href="http://www.exactaudiocopy.de/">ExactAudioCopy</a> has such a feature.<br />
+		WAVE is a complicated standard; many kinds of data besides audio data can be put in it.  Most likely what has happened is that the application that created the original WAVE file also added some extra information for it's own use, which FLAC does not store or recreate by default (but can with the <span class="argument"><a href="documentation_tools_flac.html#general-options">--keep-foreign-metadata</a></span> option) (<a href="faq.html#tools__two_bytes_short">see also</a>).  The audio data in the two WAVE files will be identical.  There are other tools to compare just the audio content of two WAVE files; <a href="http://www.exactaudiocopy.de/">ExactAudioCopy</a> has such a feature.<br />
 		<br />
 		For the more technically inclined, by default FLAC only stores what is in the 'fmt ' and 'data' sub-chunks of a WAVE file.  <a href="faq.html#general__no_wave_metadata">(see also)</a><br />
 		<br />
