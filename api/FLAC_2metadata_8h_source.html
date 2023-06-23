@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">FLAC
-   &#160;<span id="projectnumber">1.4.2</span>
+   &#160;<span id="projectnumber">1.4.3</span>
    </div>
    <div id="projectbrief">Free Lossless Audio Codec</div>
   </td>
@@ -50,7 +50,7 @@ $(function() {
 <div class="contents">
 <a href="FLAC_2metadata_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* libFLAC - Free Lossless Audio Codec library</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2001-2009  Josh Coalson</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2011-2022  Xiph.Org Foundation</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (C) 2011-2023  Xiph.Org Foundation</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Redistribution and use in source and binary forms, with or without</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * modification, are permitted provided that the following conditions</span></div>
@@ -345,13 +345,18 @@ $(function() {
 <div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160; </div>
 <div class="line"><a name="l02198"></a><span class="lineno"><a class="line" href="group__flac__metadata__object.html#ga88268a5186e37d4b98b4df7870561128"> 2198</a></span>&#160;<a class="code" href="group__flac__export.html#ga56ca07df8a23310707732b1c0007d6f5">FLAC_API</a> FLAC__bool <a class="code" href="group__flac__metadata__object.html#ga88268a5186e37d4b98b4df7870561128">FLAC__metadata_object_picture_is_legal</a>(<span class="keyword">const</span> <a class="code" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a> *<span class="keywordtype">object</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> **violation);</div>
 <div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160; </div>
-<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;<span class="comment">/* \} */</span></div>
-<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160; </div>
-<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;}</div>
-<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160; </div>
-<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160; </div>
+<div class="line"><a name="l02212"></a><span class="lineno"><a class="line" href="group__flac__metadata__object.html#ga25695e3b6541ed37c94169158cd352f8"> 2212</a></span>&#160;<a class="code" href="group__flac__export.html#ga56ca07df8a23310707732b1c0007d6f5">FLAC_API</a> FLAC__byte * <a class="code" href="group__flac__metadata__object.html#ga25695e3b6541ed37c94169158cd352f8">FLAC__metadata_object_get_raw</a>(<span class="keyword">const</span> <a class="code" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a> *<span class="keywordtype">object</span>);</div>
+<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160; </div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160; </div>
+<div class="line"><a name="l02227"></a><span class="lineno"><a class="line" href="group__flac__metadata__object.html#ga2db85cdea68f2fa84dd3f8aa31d9e4eb"> 2227</a></span>&#160;<a class="code" href="group__flac__export.html#ga56ca07df8a23310707732b1c0007d6f5">FLAC_API</a> <a class="code" href="structFLAC____StreamMetadata.html">FLAC__StreamMetadata</a> * <a class="code" href="group__flac__metadata__object.html#ga2db85cdea68f2fa84dd3f8aa31d9e4eb">FLAC__metadata_object_set_raw</a>(FLAC__byte *buffer, FLAC__uint32 length);</div>
+<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;<span class="comment">/* \} */</span></div>
+<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160; </div>
+<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;}</div>
+<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160; </div>
+<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aFLAC_09_09_2export_8h_html"><div class="ttname"><a href="FLAC_09_09_2export_8h.html">export.h</a></div><div class="ttdoc">This module contains #defines and symbols for exporting function calls, and providing version informa...</div></div>
 <div class="ttc" id="acallback_8h_html"><div class="ttname"><a href="callback_8h.html">callback.h</a></div><div class="ttdoc">This module defines the structures for describing I/O callbacks to the other FLAC interfaces.</div></div>
 <div class="ttc" id="aformat_8h_html"><div class="ttname"><a href="format_8h.html">format.h</a></div><div class="ttdoc">This module contains structure definitions for the representation of FLAC format components in memory...</div></div>
@@ -449,10 +454,12 @@ $(function() {
 <div class="ttc" id="agroup__flac__metadata__object_html_ga1293d6df6daf2d65143d8bb40eed9261"><div class="ttname"><a href="group__flac__metadata__object.html#ga1293d6df6daf2d65143d8bb40eed9261">FLAC__metadata_object_cuesheet_track_clone</a></div><div class="ttdeci">FLAC__StreamMetadata_CueSheet_Track * FLAC__metadata_object_cuesheet_track_clone(const FLAC__StreamMetadata_CueSheet_Track *object)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga1a443d9299ce69694ad59bec4519d7b2"><div class="ttname"><a href="group__flac__metadata__object.html#ga1a443d9299ce69694ad59bec4519d7b2">FLAC__metadata_object_cuesheet_is_legal</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_cuesheet_is_legal(const FLAC__StreamMetadata *object, FLAC__bool check_cd_da_subset, const char **violation)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga241f5d623483b5aebc3a721cce3fa8ec"><div class="ttname"><a href="group__flac__metadata__object.html#ga241f5d623483b5aebc3a721cce3fa8ec">FLAC__metadata_object_cuesheet_delete_track</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_cuesheet_delete_track(FLAC__StreamMetadata *object, uint32_t track_num)</div></div>
+<div class="ttc" id="agroup__flac__metadata__object_html_ga25695e3b6541ed37c94169158cd352f8"><div class="ttname"><a href="group__flac__metadata__object.html#ga25695e3b6541ed37c94169158cd352f8">FLAC__metadata_object_get_raw</a></div><div class="ttdeci">FLAC__byte * FLAC__metadata_object_get_raw(const FLAC__StreamMetadata *object)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga29079764fabda53cb3e890e6d05c8345"><div class="ttname"><a href="group__flac__metadata__object.html#ga29079764fabda53cb3e890e6d05c8345">FLAC__metadata_object_vorbiscomment_entry_to_name_value_pair</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_vorbiscomment_entry_to_name_value_pair(const FLAC__StreamMetadata_VorbisComment_Entry entry, char **field_name, char **field_value)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga293fe7d8b8b9e49d2414db0925b0f442"><div class="ttname"><a href="group__flac__metadata__object.html#ga293fe7d8b8b9e49d2414db0925b0f442">FLAC__metadata_object_picture_set_description</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_picture_set_description(FLAC__StreamMetadata *object, FLAC__byte *description, FLAC__bool copy)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga29af0ecc2a015ef22289f206bc308d80"><div class="ttname"><a href="group__flac__metadata__object.html#ga29af0ecc2a015ef22289f206bc308d80">FLAC__metadata_object_clone</a></div><div class="ttdeci">FLAC__StreamMetadata * FLAC__metadata_object_clone(const FLAC__StreamMetadata *object)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga2d66b56b6ebda795ccee86968029e6ad"><div class="ttname"><a href="group__flac__metadata__object.html#ga2d66b56b6ebda795ccee86968029e6ad">FLAC__metadata_object_cuesheet_track_insert_index</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_cuesheet_track_insert_index(FLAC__StreamMetadata *object, uint32_t track_num, uint32_t index_num, FLAC__StreamMetadata_CueSheet_Index index)</div></div>
+<div class="ttc" id="agroup__flac__metadata__object_html_ga2db85cdea68f2fa84dd3f8aa31d9e4eb"><div class="ttname"><a href="group__flac__metadata__object.html#ga2db85cdea68f2fa84dd3f8aa31d9e4eb">FLAC__metadata_object_set_raw</a></div><div class="ttdeci">FLAC__StreamMetadata * FLAC__metadata_object_set_raw(FLAC__byte *buffer, FLAC__uint32 length)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga395fcb4900cd5710e67dc96a9a9cca70"><div class="ttname"><a href="group__flac__metadata__object.html#ga395fcb4900cd5710e67dc96a9a9cca70">FLAC__metadata_object_vorbiscomment_insert_comment</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_vorbiscomment_insert_comment(FLAC__StreamMetadata *object, uint32_t comment_num, FLAC__StreamMetadata_VorbisComment_Entry entry, FLAC__bool copy)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga409f80cb3938814ae307e609faabccc4"><div class="ttname"><a href="group__flac__metadata__object.html#ga409f80cb3938814ae307e609faabccc4">FLAC__metadata_object_seektable_template_append_points</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_seektable_template_append_points(FLAC__StreamMetadata *object, FLAC__uint64 sample_numbers[], uint32_t num)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_ga4511ae9ca994c9f4ab035a3c1aa98f45"><div class="ttname"><a href="group__flac__metadata__object.html#ga4511ae9ca994c9f4ab035a3c1aa98f45">FLAC__metadata_object_picture_set_mime_type</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_picture_set_mime_type(FLAC__StreamMetadata *object, char *mime_type, FLAC__bool copy)</div></div>
@@ -486,7 +493,7 @@ $(function() {
 <div class="ttc" id="agroup__flac__metadata__object_html_gafb0449b639ba5c618826d893c2961260"><div class="ttname"><a href="group__flac__metadata__object.html#gafb0449b639ba5c618826d893c2961260">FLAC__metadata_object_seektable_template_sort</a></div><div class="ttdeci">FLAC__bool FLAC__metadata_object_seektable_template_sort(FLAC__StreamMetadata *object, FLAC__bool compact)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_gafe2983a9c09685e34626cab39b3fb52c"><div class="ttname"><a href="group__flac__metadata__object.html#gafe2983a9c09685e34626cab39b3fb52c">FLAC__metadata_object_cuesheet_track_new</a></div><div class="ttdeci">FLAC__StreamMetadata_CueSheet_Track * FLAC__metadata_object_cuesheet_track_new(void)</div></div>
 <div class="ttc" id="agroup__flac__metadata__object_html_gaff2f825950b3e4dda4c8ddbf8e2f7ecd"><div class="ttname"><a href="group__flac__metadata__object.html#gaff2f825950b3e4dda4c8ddbf8e2f7ecd">FLAC__metadata_object_cuesheet_calculate_cddb_id</a></div><div class="ttdeci">FLAC__uint32 FLAC__metadata_object_cuesheet_calculate_cddb_id(const FLAC__StreamMetadata *object)</div></div>
-<div class="ttc" id="astructFLAC____IOCallbacks_html"><div class="ttname"><a href="structFLAC____IOCallbacks.html">FLAC__IOCallbacks</a></div><div class="ttdef"><b>Definition:</b> callback.h:170</div></div>
+<div class="ttc" id="astructFLAC____IOCallbacks_html"><div class="ttname"><a href="structFLAC____IOCallbacks.html">FLAC__IOCallbacks</a></div><div class="ttdef"><b>Definition:</b> callback.h:175</div></div>
 <div class="ttc" id="astructFLAC____StreamMetadata__CueSheet__Index_html"><div class="ttname"><a href="structFLAC____StreamMetadata__CueSheet__Index.html">FLAC__StreamMetadata_CueSheet_Index</a></div><div class="ttdef"><b>Definition:</b> format.h:654</div></div>
 <div class="ttc" id="astructFLAC____StreamMetadata__CueSheet__Track_html"><div class="ttname"><a href="structFLAC____StreamMetadata__CueSheet__Track.html">FLAC__StreamMetadata_CueSheet_Track</a></div><div class="ttdef"><b>Definition:</b> format.h:673</div></div>
 <div class="ttc" id="astructFLAC____StreamMetadata__SeekPoint_html"><div class="ttname"><a href="structFLAC____StreamMetadata__SeekPoint.html">FLAC__StreamMetadata_SeekPoint</a></div><div class="ttdef"><b>Definition:</b> format.h:581</div></div>
@@ -496,9 +503,9 @@ $(function() {
 
 <hr size="1"/>
 Copyright (c) 2000-2009  Josh Coalson
-Copyright (c) 2011-2022  Xiph.Org Foundation
+Copyright (c) 2011-2023  Xiph.Org Foundation
 <!-- Copyright (c) 2000-2009  Josh Coalson -->
-<!-- Copyright (c) 2011-2022  Xiph.Org Foundation -->
+<!-- Copyright (c) 2011-2023  Xiph.Org Foundation -->
 <!-- Permission is granted to copy, distribute and/or modify this document -->
 <!-- under the terms of the GNU Free Documentation License, Version 1.1 -->
 <!-- or any later version published by the Free Software Foundation; -->
