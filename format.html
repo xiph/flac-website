@@ -3,7 +3,7 @@ layout: default
 title: Format
 ---
 
-<p>The FLAC format is described in great detail in <b><a href="https://datatracker.ietf.org/doc/draft-ietf-cellar-flac/">RFC9XXX</a></b>. That document also defines the mapping of FLAC in the <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-ogg-mapping">Ogg</a> and <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-matroska-mapping">Matroska (mkv)</a> containers, <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-numerical-considerations">provides implementation guidance</a> and contains <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-examples">examples walking through all decoding steps</a>.</p>
+<p>The FLAC format is described in great detail in <b><a href="https://datatracker.ietf.org/doc/rfc9639/">RFC 9639</a></b>. That document also defines the mapping of FLAC in the <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-ogg-mapping">Ogg</a> and <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-matroska-mapping">Matroska (mkv)</a> containers, <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-numerical-considerations">provides implementation guidance</a> and contains <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-examples">examples walking through all decoding steps</a>.</p>
 
 <p>The <a href="old_format.html">old description of the FLAC format</a> that used to be on this page for many years served as the basis for the RFC.
 While it lacks detail in certain places, requiring the reader to look for details in the libFLAC source code to fully understand it, it remains a useful overview and historical reference.</p>
@@ -22,139 +22,139 @@ While it lacks detail in certain places, requiring the reader to look for detail
 <p>The old document used to be at this URL, so below is a mapping from the old anchors to the appropriate sections of the RFC. This preserves deep links to those anchors.</p>
 
 <h3 id="acknowledgments">Acknowledgments</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-acknowledgments">section 14 of RFC9XXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-acknowledgments">section Acknowledgments of RFC 9639</a>
 
 <h3 id="scope">Scope</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-introduction">section 1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-introduction">section 1 of RFC 9639</a>
 
 <h3 id="architecture">Architecture</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-conceptual-overview">section 4 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-conceptual-overview">section 4 of RFC 9639</a>
 
 <h3 id="definitions">Definitions</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-definitions">section 3 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-definitions">section 3 of RFC 9639</a>
 
 <h3 id="blocking">Blocking</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-blocking">section 4.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-blocking">section 4.1 of RFC 9639</a>
 
 <h3 id="interchannel">Interchannel Decorrelation</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-interchannel-decorrelation">section 4.2 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-interchannel-decorrelation">section 4.2 of RFC 9639</a>
 
 <h3 id="prediction">Prediction</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-prediction">section 4.3 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-prediction">section 4.3 of RFC 9639</a>
 
 <h3 id="residualcoding">Residual Coding</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-residual-coding">section 4.4 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-residual-coding">section 4.4 of RFC 9639</a>
 
 <h3 id="format_overview">Format</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-format-principles">section 5 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-format-principles">section 5 of RFC 9639</a>
 
 <h3 id="def_STREAMINFO">STREAMINFO</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-streaminfo">section 8.2 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo">section 8.2 of RFC 9639</a>
 
 <h3 id="def_APPLICATION">APPLICATION</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-application">section 8.4 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-application">section 8.4 of RFC 9639</a>
 
 <h3 id="def_PADDING">PADDING</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-padding">section 8.3 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-padding">section 8.3 of RFC 9639</a>
 
 <h3 id="def_SEEKTABLE">SEEKTABLE</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-seektable">section 8.5 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-seektable">section 8.5 of RFC 9639</a>
 
 <h3 id="def_VORBIS_COMMENT">VORBIS_COMMENT</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-vorbis-comment">section 8.6 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-vorbis-comment">section 8.6 of RFC 9639</a>
 
 <h3 id="def_CUESHEET">CUESHEET</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-cuesheet">section 8.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-cuesheet">section 8.7 of RFC 9639</a>
 
 <h3 id="def_PICTURE">PICTURE</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-picture">section 8.8 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-picture">section 8.8 of RFC 9639</a>
 
 <h3 id="subset">FLAC subset</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-streamable-subset">section 7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-streamable-subset">section 7 of RFC 9639</a>
 
 <h3 id="stream">STREAM</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-file-level-metadata">section 8 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-file-level-metadata">section 8 of RFC 9639</a>
 
 <h3 id="metadata_block">METADATA_BLOCK</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-metadata-block-header">section 8.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-metadata-block-header">section 8.1 of RFC 9639</a>
 
 <h3 id="metadata_block_header">METADATA_BLOCK_HEADER</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-metadata-block-header">section 8.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-metadata-block-header">section 8.1 of RFC 9639</a>
 
 <h3 id="metadata_block_data">METADATA_BLOCK_DATA</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-metadata-block-header">section 8.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-metadata-block-header">section 8.1 of RFC 9639</a>
 
 <h3 id="metadata_block_streaminfo">METADATA_BLOCK_STREAMINFO</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-streaminfo">section 8.2 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo">section 8.2 of RFC 9639</a>
 
 <h3 id="metadata_block_padding">METADATA_BLOCK_PADDING</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-padding">section 8.3 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-padding">section 8.3 of RFC 9639</a>
 
 <h3 id="metadata_block_application">METADATA_BLOCK_APPLICATION</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-application">section 8.4 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-application">section 8.4 of RFC 9639</a>
 
 <h3 id="metadata_block_seektable">METADATA_BLOCK_SEEKTABLE</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-seektable">section 8.5 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-seektable">section 8.5 of RFC 9639</a>
 
 <h3 id="seekpoint">SEEKPOINT</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-seekpoint">section 8.5.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-seekpoint">section 8.5.1 of RFC 9639</a>
 
 <h3 id="metadata_block_vorbis_comment">METADATA_BLOCK_VORBIS_COMMENT</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-vorbis-comment">section 8.6 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-vorbis-comment">section 8.6 of RFC 9639</a>
 
 <h3 id="metadata_block_cuesheet">METADATA_BLOCK_CUESHEET</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-cuesheet">section 8.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-cuesheet">section 8.7 of RFC 9639</a>
 
 <h3 id="cuesheet_track">CUESHEET_TRACK</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-cuesheet-track">section 8.7.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-cuesheet-track">section 8.7.1 of RFC 9639</a>
 
 <h3 id="cuesheet_track_index">CUESHEET_TRACK_INDEX</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-cuesheet-track-index-point">section 8.7.1.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-cuesheet-track-index-point">section 8.7.1.1 of RFC 9639</a>
 
 <h3 id="metadata_block_picture">METADATA_BLOCK_PICTURE</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-picture">section 8.8 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-picture">section 8.8 of RFC 9639</a>
 
 <h3 id="frame">FRAME</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-frame-structure">section 9 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-frame-structure">section 9 of RFC 9639</a>
 
 <h3 id="frame_header">FRAME_HEADER</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-frame-header">section 9.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-frame-header">section 9.1 of RFC 9639</a>
 
 <h3 id="frame_footer">FRAME_FOOTER</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-frame-footer">section 9.3 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-frame-footer">section 9.3 of RFC 9639</a>
 
 <h3 id="subframe">SUBFRAME</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-subframes">section 9.2 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-subframes">section 9.2 of RFC 9639</a>
 
 <h3 id="subframe_header">SUBFRAME_HEADER</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-subframe-header">section 9.2.1 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-subframe-header">section 9.2.1 of RFC 9639</a>
 
 <h3 id="subframe_constant">SUBFRAME_CONSTANT</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-constant-subframe">section 9.2.3 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-constant-subframe">section 9.2.3 of RFC 9639</a>
 
 <h3 id="subframe_fixed">SUBFRAME_FIXED</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-fixed-predictor-subframe">section 9.2.5 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-fixed-predictor-subframe">section 9.2.5 of RFC 9639</a>
 
 <h3 id="subframe_lpc">SUBFRAME_LPC</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-linear-predictor-subframe">section 9.2.6 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-linear-predictor-subframe">section 9.2.6 of RFC 9639</a>
 
 <h3 id="subframe_verbatim">SUBFRAME_VERBATIM</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-verbatim-subframe">section 9.2.4 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-verbatim-subframe">section 9.2.4 of RFC 9639</a>
 
 <h3 id="residual">RESIDUAL</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-coded-residual">section 9.2.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-coded-residual">section 9.2.7 of RFC 9639</a>
 
 <h3 id="partitioned_rice">RESIDUAL_CODING_METHOD_PARTITIONED_RICE</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-coded-residual">section 9.2.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-coded-residual">section 9.2.7 of RFC 9639</a>
 
 <h3 id="rice_partition">RICE_PARTITION</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-coded-residual">section 9.2.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-coded-residual">section 9.2.7 of RFC 9639</a>
 
 <h3 id="partitioned_rice2">RESIDUAL_CODING_METHOD_PARTITIONED_RICE2</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-coded-residual">section 9.2.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-coded-residual">section 9.2.7 of RFC 9639</a>
 
 <h3 id="rice2_partition">RICE2_PARTITION</h3>
-See <a href="https://www.ietf.org/archive/id/draft-ietf-cellar-flac-14.html#name-coded-residual">section 9.2.7 of RFC9XXXX</a>
+See <a href="https://www.rfc-editor.org/rfc/rfc9639.html#name-coded-residual">section 9.2.7 of RFC 9639</a>
 
 <script>
 if (window.location.hash == "") {
